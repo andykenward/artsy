@@ -1,0 +1,17 @@
+overwrite: true
+schema: ${SCHEMA_PATH:./data/schemaV2.graphql}
+documents: './src/components/**/*.{ts,tsx}'
+generates:
+  src/generated/graphql.tsx:
+    plugins:
+      - 'typescript'
+      - 'typescript-operations'
+      - 'typescript-react-apollo'
+    config:
+      withHooks: true
+  src/generated/graphql.schema.json:
+    plugins:
+      - 'introspection'
+config:
+  namingConvention:
+    enumValues: keep

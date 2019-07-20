@@ -6,6 +6,55 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - npm `^6.10.1`
 - yarn `^1,17.0`
 
+### Yarn
+
+- [Yarn installation guide](https://yarnpkg.com/en/docs/install)
+
+### Node
+
+Recommend using a node version manager tool.
+
+- [NVM](https://github.com/creationix/nvm#install-script)
+
+Once NVM is installed go to the repos root directory
+
+```
+$ nvm use
+```
+
+## Installation
+
+Please check the above [requirements](#Requirements) before installation.
+
+```
+$ yarn
+$ cp .env.sample .env
+$ yarn codegen && yarn start
+```
+
+## Development
+
+In seperate terminal windows run.
+
+```
+$ yarn start
+```
+
+```
+$ yarn codegen:watch
+```
+
+## Enviroment Variables
+
+Don't forget to set these up on the CI if changing environments or API.
+
+**There are defaults used in the codebase if not set in the environment for now.**
+
+```
+REACT_APP_API=https://metaphysics-production.artsy.net/v2/
+SCHEMA_PATH=./data/schemaV2.graphql
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -39,6 +88,24 @@ Use [TypeScript] to check typings in `.ts` and `.tsx` files.
 
 Use [TypeScript] to check typings in `.ts` and `.tsx` files and watch for changes.
 
+### `yarn sync-schema`
+
+Downloads the [GraphQL] schema for [Artsy Metaphysics] endpoint to [data/schemaV2.graphql]. We use this to generate the [TypeScript] typings for GraphQL queries and mutations.
+
+### `yarn codegen`
+
+Generate [TypeScript] typings for GraphQL queries and mutations using [GraphQL Code Generator].
+
+See [`codegen.yml`] for configuration.
+
+Outputs to [`src/generated/graphql.schema.json`] & [`graphql.tsx`].
+
+Using [`@graphql-codegen/typescript-react-apollo`] to output [React Hooks] of [GraphQL] queries & mutations. Saves having to write out verbose typings manually.
+
+### `yarn codegen:watch`
+
+Runs the above `yarn codegen` in watch mode. Everytime you change a [GraphQL] query or mutation in the codebase the typings should update automatically.
+
 ### `yarn build`
 
 Builds the app for production to the `build` folder.<br>
@@ -59,6 +126,10 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## GraphQL
+
+API EndPoint - https://metaphysics-production.artsy.net/v2/
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
@@ -67,3 +138,11 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 [prettier]: https://prettier.io
 [eslint]: https://eslint.org
+[artsy metaphysics]: https://github.com/artsy/metaphysics
+[graphql]: https://graphql.org
+[data/schemav2.graphql]: ./data/schemaV2.graphql
+[typescript]: https://www.typescriptlang.org
+[graphql code generator]: https://graphql-code-generator.com
+[`codegen.yml`]: ./codegen.yml
+[`@graphql-codegen/typescript-react-apollo`]: https://graphql-code-generator.com/docs/plugins/typescript-react-apollo
+[react hooks]: https://reactjs.org/docs/hooks-intro.html

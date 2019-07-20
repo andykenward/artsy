@@ -8,6 +8,7 @@
     "yarn": "^1.17.0"
   },
   "dependencies": {
+    "@types/graphql": "14.2.2",
     "@types/jest": "24.0.15",
     "@types/node": "12.6.8",
     "@types/react": "16.8.23",
@@ -30,7 +31,10 @@
     "type-check": "tsc --noEmit",
     "type-check:watch": "yarn type-check -- --watch",
     "format": "prettier --write 'src/**/*.{css,js,jsx,ts,tsx}'",
-    "lint": "eslint --cache --ext .js,.ts,.tsx  src"
+    "lint": "eslint --cache --ext .js,.ts,.tsx  src",
+    "sync-schema": "curl https://raw.githubusercontent.com/artsy/metaphysics/master/_schemaV2.graphql -o data/schemaV2.graphql; yarn prettier --write --parser graphql data/schemaV2.graphql",
+    "codegen": "graphql-codegen -r dotenv/config --config codegen.yml",
+    "codegen:watch": "yarn codegen --watch"
   },
   "eslintConfig": {
     "extends": [
@@ -59,6 +63,11 @@
   },
   "devDependencies": {
     "@graphql-codegen/cli": "1.4.0",
+    "@graphql-codegen/introspection": "1.4.0",
+    "@graphql-codegen/typescript": "1.4.0",
+    "@graphql-codegen/typescript-operations": "1.4.0",
+    "@graphql-codegen/typescript-react-apollo": "1.4.0",
+    "dotenv": "8.0.0",
     "eslint-config-prettier": "6.0.0",
     "eslint-plugin-prettier": "3.1.0",
     "prettier": "1.18.2"

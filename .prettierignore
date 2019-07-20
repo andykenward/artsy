@@ -1,0 +1,4 @@
+public
+build
+src/generated
+yarn.lock
