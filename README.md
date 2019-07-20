@@ -31,6 +31,14 @@ Use [Prettier] to format `.css`, `.js`, `.jsx`, `.ts`, `.tsx` files in `/src` .
 
 Use [ESLint] to lint `.js`, `.ts`, `.tsx` files in `/src`.
 
+### `yarn type-check`
+
+Use [TypeScript] to check typings in `.ts` and `.tsx` files.
+
+### `yarn type-check:watch
+
+Use [TypeScript] to check typings in `.ts` and `.tsx` files and watch for changes.
+
 ### `yarn build`
 
 Builds the app for production to the `build` folder.<br>
