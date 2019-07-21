@@ -69,9 +69,12 @@
     "@graphql-codegen/typescript": "1.4.0",
     "@graphql-codegen/typescript-operations": "1.4.0",
     "@graphql-codegen/typescript-react-apollo": "1.4.0",
+    "@testing-library/jest-dom": "4.0.0",
+    "@testing-library/react": "8.0.5",
     "dotenv": "8.0.0",
     "eslint-config-prettier": "6.0.0",
     "eslint-plugin-prettier": "3.1.0",
+    "jest-styled-components": "6.3.3",
     "prettier": "1.18.2"
   }
 }
