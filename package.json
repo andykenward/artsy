@@ -8,6 +8,7 @@
     "yarn": "^1.17.0"
   },
   "dependencies": {
+    "@apollo/react-hooks": "0.1.0-beta.11",
     "@artsy/palette": "4.14.30",
     "@types/graphql": "14.2.2",
     "@types/jest": "24.0.15",
@@ -19,7 +20,6 @@
     "graphql-tag": "2.10.1",
     "react": "^16.8.6",
     "react-apollo": "2.5.8",
-    "react-apollo-hooks": "0.5.0",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
     "styled-components": "4.3.2",

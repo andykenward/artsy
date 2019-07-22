@@ -1,6 +1,6 @@
+import { ApolloProvider } from '@apollo/react-hooks';
 import { injectGlobalStyles, Theme } from '@artsy/palette';
 import React from 'react';
-import { ApolloProvider as ApolloHooksProvider } from 'react-apollo-hooks';
 import ReactDOM from 'react-dom';
 import { client } from './apollo-client';
 import App from './App';
@@ -11,13 +11,13 @@ const { GlobalStyles } = injectGlobalStyles(`
 `);
 
 ReactDOM.render(
-  <ApolloHooksProvider client={client}>
+  <ApolloProvider client={client}>
     <Theme>
       <>
         <GlobalStyles />
         <App />
       </>
     </Theme>
-  </ApolloHooksProvider>,
+  </ApolloProvider>,
   document.getElementById('root')
 );

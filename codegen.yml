@@ -9,6 +9,7 @@ generates:
       - 'typescript-react-apollo'
     config:
       withHooks: true
+      hooksImportFrom: '@apollo/react-hooks'
   src/generated/graphql.schema.json:
     plugins:
       - 'introspection'
