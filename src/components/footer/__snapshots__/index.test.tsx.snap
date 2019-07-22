@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Header /> renders correctly 1`] = `
+exports[`<Footer /> renders correctly 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -18,8 +18,22 @@ exports[`<Header /> renders correctly 1`] = `
 
 .c2 {
   font-family: 'Adobe Garamond W08','adobe-garamond-pro','AGaramondPro-Regular','Times New Roman',Times,serif;
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+.c3 {
+  color: #000;
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c3:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #000;
 }
 
 .c1 a {
@@ -57,25 +71,32 @@ exports[`<Header /> renders correctly 1`] = `
 
 @media screen and (min-width:768px) {
   .c2 {
-    font-size: 44px;
+    font-size: 26px;
   }
 }
 
 @media screen and (min-width:768px) {
   .c2 {
-    line-height: 50px;
+    line-height: 32px;
   }
 }
 
-<header
+<footer
   class="c0"
 >
-  <h2
+  <div
     class="c1 c2"
     font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-    font-size="32px,44px"
+    font-size="22px,26px"
   >
-    Artsy.net - GraphQL API
-  </h2>
-</header>
+    Andy Kenward
+  </div>
+  <a
+    class="c3"
+    href="https://andykenward.com"
+    target="_blank"
+  >
+    andykenward.com
+  </a>
+</footer>
 `;
