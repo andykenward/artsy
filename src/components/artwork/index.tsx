@@ -1,4 +1,4 @@
-import { Flex, Sans, Serif, Spinner } from '@artsy/palette';
+import { Flex, Link, Sans, Serif, Spinner } from '@artsy/palette';
 import { RouteComponentProps } from '@reach/router';
 import React from 'react';
 import { oc } from 'ts-optchain';
@@ -70,6 +70,13 @@ export const Artwork: React.FC<Props> = ({ slug }) => {
               <strong>{artwork.artist_names}</strong>
             </Serif>
             <Serif size="4">{artwork.image_title}</Serif>
+            <Link
+              href={`https://www.artsy.net${artwork.href}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Serif size="4">Source</Serif>
+            </Link>
           </Flex>
         </ImageContainer>
       </Container>

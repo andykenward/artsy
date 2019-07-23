@@ -149,6 +149,20 @@ exports[`<Artwork /> should render success response 1`] = `
   line-height: 26px;
 }
 
+.c8 {
+  color: #000;
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c8:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #000;
+}
+
 .c0 {
   min-height: 100vh;
 }
@@ -237,6 +251,20 @@ exports[`<Artwork /> should render success response 1`] = `
         >
           Hossam Dirar, ‘Nefertiti’, 2018
         </div>
+        <a
+          class="c8"
+          href="https://www.artsy.nethttps://artsy.net"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            class="c7"
+            font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+            font-size="18px"
+          >
+            Source
+          </div>
+        </a>
       </figcaption>
     </figure>
   </section>

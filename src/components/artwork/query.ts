@@ -8,6 +8,7 @@ export const QUERY_ARTWORK = gql`
         slug
         artist_names
         image_title
+        href
         image {
           placeholder
           orientation

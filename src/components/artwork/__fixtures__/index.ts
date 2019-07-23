@@ -5,6 +5,7 @@ export const ARTWORK_RESULT_DATA = {
       slug: 'hossam-dirar-nefertiti-9',
       artist_names: 'Hossam Dirar',
       image_title: 'Hossam Dirar, ‘Nefertiti’, 2018',
+      href: 'https://artsy.net',
       image: {
         placeholder: '100.40816326530613%',
         orientation: 'landscape',
