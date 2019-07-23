@@ -1,5 +1,13 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Deployment
+
+Uses [GitHub Actions](https://github.com/features/actions) to [zeit.co/now](https://zeit.co/now)
+
+- [ori-homework-artsy.andykenward.com](https://ori-homework-artsy.andykenward.com)
+
+- [ori-homework-artsy.andykenward.now.sh](https://ori-homework-artsy.andykenward.now.sh)
+
 ## Requirements
 
 - node `^10.15.3`
