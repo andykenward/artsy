@@ -89,14 +89,37 @@ exports[`<Footer /> renders correctly 1`] = `
     font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
     font-size="22px,26px"
   >
-    Andy Kenward
+    <strong>
+      Andy Kenward
+    </strong>
   </div>
   <a
     class="c3"
     href="https://andykenward.com"
+    rel="noopener noreferrer"
     target="_blank"
   >
-    andykenward.com
+    <div
+      class="c1 c2"
+      font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+      font-size="22px,26px"
+    >
+      andykenward.com
+    </div>
+  </a>
+  <a
+    class="c3"
+    href="https://github.com/andykenward/ori-homework-artsy"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <div
+      class="c1 c2"
+      font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+      font-size="22px,26px"
+    >
+      GitHub
+    </div>
   </a>
 </footer>
 `;

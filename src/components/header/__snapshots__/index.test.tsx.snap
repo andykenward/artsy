@@ -20,6 +20,30 @@ exports[`<Header /> renders correctly 1`] = `
   font-family: 'Adobe Garamond W08','adobe-garamond-pro','AGaramondPro-Regular','Times New Roman',Times,serif;
   font-size: 32px;
   line-height: 38px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c4 {
+  font-family: 'Adobe Garamond W08','adobe-garamond-pro','AGaramondPro-Regular','Times New Roman',Times,serif;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.c3 {
+  color: #000;
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c3:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #000;
 }
 
 .c1 a {
@@ -67,15 +91,41 @@ exports[`<Header /> renders correctly 1`] = `
   }
 }
 
+@media screen and (min-width:768px) {
+  .c4 {
+    font-size: 44px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c4 {
+    line-height: 50px;
+  }
+}
+
 <header
   class="c0"
 >
-  <h2
+  <h1
     class="c1 c2"
+    display="inline-flex"
     font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
     font-size="32px,44px"
   >
-    Artsy.net - GraphQL API
-  </h2>
+    <a
+      class="c3"
+      href="https://artsy.net"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        class="c1 c4"
+        font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+        font-size="32px,44px"
+      >
+        Artsy.net
+      </div>
+    </a>
+  </h1>
 </header>
 `;
