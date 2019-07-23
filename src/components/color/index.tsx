@@ -32,13 +32,17 @@ const Square = styled.div`
 `;
 
 const LinkColor = styled(Link)`
-  width: 5rem;
-  height: 5rem;
+  width: 2.6rem;
+  height: 2.6rem;
   transition: all 0.2s ease;
   display: inline-flex;
   :focus,
   :hover {
     transform: scale(0.9);
+  }
+  @media (min-width: 900px) {
+    width: 5rem;
+    height: 5rem;
   }
 `;
 const List = styled.ul`
@@ -46,6 +50,12 @@ const List = styled.ul`
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+`;
+
+const ListItem = styled.li`
+  display: inline-flex;
 `;
 
 const ColorItem: React.FC<{ color: string }> = ({ color }) => (
@@ -75,12 +85,12 @@ export const Color: React.FC<{ filterColors?: ColorKeys }> = ({
   filterColors = colors,
 }) => {
   const colorOptions = Object.keys(filterColors).map((color, value) => (
-    <li key={color}>
+    <ListItem key={color}>
       <ColorItem color={color} />
-    </li>
+    </ListItem>
   ));
   return (
-    <Flex as="nav" p="1rem">
+    <Flex as="nav" p="1rem" flexWrap="wrap">
       <List>{colorOptions}</List>
     </Flex>
   );
