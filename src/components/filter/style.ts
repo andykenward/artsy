@@ -11,6 +11,7 @@ export const List = styled.ul`
   padding: 0;
   margin: 0;
   list-style: none;
+  columns: 2;
 
   @media (min-width: 900px) {
     columns: 6 200px;
