@@ -1,12 +1,8 @@
+# ORI HOMEWORK ARTSY
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Deployment
-
-Uses [GitHub Actions](https://github.com/features/actions) to [zeit.co/now](https://zeit.co/now)
-
-- [ori-homework-artsy.andykenward.com](https://ori-homework-artsy.andykenward.com)
-
-- [ori-homework-artsy.andykenward.now.sh](https://ori-homework-artsy.andykenward.now.sh)
+[ori-homework-artsy.andykenward.com](https://ori-homework-artsy.andykenward.com)
 
 ## Requirements
 
@@ -102,7 +98,7 @@ Use [ESLint] to lint `.js`, `.ts`, `.tsx` files in `/src`.
 
 Use [TypeScript] to check typings in `.ts` and `.tsx` files.
 
-### `yarn type-check:watch
+### `yarn type-check:watch`
 
 Use [TypeScript] to check typings in `.ts` and `.tsx` files and watch for changes.
 
@@ -132,21 +128,24 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+See the section about [deployment](#Deployment) for more information.
 
 ## GraphQL
 
 API EndPoint - https://metaphysics-production.artsy.net/v2/
+
+## Deployment
+
+Uses [GitHub Actions] to [zeit.co/now](https://zeit.co/now)
+
+[GitHub Actions] configuration see [`.github/main.workflow`] and [ori-homework-artsy/actions]
+
+[zeit.co/now](https://zeit.co/now) configuration see [`now.json`]
+
+#### URLS
+
+- [ori-homework-artsy.andykenward.now.sh](https://ori-homework-artsy.andykenward.now.sh)
+- [ori-homework-artsy.andykenward.com](https://ori-homework-artsy.andykenward.com)
 
 ## Learn More
 
@@ -164,3 +163,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 [`codegen.yml`]: ./codegen.yml
 [`@graphql-codegen/typescript-react-apollo`]: https://graphql-code-generator.com/docs/plugins/typescript-react-apollo
 [react hooks]: https://reactjs.org/docs/hooks-intro.html
+[`.github/main.workflow`]: .github/main.workflow
+[github actions]: https://github.com/features/actions
+[ori-homework-artsy/actions]: https://github.com/andykenward/ori-homework-artsy/actions
+[`now.json`]: ./now.json
