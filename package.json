@@ -36,6 +36,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "prebuild": "yarn codegen && yarn lint && yarn type-check && yarn test",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -45,7 +46,8 @@
     "lint": "eslint --cache --ext .js,.ts,.tsx  src",
     "sync-schema": "curl https://raw.githubusercontent.com/artsy/metaphysics/master/_schemaV2.graphql -o data/schema.graphql; yarn prettier --write --parser graphql data/schema.graphql",
     "codegen": "graphql-codegen -r dotenv/config --config codegen.yml",
-    "codegen:watch": "yarn codegen --watch"
+    "codegen:watch": "yarn codegen --watch",
+    "now-build": "yarn run build"
   },
   "eslintConfig": {
     "extends": [
