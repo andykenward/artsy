@@ -42,7 +42,6 @@
     "type-check:watch": "yarn type-check -- --watch",
     "format": "prettier --write 'src/**/*.{css,js,jsx,ts,tsx}'",
     "lint": "eslint --cache --ext .js,.ts,.tsx  src",
-    "lint:ci": "eslint --ext .js,.ts,.tsx  src",
     "sync-schema": "curl https://raw.githubusercontent.com/artsy/metaphysics/master/_schemaV2.graphql -o data/schema.graphql; yarn prettier --write --parser graphql data/schema.graphql",
     "codegen": "graphql-codegen -r dotenv/config --config codegen.yml",
     "codegen:watch": "yarn codegen --watch",
