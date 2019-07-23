@@ -32,7 +32,7 @@ action "type-check" {
 action "test" {
   uses = "Borales/actions-yarn@master"
   secrets = ["REACT_APP_API", "SCHEMA_PATH"]
-  args = "test"
+  args = "test --runInBand"
   needs = ["install","codegen", "lint", "type-check"]
 }
 
