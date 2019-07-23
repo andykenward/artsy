@@ -124,20 +124,6 @@ exports[`<Artwork /> should render loading state initially 1`] = `
 `;
 
 exports[`<Artwork /> should render success response 1`] = `
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
 .c6 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -171,13 +157,36 @@ exports[`<Artwork /> should render success response 1`] = `
   margin: 1rem;
 }
 
-.c5 {
-  height: 50vh;
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+  width: 70vh;
+  max-width: 100%;
 }
 
 .c2 {
   margin-bottom: 1rem;
   display: inline-block;
+}
+
+.c5 {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+@media (orientation:landscape) and (max-width:899px) {
+  .c4 {
+    width: 50vw;
+  }
 }
 
 <main
@@ -198,42 +207,39 @@ exports[`<Artwork /> should render success response 1`] = `
         &lt; Collect
       </div>
     </a>
-    <div
+    <figure
       class="c4"
+      orientation="landscape"
     >
-      <div
+      <img
+        alt="Hossam Dirar, ‘Nefertiti’, 2018"
         class="c5"
+        height="803"
+        src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=799&height=803&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FCbM3QgRJTqffp_SwZV5FxQ%2Flarge.jpg"
+        srcset="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=799&height=803&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FCbM3QgRJTqffp_SwZV5FxQ%2Flarge.jpg, https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=799&height=803&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FCbM3QgRJTqffp_sdsdsSwZV5FxQ%2Flarge.jpg 2x"
+        width="400"
+      />
+      <figcaption
+        class="c6"
       >
-        <img
-          alt="Hossam Dirar, ‘Nefertiti’, 2018"
-          height="803"
-          src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=799&height=803&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FCbM3QgRJTqffp_SwZV5FxQ%2Flarge.jpg"
-          srcset="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=799&height=803&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FCbM3QgRJTqffp_SwZV5FxQ%2Flarge.jpg, https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=799&height=803&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FCbM3QgRJTqffp_sdsdsSwZV5FxQ%2Flarge.jpg 1.5x"
-          style="object-fit: contain; width: 100%; height: 100%;"
-          width="400"
-        />
         <div
-          class="c6"
+          class="c7"
+          font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+          font-size="18px"
         >
-          <div
-            class="c7"
-            font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-            font-size="18px"
-          >
-            <strong>
-              Hossam Dirar
-            </strong>
-          </div>
-          <div
-            class="c7"
-            font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-            font-size="18px"
-          >
-            Hossam Dirar, ‘Nefertiti’, 2018
-          </div>
+          <strong>
+            Hossam Dirar
+          </strong>
         </div>
-      </div>
-    </div>
+        <div
+          class="c7"
+          font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+          font-size="18px"
+        >
+          Hossam Dirar, ‘Nefertiti’, 2018
+        </div>
+      </figcaption>
+    </figure>
   </section>
 </main>
 `;

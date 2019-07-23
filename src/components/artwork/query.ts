@@ -10,12 +10,13 @@ export const QUERY_ARTWORK = gql`
         image_title
         image {
           placeholder
-          resized(width: 400) {
+          orientation
+          resized(width: 600) {
             url
             width
             height
           }
-          resizedRetina: resized(width: 800) {
+          resizedRetina: resized(width: 1200) {
             url
             width
             height

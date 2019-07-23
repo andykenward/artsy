@@ -5,7 +5,7 @@ import { oc } from 'ts-optchain';
 import { useArtworkQuery } from '../../generated/graphql';
 import { Error } from '../error';
 import { Page } from '../page';
-import { ImageContainer, LinkStyle, Section } from './style';
+import { Image, ImageContainer, LinkStyle, Section } from './style';
 
 interface Props extends RouteComponentProps {
   slug?: string;
@@ -55,30 +55,23 @@ export const Artwork: React.FC<Props> = ({ slug }) => {
 
     return (
       <Container>
-        <Flex flexDirection="column" alignItems="center">
-          <ImageContainer>
-            {image && (
-              <img
-                alt={oc(artwork).image_title('')}
-                width={image.width as number}
-                height={image.height as number}
-                srcSet={`${oc(image).url('')}, ${oc(imageRetina).url('')} 1.5x`}
-                style={{
-                  objectFit: 'contain',
-                  width: '100%',
-                  height: '100%',
-                }}
-                src={oc(image).url('')}
-              />
-            )}
-            <Flex mx="1rem" pt="1rem" flexDirection="column">
-              <Serif size="4">
-                <strong>{artwork.artist_names}</strong>
-              </Serif>
-              <Serif size="4">{artwork.image_title}</Serif>
-            </Flex>
-          </ImageContainer>
-        </Flex>
+        <ImageContainer orientation={oc(artwork).image.orientation('portrait')}>
+          {image && (
+            <Image
+              alt={oc(artwork).image_title('')}
+              width={image.width as number}
+              height={image.height as number}
+              srcSet={`${oc(image).url('')}, ${oc(imageRetina).url('')} 2x`}
+              src={oc(image).url('')}
+            />
+          )}
+          <Flex as="figcaption" mx="1rem" pt="1rem" flexDirection="column">
+            <Serif size="4">
+              <strong>{artwork.artist_names}</strong>
+            </Serif>
+            <Serif size="4">{artwork.image_title}</Serif>
+          </Flex>
+        </ImageContainer>
       </Container>
     );
   }

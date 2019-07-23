@@ -46,33 +46,33 @@ exports[`<Filter /> should render loading state initially 1`] = `
 `;
 
 exports[`<Filter /> should render success response 1`] = `
-.c6 {
+.c7 {
   width: 100%;
   height: 100%;
   -webkit-transition: opacity 0.25s;
   transition: opacity 0.25s;
 }
 
-.c5 {
+.c6 {
   background-color: #E5E5E5;
   -webkit-animation: ZSmbh 2s ease-in-out infinite;
   animation: ZSmbh 2s ease-in-out infinite;
-}
-
-.c7 {
-  font-family: 'Adobe Garamond W08','adobe-garamond-pro','AGaramondPro-Regular','Times New Roman',Times,serif;
-  font-size: 12px;
-  line-height: 16px;
-  padding-top: 0.5rem;
 }
 
 .c8 {
   font-family: 'Adobe Garamond W08','adobe-garamond-pro','AGaramondPro-Regular','Times New Roman',Times,serif;
   font-size: 12px;
   line-height: 16px;
+  padding-top: 0.5rem;
 }
 
-.c4 {
+.c9 {
+  font-family: 'Adobe Garamond W08','adobe-garamond-pro','AGaramondPro-Regular','Times New Roman',Times,serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.c5 {
   background-color: white;
   position: relative;
   width: 100%;
@@ -111,6 +111,11 @@ exports[`<Filter /> should render success response 1`] = `
   outline: 5px auto rgba(0,103,244,0.247);
 }
 
+.c4 {
+  padding: 0;
+  margin: 0;
+}
+
 @media (min-width:900px) {
   .c1 {
     -webkit-columns: 6 200px;
@@ -132,40 +137,46 @@ exports[`<Filter /> should render success response 1`] = `
         class="c3"
         href="/artwork/olga-kisseleva-contre-temps-2"
       >
-        <div
+        <figure
           class="c4"
-          style="padding-bottom: 44.83241854490249%;"
         >
           <div
             class="c5"
+            style="padding-bottom: 44.83241854490249%;"
           >
-            <img
-              alt="Olga Kisseleva, ‘Contre temps’, 2017"
+            <div
               class="c6"
-              height="100%"
-              src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=179&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F_OuIfBeAhYWEZ6qGRg2EZg%2Flarge.jpg"
-              style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
-              width="100%"
-            />
-            <noscript />
+            >
+              <img
+                alt="Olga Kisseleva, ‘Contre temps’, 2017"
+                class="c7"
+                height="100%"
+                src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=179&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F_OuIfBeAhYWEZ6qGRg2EZg%2Flarge.jpg"
+                style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
+                width="100%"
+              />
+              <noscript />
+            </div>
           </div>
-        </div>
-        <div
-          class="c7"
-          font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-          font-size="12px"
-        >
-          <strong>
-            bob
-          </strong>
-        </div>
-        <div
-          class="c8"
-          font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-          font-size="12px"
-        >
-          Contre temps
-        </div>
+          <figcaption>
+            <div
+              class="c8"
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="12px"
+            >
+              <strong>
+                bob
+              </strong>
+            </div>
+            <div
+              class="c9"
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="12px"
+            >
+              Contre temps
+            </div>
+          </figcaption>
+        </figure>
       </a>
     </li>
     <li
@@ -176,40 +187,46 @@ exports[`<Filter /> should render success response 1`] = `
         class="c3"
         href="/artwork/mary-reid-kelley-with-patrick-kelley-pinups-in-the-bunks-of-the-uss-sturgeon"
       >
-        <div
+        <figure
           class="c4"
-          style="padding-bottom: 80%;"
         >
           <div
             class="c5"
+            style="padding-bottom: 80%;"
           >
-            <img
-              alt="Mary Reid Kelley with Patrick Kelley, ‘Pinups in the Bunks of the USS Sturgeon’, 2017"
+            <div
               class="c6"
-              height="100%"
-              src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=320&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FxTIMkrTaxJtqfr1T7W-bJg%2Flarge.jpg"
-              style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
-              width="100%"
-            />
-            <noscript />
+            >
+              <img
+                alt="Mary Reid Kelley with Patrick Kelley, ‘Pinups in the Bunks of the USS Sturgeon’, 2017"
+                class="c7"
+                height="100%"
+                src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=320&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FxTIMkrTaxJtqfr1T7W-bJg%2Flarge.jpg"
+                style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
+                width="100%"
+              />
+              <noscript />
+            </div>
           </div>
-        </div>
-        <div
-          class="c7"
-          font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-          font-size="12px"
-        >
-          <strong>
-            bob
-          </strong>
-        </div>
-        <div
-          class="c8"
-          font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-          font-size="12px"
-        >
-          Pinups in the Bunks of the USS Sturgeon
-        </div>
+          <figcaption>
+            <div
+              class="c8"
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="12px"
+            >
+              <strong>
+                bob
+              </strong>
+            </div>
+            <div
+              class="c9"
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="12px"
+            >
+              Pinups in the Bunks of the USS Sturgeon
+            </div>
+          </figcaption>
+        </figure>
       </a>
     </li>
     <li
@@ -220,40 +237,46 @@ exports[`<Filter /> should render success response 1`] = `
         class="c3"
         href="/artwork/luis-medina-red-field-iii"
       >
-        <div
+        <figure
           class="c4"
-          style="padding-bottom: 122.72727272727273%;"
         >
           <div
             class="c5"
+            style="padding-bottom: 122.72727272727273%;"
           >
-            <img
-              alt="Luis Medina, ‘Red Field III’, 2015"
+            <div
               class="c6"
-              height="100%"
-              src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=490&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FYAITzBZh36ozLDeq4ztmqA%2Flarge.jpg"
-              style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
-              width="100%"
-            />
-            <noscript />
+            >
+              <img
+                alt="Luis Medina, ‘Red Field III’, 2015"
+                class="c7"
+                height="100%"
+                src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=490&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FYAITzBZh36ozLDeq4ztmqA%2Flarge.jpg"
+                style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
+                width="100%"
+              />
+              <noscript />
+            </div>
           </div>
-        </div>
-        <div
-          class="c7"
-          font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-          font-size="12px"
-        >
-          <strong>
-            bob
-          </strong>
-        </div>
-        <div
-          class="c8"
-          font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-          font-size="12px"
-        >
-          Red Field III
-        </div>
+          <figcaption>
+            <div
+              class="c8"
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="12px"
+            >
+              <strong>
+                bob
+              </strong>
+            </div>
+            <div
+              class="c9"
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="12px"
+            >
+              Red Field III
+            </div>
+          </figcaption>
+        </figure>
       </a>
     </li>
     <li
@@ -264,40 +287,46 @@ exports[`<Filter /> should render success response 1`] = `
         class="c3"
         href="/artwork/oso-lc-sin-titulo-18"
       >
-        <div
+        <figure
           class="c4"
-          style="padding-bottom: 131.50984682713346%;"
         >
           <div
             class="c5"
+            style="padding-bottom: 131.50984682713346%;"
           >
-            <img
-              alt="OSO LC, ‘SIN TITULO (18)’, 2019"
+            <div
               class="c6"
-              height="100%"
-              src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=526&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F8ts6ggLPfDGUEs7k1Hljbw%2Flarge.jpg"
-              style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
-              width="100%"
-            />
-            <noscript />
+            >
+              <img
+                alt="OSO LC, ‘SIN TITULO (18)’, 2019"
+                class="c7"
+                height="100%"
+                src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=526&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F8ts6ggLPfDGUEs7k1Hljbw%2Flarge.jpg"
+                style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
+                width="100%"
+              />
+              <noscript />
+            </div>
           </div>
-        </div>
-        <div
-          class="c7"
-          font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-          font-size="12px"
-        >
-          <strong>
-            bob
-          </strong>
-        </div>
-        <div
-          class="c8"
-          font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-          font-size="12px"
-        >
-          SIN TITULO (18)
-        </div>
+          <figcaption>
+            <div
+              class="c8"
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="12px"
+            >
+              <strong>
+                bob
+              </strong>
+            </div>
+            <div
+              class="c9"
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="12px"
+            >
+              SIN TITULO (18)
+            </div>
+          </figcaption>
+        </figure>
       </a>
     </li>
     <li
@@ -308,40 +337,46 @@ exports[`<Filter /> should render success response 1`] = `
         class="c3"
         href="/artwork/mary-reid-kelley-with-patrick-kelley-gaudy-night"
       >
-        <div
+        <figure
           class="c4"
-          style="padding-bottom: 66.73913043478261%;"
         >
           <div
             class="c5"
+            style="padding-bottom: 66.73913043478261%;"
           >
-            <img
-              alt="Mary Reid Kelley with Patrick Kelley, ‘Gaudy Night’, 2017"
+            <div
               class="c6"
-              height="100%"
-              src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=266&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FEeBUZRYDj56abPARNdwzyA%2Flarge.jpg"
-              style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
-              width="100%"
-            />
-            <noscript />
+            >
+              <img
+                alt="Mary Reid Kelley with Patrick Kelley, ‘Gaudy Night’, 2017"
+                class="c7"
+                height="100%"
+                src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=266&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FEeBUZRYDj56abPARNdwzyA%2Flarge.jpg"
+                style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
+                width="100%"
+              />
+              <noscript />
+            </div>
           </div>
-        </div>
-        <div
-          class="c7"
-          font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-          font-size="12px"
-        >
-          <strong>
-            bob
-          </strong>
-        </div>
-        <div
-          class="c8"
-          font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-          font-size="12px"
-        >
-          Gaudy Night
-        </div>
+          <figcaption>
+            <div
+              class="c8"
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="12px"
+            >
+              <strong>
+                bob
+              </strong>
+            </div>
+            <div
+              class="c9"
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="12px"
+            >
+              Gaudy Night
+            </div>
+          </figcaption>
+        </figure>
       </a>
     </li>
     <li
@@ -352,40 +387,46 @@ exports[`<Filter /> should render success response 1`] = `
         class="c3"
         href="/artwork/mwamba-mulangala-sensual-snare"
       >
-        <div
+        <figure
           class="c4"
-          style="padding-bottom: 218.57923497267763%;"
         >
           <div
             class="c5"
+            style="padding-bottom: 218.57923497267763%;"
           >
-            <img
-              alt="Mwamba Mulangala, ‘Sensual Snare’, 2016"
+            <div
               class="c6"
-              height="100%"
-              src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=874&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FyML5R5JvfJXc-uGD2DLvLQ%2Flarge.jpg"
-              style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
-              width="100%"
-            />
-            <noscript />
+            >
+              <img
+                alt="Mwamba Mulangala, ‘Sensual Snare’, 2016"
+                class="c7"
+                height="100%"
+                src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=874&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FyML5R5JvfJXc-uGD2DLvLQ%2Flarge.jpg"
+                style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
+                width="100%"
+              />
+              <noscript />
+            </div>
           </div>
-        </div>
-        <div
-          class="c7"
-          font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-          font-size="12px"
-        >
-          <strong>
-            bob
-          </strong>
-        </div>
-        <div
-          class="c8"
-          font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-          font-size="12px"
-        >
-          Sensual Snare
-        </div>
+          <figcaption>
+            <div
+              class="c8"
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="12px"
+            >
+              <strong>
+                bob
+              </strong>
+            </div>
+            <div
+              class="c9"
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="12px"
+            >
+              Sensual Snare
+            </div>
+          </figcaption>
+        </figure>
       </a>
     </li>
   </ul>

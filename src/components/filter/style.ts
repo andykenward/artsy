@@ -1,3 +1,4 @@
+import { Link as ReachLink } from '@reach/router';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -22,4 +23,16 @@ export const ListItem = styled.li`
   display: inline-block;
   width: 100%;
   padding: 0.5rem 0;
+`;
+
+export const Link = styled(ReachLink)`
+  text-decoration: none;
+  :focus {
+    outline: 5px auto rgba(0, 103, 244, 0.247);
+  }
+`;
+
+export const Figure = styled.figure`
+  padding: 0;
+  margin: 0;
 `;
