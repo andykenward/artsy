@@ -40,19 +40,10 @@ action "test" {
   needs = ["install", "codegen"]
 }
 
-action "build" {
-  uses = "Borales/actions-yarn@master"
-  secrets = [
-    "REACT_APP_API",
-    "SCHEMA_PATH",
-    "CI",
-  ]
-  args = "build"
-  needs = ["install", "codegen", "lint", "type-check", "test"]
-}
-
 action "deploy" {
   uses = "andykenward/deploy-now@master"
-  secrets = ["GITHUB_TOKEN", "NOW_TOKEN"]
-  needs = ["build"]
+  secrets = ["GITHUB_TOKEN", "NOW_TOKEN","REACT_APP_API",
+    "SCHEMA_PATH",
+    "CI"]
+  needs = ["install", "codegen", "lint", "type-check", "test"]
 }
