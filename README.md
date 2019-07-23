@@ -4,14 +4,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 [ori-homework-artsy.andykenward.com](https://ori-homework-artsy.andykenward.com)
 
+[Artsy GraphQL API]
+
 ## Requirements
 
 - node `^10.15.3`
 - yarn `^1.16.0`
-
-### Yarn
-
-- [Yarn installation guide](https://yarnpkg.com/en/docs/install)
 
 ### Node
 
@@ -24,6 +22,11 @@ Once NVM is installed go to the repos root directory
 ```
 $ nvm use
 ```
+
+### Yarn
+
+- [Yarn installation guide](https://yarnpkg.com/en/docs/install)
+
 
 ## Installation
 
@@ -45,28 +48,6 @@ $ yarn start
 
 ```
 $ yarn codegen:watch
-```
-
-## Enviroment Variables
-
-Don't forget to set these up on the CI if changing environments or API.
-
-**There are defaults used in the codebase if not set in the environment**
-
-```
-REACT_APP_API=https://metaphysics-production.artsy.net/v2/
-SCHEMA_PATH=./data/schema.graphql
-```
-
-For `now` deployment you need to add secrets to your account via now-cli.
-
-**FYI `now` secrets keys are case sensitive, REACT_APP_API will be react_app_api when using on now-cli**
-[using-environment-variables-and-secrets](https://zeit.co/docs/v2/build-step#using-environment-variables-and-secrets)
-
-```
-npx now secrets add react_app_api https://metaphysics-production.artsy.net/v2/
-npx now secrets add schema_path ./data/schema.graphql
-npx now secrets add ci true
 ```
 
 ## Available Scripts
@@ -112,7 +93,9 @@ Generate [TypeScript] typings for GraphQL queries and mutations using [GraphQL C
 
 See [`codegen.yml`] for configuration.
 
-Outputs to [`src/generated/graphql.schema.json`] & [`graphql.tsx`].
+Outputs [`src/generated/graphql.tsx`] & [`src/generated/introspection-result.ts`]. 
+
+**These are git ignored and will be generated on the CI during deployment, but you need them locally for typings.**
 
 Using [`@graphql-codegen/typescript-react-apollo`] to output [React Hooks] of [GraphQL] queries & mutations. Saves having to write out verbose typings manually.
 
@@ -132,15 +115,62 @@ See the section about [deployment](#Deployment) for more information.
 
 ## GraphQL
 
-API EndPoint - https://metaphysics-production.artsy.net/v2/
+[Artsy GraphQL API]
+
+[Apollo Client]
+
+## Environment Variables
+
+Don't forget to set these up on the CI if changing environments or API.
+
+**There are defaults used in the codebase if not set in the environment**
+
+```
+REACT_APP_API=https://metaphysics-production.artsy.net/v2/
+SCHEMA_PATH=./data/schema.graphql
+```
+
+For `now` deployment you need to add secrets to your account via now-cli.
+
+**FYI `now` secrets keys are case sensitive, REACT_APP_API will be react_app_api when using on now-cli**
+[using-environment-variables-and-secrets](https://zeit.co/docs/v2/build-step#using-environment-variables-and-secrets)
+
+```
+npx now secrets add react_app_api https://metaphysics-production.artsy.net/v2/
+npx now secrets add schema_path ./data/schema.graphql
+npx now secrets add ci true
+```
 
 ## Deployment
 
-Uses [GitHub Actions] to [zeit.co/now](https://zeit.co/now)
+Uses [GitHub Actions] to deploy to [zeit.co/now].
+
+Every branch in the repo is deployed to [zeit.co/now]. 
+
+And is aliased using a naming convention of `<project-name>-<branch>.<scope>.now.sh`. 
+
+For example
+
+[`ori-homework-artsy`-`develop`.andykenward.now.sh](https://ori-homework-artsy-develop.andykenward.now.sh)
+
+The most recent committed branch will always alias to [ori-homework-artsy.andykenward.now.sh](https://ori-homework-artsy.andykenward.now.sh)
+
+**`master` branch is aliased to [ori-homework-artsy.andykenward.com](https://ori-homework-artsy.andykenward.com)**
+
+### Actions
+- install
+- codegen
+- lint
+- type-check
+- test
+- build
+- deploy
 
 [GitHub Actions] configuration see [`.github/main.workflow`] and [ori-homework-artsy/actions]
 
-[zeit.co/now](https://zeit.co/now) configuration see [`now.json`]
+[zeit.co/now] configuration see [`now.json`]
+
+Also see [Environment Variables](#environment-variables)
 
 #### URLS
 
@@ -167,3 +197,8 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 [github actions]: https://github.com/features/actions
 [ori-homework-artsy/actions]: https://github.com/andykenward/ori-homework-artsy/actions
 [`now.json`]: ./now.json
+[artsy graphql api]: https://metaphysics-production.artsy.net/v2/
+[apollo client]: https://www.apollographql.com
+[`src/generated/introspection-result.ts`]: ./src/generated/introspection-result.ts
+[`src/generated/graphql.tsx`]: ./src/generated/graphql.tsx
+[zeit.co/now]: https://zeit.co/now
