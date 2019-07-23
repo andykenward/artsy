@@ -51,7 +51,7 @@ Don't forget to set these up on the CI if changing environments or API.
 
 ```
 REACT_APP_API=https://metaphysics-production.artsy.net/v2/
-SCHEMA_PATH=./data/schemaV2.graphql
+SCHEMA_PATH=./data/schema.graphql
 ```
 
 ## Available Scripts
@@ -89,7 +89,7 @@ Use [TypeScript] to check typings in `.ts` and `.tsx` files and watch for change
 
 ### `yarn sync-schema`
 
-Downloads the [GraphQL] schema for [Artsy Metaphysics] endpoint to [data/schemaV2.graphql]. We use this to generate the [TypeScript] typings for GraphQL queries and mutations.
+Downloads the [GraphQL] schema for [Artsy Metaphysics] endpoint to [data/schema.graphql]. We use this to generate the [TypeScript] typings for GraphQL queries and mutations.
 
 ### `yarn codegen`
 
@@ -139,7 +139,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 [eslint]: https://eslint.org
 [artsy metaphysics]: https://github.com/artsy/metaphysics
 [graphql]: https://graphql.org
-[data/schemav2.graphql]: ./data/schemaV2.graphql
+[data/schema.graphql]: ./data/schema.graphql
 [typescript]: https://www.typescriptlang.org
 [graphql code generator]: https://graphql-code-generator.com
 [`codegen.yml`]: ./codegen.yml
