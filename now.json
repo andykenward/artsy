@@ -16,10 +16,7 @@
     }
   ],
   "routes": [
-    {
-      "src": "^/(.*).html",
-      "headers": { "cache-control": "public,max-age=0,must-revalidate" },
-      "dest": "$1.html"
-    }
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
