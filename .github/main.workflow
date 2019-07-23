@@ -42,8 +42,6 @@ action "test" {
 
 action "deploy" {
   uses = "andykenward/deploy-now@master"
-  secrets = ["GITHUB_TOKEN", "NOW_TOKEN","REACT_APP_API",
-    "SCHEMA_PATH",
-    "CI"]
+  secrets = ["GITHUB_TOKEN", "NOW_TOKEN"]
   needs = ["install", "codegen", "lint", "type-check", "test"]
 }
