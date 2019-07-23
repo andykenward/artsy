@@ -8,6 +8,13 @@
     "enabled": false,
     "autoAlias": false
   },
+  "build": {
+    "env": {
+      "REACT_APP_API": "@react_app_api",
+      "SCHEMA_PATH": "@schema_path",
+      "CI": "@ci"
+    }
+  },
   "builds": [
     {
       "src": "package.json",
