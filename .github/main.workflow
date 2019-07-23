@@ -1,6 +1,6 @@
 workflow "Build and deploy on push" {
   on = "push"
-  resolves = ["deploy","test-npm"]
+  resolves = ["deploy"]
 }
 
 action "install" {
@@ -19,34 +19,36 @@ action "lint" {
   uses = "Borales/actions-yarn@master"
   args = "lint:ci"
   secrets = ["REACT_APP_API", "SCHEMA_PATH"]
-  needs = ["install","codegen"]
+  needs = ["install", "codegen"]
 }
 
 action "type-check" {
   uses = "Borales/actions-yarn@master"
-  needs = ["install","codegen", "lint"]
+  needs = ["install", "codegen"]
   args = "type-check"
   secrets = ["REACT_APP_API", "SCHEMA_PATH"]
 }
 
 action "test" {
   uses = "Borales/actions-yarn@master"
-  secrets = ["REACT_APP_API", "SCHEMA_PATH"]
-  args = "test --runInBand"
-  needs = ["install","codegen", "lint", "type-check"]
-}
-
-action "test-npm" {
-  uses = "actions/npm@master"
-  needs = ["install","codegen"]
-  runs = "npm test"
+  secrets = [
+    "REACT_APP_API",
+    "SCHEMA_PATH",
+    "CI",
+  ]
+  args = "test"
+  needs = ["install", "codegen"]
 }
 
 action "build" {
   uses = "Borales/actions-yarn@master"
-  secrets = ["REACT_APP_API", "SCHEMA_PATH"]
+  secrets = [
+    "REACT_APP_API",
+    "SCHEMA_PATH",
+    "CI",
+  ]
   args = "build"
-  needs = ["install","codegen","lint","type-check","test"]
+  needs = ["install", "codegen", "lint", "type-check", "test"]
 }
 
 action "deploy" {
