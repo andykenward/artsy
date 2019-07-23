@@ -8,6 +8,9 @@ const fragmentMatcher = new IntrospectionFragmentMatcher({
   introspectionQueryResultData: introspectionResult,
 });
 export const cache = new InMemoryCache({ fragmentMatcher });
+
+console.log('GRAPHQL API', process.env.REACT_APP_API);
+
 export const client = new ApolloClient({
   uri:
     process.env.REACT_APP_API || 'https://metaphysics-production.artsy.net/v2/',
