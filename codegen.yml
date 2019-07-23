@@ -10,9 +10,9 @@ generates:
     config:
       withHooks: true
       hooksImportFrom: '@apollo/react-hooks'
-  src/generated/graphql.schema.json:
+  src/generated/introspection-result.ts:
     plugins:
-      - 'introspection'
+      - fragment-matcher
 config:
   namingConvention:
     enumValues: keep

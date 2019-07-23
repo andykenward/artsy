@@ -18,5 +18,29 @@
     "typescript",
     "typescriptreact"
   ],
-  "editor.wordWrap": "on"
+  "editor.wordWrap": "on",
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/.cache": true,
+    "**/.vscode": true,
+    "**/public": false,
+    "**/storybook-statc": true,
+    "**/build": true,
+    ".eslintcache": true
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.vscode": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.cache": true,
+    "**/node_modules": true,
+    "**/public": false,
+    "**/storybook-static": true,
+    "**/build": true,
+    ".eslintcache": true
+  }
 }

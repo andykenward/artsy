@@ -1,9 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Page /> renders correctly 1`] = `<main />`;
+exports[`<Page /> renders correctly 1`] = `
+.c0 {
+  min-height: 100vh;
+}
+
+<main
+  class="c0"
+/>
+`;
 
 exports[`<Page /> renders with children 1`] = `
-<main>
+.c0 {
+  min-height: 100vh;
+}
+
+<main
+  class="c0"
+>
   Hello World
 </main>
 `;

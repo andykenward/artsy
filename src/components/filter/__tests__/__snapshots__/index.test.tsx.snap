@@ -1,0 +1,391 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Filter /> should render empty success response 1`] = `
+.c1 {
+  font-family: 'Adobe Garamond W08','adobe-garamond-pro','AGaramondPro-Regular','Times New Roman',Times,serif;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.c0 {
+  background-color: #f4f4f4;
+  padding: 1rem;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+    font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+    font-size="18px"
+  >
+    No Artwork found with that colour
+  </div>
+</div>
+`;
+
+exports[`<Filter /> should render loading state initially 1`] = `
+.c0 {
+  -webkit-animation: FiaaB 1s infinite linear;
+  animation: FiaaB 1s infinite linear;
+  position: absolute;
+  background: #000;
+  width: 25px;
+  height: 6px;
+  top: calc(50% - 6px / 2);
+  left: calc(50% - 25px / 2);
+}
+
+<div
+  class="c0"
+  color="black100"
+  height="6"
+  width="25"
+/>
+`;
+
+exports[`<Filter /> should render success response 1`] = `
+.c6 {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+}
+
+.c5 {
+  background-color: #E5E5E5;
+  -webkit-animation: ZSmbh 2s ease-in-out infinite;
+  animation: ZSmbh 2s ease-in-out infinite;
+}
+
+.c7 {
+  font-family: 'Adobe Garamond W08','adobe-garamond-pro','AGaramondPro-Regular','Times New Roman',Times,serif;
+  font-size: 12px;
+  line-height: 16px;
+  padding-top: 0.5rem;
+}
+
+.c8 {
+  font-family: 'Adobe Garamond W08','adobe-garamond-pro','AGaramondPro-Regular','Times New Roman',Times,serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.c4 {
+  background-color: white;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.c0 {
+  background-color: #f4f4f4;
+  padding: 1rem;
+}
+
+.c1 {
+  -webkit-column-gap: 1rem;
+  column-gap: 1rem;
+  -webkit-columns: 1 100%;
+  columns: 1 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.c2 {
+  display: inline-block;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.c3 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3:focus {
+  outline: 5px auto rgba(0,103,244,0.247);
+}
+
+@media (min-width:900px) {
+  .c1 {
+    -webkit-columns: 6 200px;
+    columns: 6 200px;
+  }
+}
+
+<div
+  class="c0"
+>
+  <ul
+    class="c1"
+  >
+    <li
+      class="c2"
+    >
+      <a
+        aria-label="Contre temps"
+        class="c3"
+        href="/artwork/olga-kisseleva-contre-temps-2"
+      >
+        <div
+          class="c4"
+          style="padding-bottom: 44.83241854490249%;"
+        >
+          <div
+            class="c5"
+          >
+            <img
+              alt="Olga Kisseleva, ‘Contre temps’, 2017"
+              class="c6"
+              height="100%"
+              src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=179&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F_OuIfBeAhYWEZ6qGRg2EZg%2Flarge.jpg"
+              style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
+              width="100%"
+            />
+            <noscript />
+          </div>
+        </div>
+        <div
+          class="c7"
+          font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+          font-size="12px"
+        >
+          <strong>
+            bob
+          </strong>
+        </div>
+        <div
+          class="c8"
+          font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+          font-size="12px"
+        >
+          Contre temps
+        </div>
+      </a>
+    </li>
+    <li
+      class="c2"
+    >
+      <a
+        aria-label="Pinups in the Bunks of the USS Sturgeon"
+        class="c3"
+        href="/artwork/mary-reid-kelley-with-patrick-kelley-pinups-in-the-bunks-of-the-uss-sturgeon"
+      >
+        <div
+          class="c4"
+          style="padding-bottom: 80%;"
+        >
+          <div
+            class="c5"
+          >
+            <img
+              alt="Mary Reid Kelley with Patrick Kelley, ‘Pinups in the Bunks of the USS Sturgeon’, 2017"
+              class="c6"
+              height="100%"
+              src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=320&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FxTIMkrTaxJtqfr1T7W-bJg%2Flarge.jpg"
+              style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
+              width="100%"
+            />
+            <noscript />
+          </div>
+        </div>
+        <div
+          class="c7"
+          font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+          font-size="12px"
+        >
+          <strong>
+            bob
+          </strong>
+        </div>
+        <div
+          class="c8"
+          font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+          font-size="12px"
+        >
+          Pinups in the Bunks of the USS Sturgeon
+        </div>
+      </a>
+    </li>
+    <li
+      class="c2"
+    >
+      <a
+        aria-label="Red Field III"
+        class="c3"
+        href="/artwork/luis-medina-red-field-iii"
+      >
+        <div
+          class="c4"
+          style="padding-bottom: 122.72727272727273%;"
+        >
+          <div
+            class="c5"
+          >
+            <img
+              alt="Luis Medina, ‘Red Field III’, 2015"
+              class="c6"
+              height="100%"
+              src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=490&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FYAITzBZh36ozLDeq4ztmqA%2Flarge.jpg"
+              style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
+              width="100%"
+            />
+            <noscript />
+          </div>
+        </div>
+        <div
+          class="c7"
+          font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+          font-size="12px"
+        >
+          <strong>
+            bob
+          </strong>
+        </div>
+        <div
+          class="c8"
+          font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+          font-size="12px"
+        >
+          Red Field III
+        </div>
+      </a>
+    </li>
+    <li
+      class="c2"
+    >
+      <a
+        aria-label="SIN TITULO (18)"
+        class="c3"
+        href="/artwork/oso-lc-sin-titulo-18"
+      >
+        <div
+          class="c4"
+          style="padding-bottom: 131.50984682713346%;"
+        >
+          <div
+            class="c5"
+          >
+            <img
+              alt="OSO LC, ‘SIN TITULO (18)’, 2019"
+              class="c6"
+              height="100%"
+              src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=526&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F8ts6ggLPfDGUEs7k1Hljbw%2Flarge.jpg"
+              style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
+              width="100%"
+            />
+            <noscript />
+          </div>
+        </div>
+        <div
+          class="c7"
+          font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+          font-size="12px"
+        >
+          <strong>
+            bob
+          </strong>
+        </div>
+        <div
+          class="c8"
+          font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+          font-size="12px"
+        >
+          SIN TITULO (18)
+        </div>
+      </a>
+    </li>
+    <li
+      class="c2"
+    >
+      <a
+        aria-label="Gaudy Night"
+        class="c3"
+        href="/artwork/mary-reid-kelley-with-patrick-kelley-gaudy-night"
+      >
+        <div
+          class="c4"
+          style="padding-bottom: 66.73913043478261%;"
+        >
+          <div
+            class="c5"
+          >
+            <img
+              alt="Mary Reid Kelley with Patrick Kelley, ‘Gaudy Night’, 2017"
+              class="c6"
+              height="100%"
+              src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=266&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FEeBUZRYDj56abPARNdwzyA%2Flarge.jpg"
+              style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
+              width="100%"
+            />
+            <noscript />
+          </div>
+        </div>
+        <div
+          class="c7"
+          font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+          font-size="12px"
+        >
+          <strong>
+            bob
+          </strong>
+        </div>
+        <div
+          class="c8"
+          font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+          font-size="12px"
+        >
+          Gaudy Night
+        </div>
+      </a>
+    </li>
+    <li
+      class="c2"
+    >
+      <a
+        aria-label="Sensual Snare"
+        class="c3"
+        href="/artwork/mwamba-mulangala-sensual-snare"
+      >
+        <div
+          class="c4"
+          style="padding-bottom: 218.57923497267763%;"
+        >
+          <div
+            class="c5"
+          >
+            <img
+              alt="Mwamba Mulangala, ‘Sensual Snare’, 2016"
+              class="c6"
+              height="100%"
+              src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=874&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FyML5R5JvfJXc-uGD2DLvLQ%2Flarge.jpg"
+              style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
+              width="100%"
+            />
+            <noscript />
+          </div>
+        </div>
+        <div
+          class="c7"
+          font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+          font-size="12px"
+        >
+          <strong>
+            bob
+          </strong>
+        </div>
+        <div
+          class="c8"
+          font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+          font-size="12px"
+        >
+          Sensual Snare
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+`;

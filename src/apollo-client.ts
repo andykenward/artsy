@@ -1,11 +1,20 @@
-import ApolloClient from 'apollo-boost';
+import ApolloClient, {
+  InMemoryCache,
+  IntrospectionFragmentMatcher,
+} from 'apollo-boost';
+import introspectionResult from './generated/introspection-result';
 
+const fragmentMatcher = new IntrospectionFragmentMatcher({
+  introspectionQueryResultData: introspectionResult,
+});
+export const cache = new InMemoryCache({ fragmentMatcher });
 export const client = new ApolloClient({
   uri:
     process.env.REACT_APP_API || 'https://metaphysics-production.artsy.net/v2/',
   fetchOptions: {
-    credentials: 'include',
+    credentials: 'same-origin',
   },
+  cache: cache,
   request: async operation => {
     const token = process.env.REACT_APP_USER_TOKEN;
 
