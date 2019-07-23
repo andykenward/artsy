@@ -5,9 +5,7 @@ export const Section = styled.section`
   margin: 1rem;
 `;
 
-export const ImageContainer = styled.figure<{
-  orientation: string;
-}>`
+export const ImageContainer = styled.figure<{ orientation: string }>`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
