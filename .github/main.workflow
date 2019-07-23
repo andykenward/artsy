@@ -1,6 +1,6 @@
 workflow "Build and deploy on push" {
   on = "push"
-  resolves = ["deploy"]
+  resolves = ["deploy","test-npm"]
 }
 
 action "install" {
@@ -34,6 +34,12 @@ action "test" {
   secrets = ["REACT_APP_API", "SCHEMA_PATH"]
   args = "test --runInBand"
   needs = ["install","codegen", "lint", "type-check"]
+}
+
+action "test-npm" {
+  uses = "actions/npm@master"
+  needs = ["install","codegen"]
+  runs = "npm test"
 }
 
 action "build" {
