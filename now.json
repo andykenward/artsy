@@ -24,6 +24,10 @@
   ],
   "routes": [
     { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/index.html" }
+    {
+      "src": "/(.*)",
+      "headers": { "cache-control": "public,max-age=0,must-revalidate" },
+      "dest": "/index.html"
+    }
   ]
 }
