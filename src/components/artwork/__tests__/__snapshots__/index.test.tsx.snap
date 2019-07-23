@@ -167,8 +167,7 @@ exports[`<Artwork /> should render success response 1`] = `
   flex-direction: column;
   margin: 0 auto;
   padding: 0;
-  width: 70vh;
-  max-width: 100%;
+  max-width: calc(-300px + 149.986vh);
 }
 
 .c2 {
@@ -185,7 +184,7 @@ exports[`<Artwork /> should render success response 1`] = `
 
 @media (orientation:landscape) and (max-width:899px) {
   .c4 {
-    width: 50vw;
+    min-width: 50vw;
   }
 }
 

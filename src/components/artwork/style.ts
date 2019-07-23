@@ -5,17 +5,20 @@ export const Section = styled.section`
   margin: 1rem;
 `;
 
-export const ImageContainer = styled.figure<{ orientation: string }>`
+export const ImageContainer = styled.figure<{
+  orientation: string;
+}>`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   padding: 0;
 
-  width: ${({ orientation }) =>
-    orientation === 'landscape' ? '70vh' : '50vh'};
-  max-width: 100%;
+  max-width: ${({ orientation }) =>
+    orientation === 'landscape'
+      ? `calc(-300px + 149.986vh)`
+      : `calc(-150px + 66.6667vh)`};
   @media (orientation: landscape) and (max-width: 899px) {
-    width: 50vw;
+    min-width: 50vw;
   }
 `;
 
