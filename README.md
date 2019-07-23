@@ -2,9 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Requirements
 
-- node `^10.16.0`
-- npm `^6.10.1`
-- yarn `^1,17.0`
+- node `^10.15.3`
+- yarn `^1.16.0`
 
 ### Yarn
 
