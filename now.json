@@ -4,6 +4,10 @@
   "alias": "ori-homework-artsy.andykenward.com",
   "scope": "andykenward",
   "regions": ["lhr1"],
+  "github": {
+    "enabled": false,
+    "autoAlias": false
+  },
   "builds": [
     {
       "src": "package.json",
