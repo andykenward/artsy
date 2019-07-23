@@ -17,7 +17,7 @@ action "codegen" {
 
 action "lint" {
   uses = "Borales/actions-yarn@master"
-  args = "lint"
+  args = "lint:ci"
   secrets = ["REACT_APP_API", "SCHEMA_PATH"]
   needs = ["install","codegen"]
 }
