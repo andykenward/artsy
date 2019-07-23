@@ -28,3 +28,4 @@ yarn-error.log*
 
 # generated
 /src/generated
+.envrc
