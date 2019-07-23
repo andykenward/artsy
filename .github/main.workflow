@@ -22,11 +22,18 @@ action "lint" {
   needs = ["install","codegen"]
 }
 
+action "type-check" {
+  uses = "Borales/actions-yarn@master"
+  needs = ["install","codegen", "lint"]
+  args = "type-check"
+  secrets = ["REACT_APP_API", "SCHEMA_PATH"]
+}
+
 action "test" {
   uses = "Borales/actions-yarn@master"
   secrets = ["REACT_APP_API", "SCHEMA_PATH"]
   args = "test"
-  needs = ["install","codegen"]
+  needs = ["install","codegen", "lint", "type-check"]
 }
 
 action "build" {
@@ -40,11 +47,4 @@ action "deploy" {
   uses = "andykenward/deploy-now@master"
   secrets = ["GITHUB_TOKEN", "NOW_TOKEN"]
   needs = ["build"]
-}
-
-action "type-check" {
-  uses = "Borales/actions-yarn@master"
-  needs = ["install","codegen"]
-  args = "type-check"
-  secrets = ["REACT_APP_API", "SCHEMA_PATH"]
 }
