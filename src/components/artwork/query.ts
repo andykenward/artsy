@@ -6,8 +6,8 @@ export const QUERY_ARTWORK = gql`
       artwork(id: $id) {
         id
         slug
-        artist_names
-        image_title
+        artistNames
+        imageTitle
         href
         image {
           placeholder

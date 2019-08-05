@@ -9,7 +9,7 @@ import {
   ResizedImageUrl,
 } from '../../generated/graphql';
 
-type Props = Pick<Artwork, 'image_title'> & {
+type Props = Pick<Artwork, 'imageTitle'> & {
   image: Maybe<
     { __typename?: 'Image' } & Pick<GImage, 'placeholder'> & {
         resized: Maybe<
@@ -30,7 +30,7 @@ const Placeholder = styled.div`
 `;
 
 export const Image: React.FC<Props> = ({
-  image_title,
+  imageTitle,
   image,
   lazyLoad = false,
   placeholder,
@@ -50,7 +50,7 @@ export const Image: React.FC<Props> = ({
             height: '100%',
           }}
           lazyLoad={lazyLoad}
-          alt={image_title || ''}
+          alt={imageTitle || ''}
           src={imageUrl}
         />
       </Wrap>

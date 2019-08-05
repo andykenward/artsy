@@ -58,7 +58,7 @@ export const Artwork: React.FC<Props> = ({ slug }) => {
         <ImageContainer orientation={oc(artwork).image.orientation('portrait')}>
           {image && (
             <Image
-              alt={oc(artwork).image_title('')}
+              alt={oc(artwork).imageTitle('')}
               width={image.width as number}
               height={image.height as number}
               srcSet={`${oc(image).url('')}, ${oc(imageRetina).url('')} 2x`}
@@ -67,9 +67,9 @@ export const Artwork: React.FC<Props> = ({ slug }) => {
           )}
           <Flex as="figcaption" mx="1rem" pt="1rem" flexDirection="column">
             <Serif size="4">
-              <strong>{artwork.artist_names}</strong>
+              <strong>{artwork.artistNames}</strong>
             </Serif>
-            <Serif size="4">{artwork.image_title}</Serif>
+            <Serif size="4">{artwork.imageTitle}</Serif>
             <Link
               href={`https://www.artsy.net${artwork.href}`}
               target="_blank"

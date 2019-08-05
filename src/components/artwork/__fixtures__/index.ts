@@ -1,10 +1,12 @@
-export const ARTWORK_RESULT_DATA = {
+import { ArtworkQuery } from '../../../generated/graphql';
+
+export const ARTWORK_RESULT_DATA: ArtworkQuery = {
   viewer: {
     artwork: {
       id: 'QXJ0d29yazpob3NzYW0tZGlyYXItbmVmZXJ0aXRpLTk=',
       slug: 'hossam-dirar-nefertiti-9',
-      artist_names: 'Hossam Dirar',
-      image_title: 'Hossam Dirar, ‘Nefertiti’, 2018',
+      artistNames: 'Hossam Dirar',
+      imageTitle: 'Hossam Dirar, ‘Nefertiti’, 2018',
       href: 'https://artsy.net',
       image: {
         placeholder: '100.40816326530613%',
@@ -31,7 +33,7 @@ export const ARTWORK_RESULT_DATA = {
   },
 };
 
-export const ARTWORK_RESULT_ERROR = {
+export const ARTWORK_RESULT_ERROR: { errors: any; data: ArtworkQuery } = {
   errors: [
     {
       message: 'error',

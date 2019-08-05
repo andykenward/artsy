@@ -4,13 +4,13 @@ import gql from 'graphql-tag';
 export const QUERY_FILTER: DocumentNode = gql`
   query FilterArtworks($color: String, $page: Int) {
     viewer {
-      filter_artworks(
+      filterArtworks(
         aggregations: [TOTAL]
         size: 0
         color: $color
         page: $page
       ) {
-        artworks: artworks_connection(first: 30, after: "") {
+        artworks: artworksConnection(first: 30, after: "") {
           pageInfo {
             hasNextPage
             endCursor
@@ -20,8 +20,8 @@ export const QUERY_FILTER: DocumentNode = gql`
               id
               href
               title
-              artist_names
-              image_title
+              artistNames
+              imageTitle
               image {
                 placeholder
                 resized(width: 400) {

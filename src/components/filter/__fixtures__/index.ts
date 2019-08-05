@@ -1,6 +1,8 @@
-export const FILTER_RESULT_DATA_EMPTY = {
+import { FilterArtworksQuery } from '../../../generated/graphql';
+
+export const FILTER_RESULT_DATA_EMPTY: FilterArtworksQuery = {
   viewer: {
-    filter_artworks: {
+    filterArtworks: {
       artworks: {
         pageInfo: {
           hasNextPage: true,
@@ -16,9 +18,9 @@ export const FILTER_RESULT_DATA_EMPTY = {
   },
 };
 
-export const FILTER_RESULT_DATA = {
+export const FILTER_RESULT_DATA: FilterArtworksQuery = {
   viewer: {
-    filter_artworks: {
+    filterArtworks: {
       artworks: {
         pageInfo: {
           hasNextPage: true,
@@ -31,8 +33,8 @@ export const FILTER_RESULT_DATA = {
               id: 'QXJ0d29yazpvbGdhLWtpc3NlbGV2YS1jb250cmUtdGVtcHMtMg==',
               href: '/artwork/olga-kisseleva-contre-temps-2',
               title: 'Contre temps',
-              image_title: 'Olga Kisseleva, ‘Contre temps’, 2017',
-              artist_names: 'bob',
+              imageTitle: 'Olga Kisseleva, ‘Contre temps’, 2017',
+              artistNames: 'bob',
               image: {
                 placeholder: '44.83241854490249%',
                 resized: {
@@ -53,9 +55,9 @@ export const FILTER_RESULT_DATA = {
               href:
                 '/artwork/mary-reid-kelley-with-patrick-kelley-pinups-in-the-bunks-of-the-uss-sturgeon',
               title: 'Pinups in the Bunks of the USS Sturgeon',
-              image_title:
+              imageTitle:
                 'Mary Reid Kelley with Patrick Kelley, ‘Pinups in the Bunks of the USS Sturgeon’, 2017',
-              artist_names: 'bob',
+              artistNames: 'bob',
               image: {
                 placeholder: '80%',
                 resized: {
@@ -74,8 +76,8 @@ export const FILTER_RESULT_DATA = {
               id: 'QXJ0d29yazpsdWlzLW1lZGluYS1yZWQtZmllbGQtaWlp',
               href: '/artwork/luis-medina-red-field-iii',
               title: 'Red Field III',
-              image_title: 'Luis Medina, ‘Red Field III’, 2015',
-              artist_names: 'bob',
+              imageTitle: 'Luis Medina, ‘Red Field III’, 2015',
+              artistNames: 'bob',
               image: {
                 placeholder: '122.72727272727273%',
                 resized: {
@@ -94,8 +96,8 @@ export const FILTER_RESULT_DATA = {
               id: 'QXJ0d29yazpvc28tbGMtc2luLXRpdHVsby0xOA==',
               href: '/artwork/oso-lc-sin-titulo-18',
               title: 'SIN TITULO (18)',
-              image_title: 'OSO LC, ‘SIN TITULO (18)’, 2019',
-              artist_names: 'bob',
+              imageTitle: 'OSO LC, ‘SIN TITULO (18)’, 2019',
+              artistNames: 'bob',
               image: {
                 placeholder: '131.50984682713346%',
                 resized: {
@@ -115,9 +117,9 @@ export const FILTER_RESULT_DATA = {
                 'QXJ0d29yazptYXJ5LXJlaWQta2VsbGV5LXdpdGgtcGF0cmljay1rZWxsZXktZ2F1ZHktbmlnaHQ=',
               href: '/artwork/mary-reid-kelley-with-patrick-kelley-gaudy-night',
               title: 'Gaudy Night',
-              image_title:
+              imageTitle:
                 'Mary Reid Kelley with Patrick Kelley, ‘Gaudy Night’, 2017',
-              artist_names: 'bob',
+              artistNames: 'bob',
               image: {
                 placeholder: '66.73913043478261%',
                 resized: {
@@ -136,8 +138,8 @@ export const FILTER_RESULT_DATA = {
               id: 'QXJ0d29yazptd2FtYmEtbXVsYW5nYWxhLXNlbnN1YWwtc25hcmU=',
               href: '/artwork/mwamba-mulangala-sensual-snare',
               title: 'Sensual Snare',
-              image_title: 'Mwamba Mulangala, ‘Sensual Snare’, 2016',
-              artist_names: 'bob',
+              imageTitle: 'Mwamba Mulangala, ‘Sensual Snare’, 2016',
+              artistNames: 'bob',
               image: {
                 placeholder: '218.57923497267763%',
                 resized: {

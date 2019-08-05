@@ -23,7 +23,7 @@ export const Filter: React.FC<Pick<RouteComponentProps, 'location'>> = ({
     return <Spinner />;
   }
   if (data) {
-    const artworks = oc(data).viewer.filter_artworks.artworks.edges([]);
+    const artworks = oc(data).viewer.filterArtworks.artworks.edges([]);
 
     return (
       <Container>
@@ -44,12 +44,12 @@ export const Filter: React.FC<Pick<RouteComponentProps, 'location'>> = ({
                           placeholder={
                             oc(node).image.placeholder() || undefined
                           }
-                          image_title={node.image_title}
+                          imageTitle={node.imageTitle}
                           image={node.image}
                         />
                         <figcaption>
                           <Serif pt="0.5rem" size="1">
-                            <strong>{node.artist_names}</strong>
+                            <strong>{node.artistNames}</strong>
                           </Serif>
                           <Serif size="1">{node.title}</Serif>
                         </figcaption>
