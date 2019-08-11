@@ -19,14 +19,11 @@ export const Filter: React.FC<Pick<RouteComponentProps, 'location'>> = ({
     return <Error error={error} />;
   }
 
-  if (loading) {
-    return <Spinner />;
-  }
-  if (data) {
-    const artworks = oc(data).viewer.filterArtworksConnection.edges([]);
+  const artworks = oc(data).viewer.filterArtworksConnection.edges([]);
 
-    return (
-      <Container>
+  return (
+    <>
+      <Container loading={loading}>
         {artworks.length > 0 ? (
           <List>
             {artworks.map(item => {
@@ -48,10 +45,17 @@ export const Filter: React.FC<Pick<RouteComponentProps, 'location'>> = ({
                           image={node.image}
                         />
                         <figcaption>
-                          <Serif pt="0.5rem" size="1">
+                          <Serif
+                            pt="0.5rem"
+                            size="1"
+                            fontSize="0.75rem"
+                            lineHeight="1rem"
+                          >
                             <strong>{node.artistNames}</strong>
                           </Serif>
-                          <Serif size="1">{node.title}</Serif>
+                          <Serif size="1" fontSize="0.75rem" lineHeight="1rem">
+                            {node.title}
+                          </Serif>
                         </figcaption>
                       </Figure>
                     </Link>
@@ -64,7 +68,9 @@ export const Filter: React.FC<Pick<RouteComponentProps, 'location'>> = ({
           <Serif size="4">No Artwork found with that colour</Serif>
         )}
       </Container>
-    );
-  }
-  return null;
+      {loading && <Spinner />}
+    </>
+  );
+  // }
+  // return null;
 };

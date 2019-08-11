@@ -1,9 +1,11 @@
 import { Link as ReachLink } from '@reach/router';
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.div<{ loading?: boolean }>`
   background-color: #f4f4f4;
   padding: 1rem;
+  opacity: ${({ loading = false }) => (loading ? '0.1' : '1')};
+  transition: opacity 0.5s ease;
 `;
 
 export const List = styled.ul`
