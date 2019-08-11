@@ -1,5 +1,5 @@
 import { MockedProvider, MockedResponse, wait } from '@apollo/react-testing';
-import { render } from '@testing-library/react';
+import { act, render, RenderResult } from '@testing-library/react';
 import { InMemoryCache, IntrospectionFragmentMatcher } from 'apollo-boost';
 import React from 'react';
 import { Artwork } from '..';
@@ -61,21 +61,35 @@ describe('<Artwork />', () => {
   });
 
   it('should render loading state initially', async () => {
-    const { container } = renderWithRouter(
-      <MockedProvider mocks={MOCKS}>
-        <Artwork slug={SLUG} />
-      </MockedProvider>
-    );
-    expect(container.firstChild).toMatchSnapshot();
+    let root: RenderResult;
+    act(() => {
+      root = renderWithRouter(
+        <MockedProvider mocks={MOCKS}>
+          <Artwork slug={SLUG} />
+        </MockedProvider>
+      );
+    });
+
+    act(() => {
+      expect(root.container.firstChild).toMatchSnapshot();
+    });
   });
   it('should render success response', async () => {
-    const { container } = renderWithRouter(
-      <MockedProvider mocks={MOCKS}>
-        <Artwork slug={SLUG} />
-      </MockedProvider>
-    );
-    await wait(0); // wait for response
-    expect(container.firstChild).toMatchSnapshot();
+    let root: RenderResult;
+    await act(async () => {
+      root = renderWithRouter(
+        <MockedProvider mocks={MOCKS}>
+          <Artwork slug={SLUG} />
+        </MockedProvider>
+      );
+    });
+    await act(async () => {
+      await wait(0); // wait for response
+    });
+
+    act(() => {
+      expect(root.container.firstChild).toMatchSnapshot();
+    });
   });
 
   it('should render empty success response', async () => {
@@ -91,12 +105,19 @@ describe('<Artwork />', () => {
         },
       },
     ];
-    const { container } = renderWithRouter(
-      <MockedProvider mocks={MOCKS}>
-        <Artwork slug={SLUG_FAIL} />
-      </MockedProvider>
-    );
-    await wait(0); // wait for response
-    expect(container.firstChild).toMatchSnapshot();
+    let root: RenderResult;
+    act(() => {
+      root = renderWithRouter(
+        <MockedProvider mocks={MOCKS}>
+          <Artwork slug={SLUG_FAIL} />
+        </MockedProvider>
+      );
+    });
+    await act(async () => {
+      await wait(0); // wait for response
+    });
+    act(() => {
+      expect(root.container.firstChild).toMatchSnapshot();
+    });
   });
 });
