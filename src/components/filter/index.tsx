@@ -65,7 +65,7 @@ export const Filter: React.FC<Pick<RouteComponentProps, 'location'>> = ({
             })}
           </List>
         ) : (
-          <Serif size="4">No Artwork found with that colour</Serif>
+          !loading && <Serif size="4">No Artwork found with that colour</Serif>
         )}
       </Container>
       {loading && <Spinner />}

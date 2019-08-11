@@ -29,12 +29,6 @@ exports[`<Filter /> should render empty success response 1`] = `
 `;
 
 exports[`<Filter /> should render loading state initially 1`] = `
-.c1 {
-  font-family: 'Adobe Garamond W08','adobe-garamond-pro','AGaramondPro-Regular','Times New Roman',Times,serif;
-  font-size: 18px;
-  line-height: 26px;
-}
-
 .c0 {
   background-color: #f4f4f4;
   padding: 1rem;
@@ -45,15 +39,7 @@ exports[`<Filter /> should render loading state initially 1`] = `
 
 <div
   class="c0"
->
-  <div
-    class="c1"
-    font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-    font-size="18px"
-  >
-    No Artwork found with that colour
-  </div>
-</div>
+/>
 `;
 
 exports[`<Filter /> should render success response 1`] = `
