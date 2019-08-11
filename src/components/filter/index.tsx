@@ -23,7 +23,7 @@ export const Filter: React.FC<Pick<RouteComponentProps, 'location'>> = ({
     return <Spinner />;
   }
   if (data) {
-    const artworks = oc(data).viewer.filterArtworks.artworks.edges([]);
+    const artworks = oc(data).viewer.filterArtworksConnection.edges([]);
 
     return (
       <Container>
