@@ -16,7 +16,7 @@ export const LinkColor = styled(Link)`
   :hover {
     transform: scale(0.9);
   }
-  @media (min-width: 900px) {
+  @media (min-width: 56.25rem) {
     width: 5rem;
     height: 5rem;
   }

@@ -16,23 +16,17 @@ exports[`<Header /> renders correctly 1`] = `
   margin: 1rem;
 }
 
-.c2 {
+.c3 {
   font-family: 'Adobe Garamond W08','adobe-garamond-pro','AGaramondPro-Regular','Times New Roman',Times,serif;
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 2rem;
+  line-height: 2.375rem;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.c4 {
-  font-family: 'Adobe Garamond W08','adobe-garamond-pro','AGaramondPro-Regular','Times New Roman',Times,serif;
-  font-size: 32px;
-  line-height: 38px;
-}
-
-.c3 {
+.c1 {
   color: #000;
   -webkit-transition: color 0.25s;
   transition: color 0.25s;
@@ -40,92 +34,74 @@ exports[`<Header /> renders correctly 1`] = `
   text-decoration: underline;
 }
 
-.c3:hover {
+.c1:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
   color: #000;
 }
 
-.c1 a {
+.c2 a {
   color: inherit;
 }
 
-.c1 a:hover {
+.c2 a:hover {
   color: #000;
 }
 
-.c1 a:active {
+.c2 a:active {
   color: #000;
 }
 
-.c1 a.noUnderline {
+.c2 a.noUnderline {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1 a.noUnderline:hover {
+.c2 a.noUnderline:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c1 a.colorLink {
+.c2 a.colorLink {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #6E1EFF;
 }
 
-.c1 a.colorLink:hover {
+.c2 a.colorLink:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 @media screen and (min-width:768px) {
-  .c2 {
-    font-size: 44px;
+  .c3 {
+    font-size: 2.75rem;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c2 {
-    line-height: 50px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c4 {
-    font-size: 44px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c4 {
-    line-height: 50px;
+  .c3 {
+    line-height: 3.125rem;
   }
 }
 
 <header
   class="c0"
 >
-  <h1
-    class="c1 c2"
-    display="inline-flex"
-    font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-    font-size="32px,44px"
+  <a
+    class="c1"
+    href="https://artsy.net"
+    rel="noopener noreferrer"
+    target="_blank"
   >
-    <a
-      class="c3"
-      href="https://artsy.net"
-      rel="noopener noreferrer"
-      target="_blank"
+    <h1
+      class="c2 c3"
+      display="inline-flex"
+      font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+      font-size="2rem,2.75rem"
     >
-      <div
-        class="c1 c4"
-        font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-        font-size="32px,44px"
-      >
-        Artsy.net
-      </div>
-    </a>
-  </h1>
+      Artsy.net
+    </h1>
+  </a>
 </header>
 `;
