@@ -557,21 +557,6 @@ type Artist implements Node & Searchable {
     before: String
     last: Int
   ): ArticleConnection
-  articles(sort: ArticleSorts, limit: Int, inEditorialFeed: Boolean): [Article]
-  artists(
-    # The number of Artists to return
-    size: Int
-    excludeArtistsWithoutArtworks: Boolean = true
-  ): [Artist]
-  artworks(
-    # The number of Artworks to return
-    size: Int
-    page: Int
-    sort: ArtworkSorts
-    published: Boolean = true
-    filter: [ArtistArtworksFilters]
-    exclude: [String]
-  ): [Artwork]
   artworksConnection(
     # List of artwork IDs to exclude from the response.
     exclude: [String]
@@ -583,7 +568,7 @@ type Artist implements Node & Searchable {
     before: String
     last: Int
   ): ArtworkConnection
-  auctionResults(
+  auctionResultsConnection(
     sort: AuctionResultSorts
 
     # When true, will only return records for allowed artists.
@@ -622,50 +607,6 @@ type Artist implements Node & Searchable {
     size: Int = 5
   ): [Show]
 
-  # Artworks Elastic Search results
-  filteredArtworks(
-    acquireable: Boolean
-    offerable: Boolean
-    aggregationPartnerCities: [String]
-    aggregations: [ArtworkAggregation]
-    artistID: String
-    artistIDs: [String]
-    atAuction: Boolean
-    attributionClass: [String]
-    color: String
-    dimensionRange: String
-    extraAggregationGeneIDs: [String]
-    includeArtworksByFollowedArtists: Boolean
-    includeMediumFilterInAggregation: Boolean
-    inquireableOnly: Boolean
-    forSale: Boolean
-    geneID: String
-    geneIDs: [String]
-    height: String
-    width: String
-
-    # When true, will only return `marketable` works (not nude or provocative).
-    marketable: Boolean
-
-    # A string from the list of allocations, or * to denote all mediums
-    medium: String
-    period: String
-    periods: [String]
-    majorPeriods: [String]
-    partnerID: ID
-    partnerCities: [String]
-    priceRange: String
-    page: Int
-    saleID: ID
-    size: Int
-    sort: String
-    tagID: String
-    keyword: String
-
-    # When true, will only return exact keyword match
-    keywordMatchExact: Boolean
-  ): FilterArtworks
-
   # A string showing the total number of works and those for sale
   formattedArtworksCount: String
 
@@ -694,7 +635,7 @@ type Artist implements Node & Searchable {
   meta: ArtistMeta
   nationality: String
   name: String
-  partners(
+  partnersConnection(
     representedBy: Boolean
     partnerCategory: [String]
     after: String
@@ -715,19 +656,6 @@ type Artist implements Node & Searchable {
     size: Int
     sort: SaleSorts
   ): [Sale]
-  shows(
-    active: Boolean
-    atAFair: Boolean
-    isReference: Boolean
-
-    # The number of PartnerShows to return
-    size: Int
-    soloShow: Boolean
-    status: String
-    topTier: Boolean
-    visibleToPublic: Boolean
-    sort: ShowSorts
-  ): [Show]
   showsConnection(
     active: Boolean
     atAFair: Boolean
@@ -751,14 +679,13 @@ type Artist implements Node & Searchable {
   statuses: ArtistStatuses
   highlights: ArtistHighlights
   years: String
-  marketingCollections(size: Int): [MarketingCollection]
 }
 
 type ArtistArtworkGrid implements ArtworkContextGrid {
   title: String
   ctaTitle: String
   ctaHref: String
-  artworks(
+  artworksConnection(
     after: String
     first: Int
     before: String
@@ -848,7 +775,7 @@ type ArtistGroup {
 }
 
 type ArtistHighlights {
-  partners(
+  partnersConnection(
     representedBy: Boolean
     partnerCategory: [String]
     displayOnPartnerProfile: Boolean
@@ -877,7 +804,7 @@ type ArtistMeta {
 
 type ArtistRelatedData {
   genes(after: String, first: Int, before: String, last: Int): GeneConnection
-  artists(
+  artistsConnection(
     excludeArtistsWithoutArtworks: Boolean = true
     minForsaleArtworks: Int
     kind: RelatedArtistsKind
@@ -888,7 +815,7 @@ type ArtistRelatedData {
   ): ArtistConnection
 
   # A list of the current user’s suggested artists, based on a single artist
-  suggested(
+  suggestedConnection(
     # The slug or ID of an artist
     artistID: String
 
@@ -1105,7 +1032,7 @@ enum ArtworkAggregation {
 }
 
 # A connection to a list of items.
-type ArtworkConnection {
+type ArtworkConnection implements ArtworkConnectionInterface {
   # Information to aid in pagination.
   pageInfo: PageInfo!
 
@@ -1115,6 +1042,11 @@ type ArtworkConnection {
   totalCount: Int
 }
 
+interface ArtworkConnectionInterface {
+  pageInfo: PageInfo!
+  edges: [ArtworkEdgeInterface]
+}
+
 union ArtworkContext = Fair | Sale | Show
 
 # A specific grid.
@@ -1122,7 +1054,7 @@ interface ArtworkContextGrid {
   title: String
   ctaTitle: String
   ctaHref: String
-  artworks(
+  artworksConnection(
     after: String
     first: Int
     before: String
@@ -1131,11 +1063,16 @@ interface ArtworkContextGrid {
 }
 
 # An edge in a connection.
-type ArtworkEdge {
+type ArtworkEdge implements ArtworkEdgeInterface {
   # The item at the end of the edge
   node: Artwork
 
   # A cursor for use in pagination
+  cursor: String!
+}
+
+interface ArtworkEdgeInterface {
+  node: Artwork
   cursor: String!
 }
 
@@ -1186,7 +1123,6 @@ type ArtworkLayer {
 
   # A type-specific ID.
   internalID: ID!
-  artworks: [Artwork]
 
   # A connection of artworks from a Layer.
   artworksConnection(
@@ -1311,7 +1247,7 @@ type AuctionArtworkGrid implements ArtworkContextGrid {
   title: String
   ctaTitle: String
   ctaHref: String
-  artworks(
+  artworksConnection(
     after: String
     first: Int
     before: String
@@ -1565,7 +1501,7 @@ type City {
   slug: String
   name: String
   coordinates: LatLng
-  shows(
+  showsConnection(
     sort: ShowSorts
 
     # Filter shows by chronological event status
@@ -1584,7 +1520,7 @@ type City {
     before: String
     last: Int
   ): ShowConnection
-  fairs(
+  fairsConnection(
     sort: FairSorts
     status: EventStatus
     after: String
@@ -1599,7 +1535,7 @@ type CitySponsoredContent {
   introText: String
   artGuideUrl: String
   featuredShows: [Show]
-  shows(
+  showsConnection(
     sort: ShowSorts
     status: EventStatus
     after: String
@@ -2639,6 +2575,11 @@ interface CommerceOrder {
   ): String
 }
 
+# Order Action data
+type CommerceOrderActionData {
+  clientSecret: String!
+}
+
 # Fields to sort by
 enum CommerceOrderConnectionSortEnum {
   # Sort by the timestamp the state of the order expires at in ascending order
@@ -2702,7 +2643,8 @@ enum CommerceOrderModeEnum {
 
 # Represents either a resolved Order or a potential failure
 union CommerceOrderOrFailureUnion =
-    CommerceOrderWithMutationFailure
+    CommerceOrderRequiresAction
+  | CommerceOrderWithMutationFailure
   | CommerceOrderWithMutationSuccess
 
 enum CommerceOrderParticipantEnum {
@@ -2715,6 +2657,12 @@ enum CommerceOrderParticipantEnum {
 
 # Represents either a partner or a user
 union CommerceOrderPartyUnion = CommercePartner | CommerceUser
+
+# Data reflecting actions required
+type CommerceOrderRequiresAction {
+  # Data related to action needed
+  actionData: CommerceOrderActionData!
+}
 
 enum CommerceOrderStateEnum {
   # order is abandoned by buyer and never submitted
@@ -3555,6 +3503,57 @@ type EndSalePayload {
   clientMutationId: String
 }
 
+interface EntityWithFilterArtworksConnectionInterface {
+  # A globally unique ID.
+  id: ID!
+  filterArtworksConnection(
+    acquireable: Boolean
+    offerable: Boolean
+    aggregationPartnerCities: [String]
+    aggregations: [ArtworkAggregation]
+    artistID: String
+    artistIDs: [String]
+    atAuction: Boolean
+    attributionClass: [String]
+    color: String
+    dimensionRange: String
+    extraAggregationGeneIDs: [String]
+    includeArtworksByFollowedArtists: Boolean
+    includeMediumFilterInAggregation: Boolean
+    inquireableOnly: Boolean
+    forSale: Boolean
+    geneID: String
+    geneIDs: [String]
+    height: String
+    width: String
+
+    # When true, will only return `marketable` works (not nude or provocative).
+    marketable: Boolean
+
+    # A string from the list of allocations, or * to denote all mediums
+    medium: String
+    period: String
+    periods: [String]
+    majorPeriods: [String]
+    partnerID: ID
+    partnerCities: [String]
+    priceRange: String
+    page: Int
+    saleID: ID
+    size: Int
+    sort: String
+    tagID: String
+    keyword: String
+
+    # When true, will only return exact keyword match
+    keywordMatchExact: Boolean
+    after: String
+    first: Int
+    before: String
+    last: Int
+  ): FilterArtworksConnection
+}
+
 enum EventStatus {
   # End date is in the past
   CLOSED
@@ -3589,7 +3588,7 @@ type ExternalPartner {
   name: String
 }
 
-type Fair {
+type Fair implements EntityWithFilterArtworksConnectionInterface {
   # A globally unique ID.
   id: ID!
 
@@ -3600,7 +3599,7 @@ type Fair {
   internalID: ID!
   about: String
   followedContent: FollowedContent
-  artists(
+  artistsConnection(
     # Sorts for artists in a fair
     sort: FairArtistSorts
     after: String
@@ -3672,7 +3671,7 @@ type Fair {
   exhibitorsGroupedByName: [FairExhibitorsGroup]
 
   # Artworks Elastic Search results
-  filteredArtworks(
+  filterArtworksConnection(
     acquireable: Boolean
     offerable: Boolean
     aggregationPartnerCities: [String]
@@ -3713,7 +3712,11 @@ type Fair {
 
     # When true, will only return exact keyword match
     keywordMatchExact: Boolean
-  ): FilterArtworks
+    after: String
+    first: Int
+    before: String
+    last: Int
+  ): FilterArtworksConnection
   sponsoredContent: FairSponsoredContent
 }
 
@@ -3825,19 +3828,19 @@ type Feedback {
   message: String!
 }
 
-type FilterArtworks implements Node {
+# A connection to a list of items.
+type FilterArtworksConnection implements Node & ArtworkConnectionInterface {
+  # Information to aid in pagination.
+  pageInfo: PageInfo!
+
+  # A list of edges.
+  edges: [FilterArtworksEdge]
+
   # The ID of the object.
   id: ID!
 
   # Returns aggregation counts for the given filter query.
   aggregations: [ArtworksAggregationResults]
-  artworksConnection(
-    sort: String
-    after: String
-    first: Int
-    before: String
-    last: Int
-  ): ArtworkConnection
   counts: FilterArtworksCounts
 
   # Artwork results.
@@ -3859,6 +3862,15 @@ type FilterArtworksCounts {
     format: String
     label: String
   ): FormattedNumber
+}
+
+# An edge in a connection.
+type FilterArtworksEdge implements ArtworkEdgeInterface {
+  # The item at the end of the edge
+  node: Artwork
+
+  # A cursor for use in pagination
+  cursor: String!
 }
 
 type FilterPartners {
@@ -3945,9 +3957,6 @@ type FollowedArtistsArtworksGroup implements Node {
   # A globally unique ID.
   id: ID!
   href: String
-
-  # List of artworks in this group.
-  artworks: [Artwork]
   artworksConnection(
     after: String
     first: Int
@@ -4075,7 +4084,7 @@ type FollowProfilePayload {
 
 type FollowsAndSaves {
   # A list of published artworks by followed artists (grouped by date and artists).
-  bundledArtworksByArtist(
+  bundledArtworksByArtistConnection(
     sort: ArtworkSorts
     forSale: Boolean
     after: String
@@ -4084,8 +4093,24 @@ type FollowsAndSaves {
     last: Int
   ): FollowedArtistsArtworksGroupConnection
 
+  # A Connection of followed artists by current user
+  artistsConnection(
+    after: String
+    first: Int
+    before: String
+    last: Int
+  ): FollowArtistConnection
+  artworksConnection(
+    after: String
+    first: Int
+    before: String
+    last: Int
+    private: Boolean = false
+    sort: CollectionSorts
+  ): SavedArtworksConnection
+
   # A list of the current user’s currently followed shows
-  shows(
+  showsConnection(
     status: EventStatus
 
     # Number of days which will be used to filter upcoming and closing soon shows
@@ -4102,12 +4127,20 @@ type FollowsAndSaves {
   ): FollowedShowConnection
 
   # A list of the current user’s currently followed fair profiles
-  fairs(
+  fairsConnection(
     after: String
     first: Int
     before: String
     last: Int
   ): FollowedFairConnection
+
+  # A list of the current user’s inquiry requests
+  genesConnection(
+    after: String
+    first: Int
+    before: String
+    last: Int
+  ): FollowGeneConnection
 }
 
 input FollowShowInput {
@@ -4151,14 +4184,15 @@ type Gene implements Node {
   # A type-specific ID likely used as a database ID.
   internalID: ID!
   cached: Int
-  artists: [Artist]
   artistsConnection(
     after: String
     first: Int
     before: String
     last: Int
   ): ArtistConnection
-  artworksConnection(
+
+  # Artworks Elastic Search results
+  filterArtworksConnection(
     acquireable: Boolean
     offerable: Boolean
     aggregationPartnerCities: [String]
@@ -4203,53 +4237,9 @@ type Gene implements Node {
     first: Int
     before: String
     last: Int
-  ): GeneArtworksConnection
+  ): FilterArtworksConnection
   description: String
   displayName: String
-
-  # Artworks Elastic Search results
-  filteredArtworks(
-    acquireable: Boolean
-    offerable: Boolean
-    aggregationPartnerCities: [String]
-    aggregations: [ArtworkAggregation]
-    artistID: String
-    artistIDs: [String]
-    atAuction: Boolean
-    attributionClass: [String]
-    color: String
-    dimensionRange: String
-    extraAggregationGeneIDs: [String]
-    includeArtworksByFollowedArtists: Boolean
-    includeMediumFilterInAggregation: Boolean
-    inquireableOnly: Boolean
-    forSale: Boolean
-    geneID: String
-    geneIDs: [String]
-    height: String
-    width: String
-
-    # When true, will only return `marketable` works (not nude or provocative).
-    marketable: Boolean
-
-    # A string from the list of allocations, or * to denote all mediums
-    medium: String
-    period: String
-    periods: [String]
-    majorPeriods: [String]
-    partnerID: ID
-    partnerCities: [String]
-    priceRange: String
-    page: Int
-    saleID: ID
-    size: Int
-    sort: String
-    tagID: String
-    keyword: String
-
-    # When true, will only return exact keyword match
-    keywordMatchExact: Boolean
-  ): FilterArtworks
   href: String
   image: Image
   isPublished: Boolean
@@ -4267,28 +4257,6 @@ type Gene implements Node {
     last: Int
   ): GeneConnection
   trendingArtists(sample: Int): [Artist]
-}
-
-# A connection to a list of items.
-type GeneArtworksConnection {
-  # Information to aid in pagination.
-  pageInfo: PageInfo!
-
-  # A list of edges.
-  edges: [GeneArtworksEdge]
-
-  # Returns aggregation counts for the given filter query.
-  aggregations: [ArtworksAggregationResults]
-  counts: FilterArtworksCounts
-}
-
-# An edge in a connection.
-type GeneArtworksEdge {
-  # The item at the end of the edge
-  node: Artwork
-
-  # A cursor for use in pagination
-  cursor: String!
 }
 
 # A connection to a list of items.
@@ -4720,42 +4688,6 @@ type MarketingCollection {
   # CollectionGroups of this collection
   linkedCollections: [MarketingCollectionGroup!]!
   relatedCollections: [MarketingCollection!]!
-  artworks(
-    acquireable: Boolean
-    offerable: Boolean
-    aggregation_partner_cities: [String]
-    aggregations: [ArtworkAggregation]
-    artist_id: String
-    artist_ids: [String]
-    at_auction: Boolean
-    attribution_class: [String]
-    color: String
-    dimension_range: String
-    extra_aggregation_gene_ids: [String]
-    include_artworks_by_followed_artists: Boolean
-    include_medium_filter_in_aggregation: Boolean
-    inquireable_only: Boolean
-    for_sale: Boolean
-    gene_id: String
-    gene_ids: [String]
-    height: String
-    width: String
-
-    # A string from the list of allocations, or * to denote all mediums
-    medium: String
-    period: String
-    periods: [String]
-    major_periods: [String]
-    partner_id: ID
-    partner_cities: [String]
-    price_range: String
-    page: Int
-    sale_id: ID
-    size: Int
-    sort: String
-    tag_id: String
-    keyword: String
-  ): FilterArtworks
 }
 
 type MarketingCollectionCategory {
@@ -4826,7 +4758,7 @@ type Me implements Node {
   internalID: ID!
 
   # A list of the current user’s consignment submissions
-  consignmentSubmissions(
+  consignmentSubmissionsConnection(
     after: String
     first: Int
     before: String
@@ -4876,7 +4808,7 @@ type Me implements Node {
   ): Conversation
 
   # Conversations, usually between a user and partner.
-  conversations(
+  conversationsConnection(
     after: String
     first: Int
     before: String
@@ -4897,25 +4829,6 @@ type Me implements Node {
     last: Int
   ): CreditCardConnection
   email: String
-
-  # A list of the current user’s artist follows
-  followArtists(page: Int, size: Int): FollowArtists
-
-  # A Connection of followed artists by current user
-  followedArtistsConnection(
-    after: String
-    first: Int
-    before: String
-    last: Int
-  ): FollowArtistConnection
-
-  # A list of the current user’s inquiry requests
-  followedGenes(
-    after: String
-    first: Int
-    before: String
-    last: Int
-  ): FollowGeneConnection
   followsAndSaves: FollowsAndSaves
   hasCreditCards: Boolean
   hasQualifiedCreditCards: Boolean
@@ -4957,7 +4870,7 @@ type Me implements Node {
   recentlyViewedArtworkIds: [String]!
 
   # A list of the current user’s recently viewed artworks.
-  recentlyViewedArtworks(
+  recentlyViewedArtworksConnection(
     after: String
     first: Int
     before: String
@@ -4981,7 +4894,6 @@ type Me implements Node {
     size: Int
     sort: SaleSorts
   ): [SaleRegistration]
-  savedArtworks: Collection
 
   # A list of the current user’s suggested artists, based on a single artist
   suggestedArtists(
@@ -5311,12 +5223,6 @@ type Partner implements Node {
   # A type-specific ID likely used as a database ID.
   internalID: ID!
   cached: Int
-  artworks(
-    forSale: Boolean
-    sort: ArtworkSorts
-    exclude: [String]
-    size: Int
-  ): [Artwork]
 
   # A connection of artworks from a Partner.
   artworksConnection(
@@ -5413,7 +5319,7 @@ type PartnerArtworkGrid implements ArtworkContextGrid {
   title: String
   ctaTitle: String
   ctaHref: String
-  artworks(
+  artworksConnection(
     after: String
     first: Int
     before: String
@@ -5760,7 +5666,7 @@ type Query {
   ): FilterPartners
 
   # Artworks Elastic Search results
-  filterArtworks(
+  filterArtworksConnection(
     acquireable: Boolean
     offerable: Boolean
     aggregationPartnerCities: [String]
@@ -5801,7 +5707,11 @@ type Query {
 
     # When true, will only return exact keyword match
     keywordMatchExact: Boolean
-  ): FilterArtworks
+    after: String
+    first: Int
+    before: String
+    last: Int
+  ): FilterArtworksConnection
   gene(
     # The slug or ID of the Gene
     id: String!
@@ -5958,7 +5868,7 @@ type Query {
   ): SaleArtwork
 
   # Sale Artworks search results
-  saleArtworks(
+  saleArtworksConnection(
     aggregations: [SaleArtworkAggregation]
     artistIDs: [String]
     includeArtworksByFollowedArtists: Boolean
@@ -5997,7 +5907,7 @@ type Query {
   ): [Sale]
 
   # Global search
-  search(
+  searchConnection(
     # Search query to perform. Required.
     query: String!
 
@@ -6174,7 +6084,7 @@ type RelatedArtworkGrid implements ArtworkContextGrid {
   title: String
   ctaTitle: String
   ctaHref: String
-  artworks(
+  artworksConnection(
     after: String
     first: Int
     before: String
@@ -6242,14 +6152,6 @@ type Sale implements Node {
   # A type-specific ID likely used as a database ID.
   internalID: ID!
   cached: Int
-  artworks(
-    page: Int = 1
-    size: Int = 25
-    all: Boolean = false
-
-    # List of artwork IDs to exclude from the response (irrespective of size)
-    exclude: [String]
-  ): [Artwork]
 
   # Returns a connection of artworks for a sale.
   artworksConnection(
@@ -6328,11 +6230,6 @@ type Sale implements Node {
   # A registration for this sale or null
   registrationStatus: Bidder
   requireBidderApproval: Boolean
-  saleArtworks(
-    page: Int = 1
-    size: Int = 25
-    all: Boolean = false
-  ): [SaleArtwork]
   saleArtworksConnection(
     after: String
     first: Int
@@ -6629,6 +6526,30 @@ type SaveArtworkPayload {
   clientMutationId: String
 }
 
+# A connection to a list of items.
+type SavedArtworksConnection {
+  # Information to aid in pagination.
+  pageInfo: PageInfo!
+
+  # A list of edges.
+  edges: [SavedArtworksEdge]
+  pageCursors: PageCursors
+  totalCount: Int
+  description: String!
+  default: Boolean!
+  name: String!
+  private: Boolean!
+}
+
+# An edge in a connection.
+type SavedArtworksEdge {
+  # The item at the end of the edge
+  node: Artwork
+
+  # A cursor for use in pagination
+  cursor: String!
+}
+
 # An object that may be searched for
 interface Searchable {
   displayLabel: String
@@ -6778,7 +6699,7 @@ type Services {
   metaphysics: Metaphysics!
 }
 
-type Show implements Node {
+type Show implements Node & EntityWithFilterArtworksConnectionInterface {
   # A globally unique ID.
   id: ID!
 
@@ -6838,7 +6759,7 @@ type Show implements Node {
   fair: Fair
 
   # Artworks Elastic Search results
-  filteredArtworks(
+  filterArtworksConnection(
     acquireable: Boolean
     offerable: Boolean
     aggregationPartnerCities: [String]
@@ -6879,7 +6800,11 @@ type Show implements Node {
 
     # When true, will only return exact keyword match
     keywordMatchExact: Boolean
-  ): FilterArtworks
+    after: String
+    first: Int
+    before: String
+    last: Int
+  ): FilterArtworksConnection
 
   # A path to the show on Artsy
   href: String
@@ -6928,7 +6853,7 @@ type Show implements Node {
   name: String
 
   # Shows that are near (~75km) from this show
-  nearbyShows(
+  nearbyShowsConnection(
     sort: ShowSorts
 
     # By default show only current shows
@@ -6975,7 +6900,7 @@ type Show implements Node {
   type: String
 
   # A Connection of followed artists by current user for this show
-  followedArtists(
+  followedArtistsConnection(
     after: String
     first: Int
     before: String
@@ -6987,7 +6912,7 @@ type ShowArtworkGrid implements ArtworkContextGrid {
   title: String
   ctaTitle: String
   ctaHref: String
-  artworks(
+  artworksConnection(
     after: String
     first: Int
     before: String
@@ -7172,50 +7097,6 @@ type Tag implements Node {
   href: String
   image: Image
   count: Int
-
-  # Artworks Elastic Search results
-  filteredArtworks(
-    acquireable: Boolean
-    offerable: Boolean
-    aggregationPartnerCities: [String]
-    aggregations: [ArtworkAggregation]
-    artistID: String
-    artistIDs: [String]
-    atAuction: Boolean
-    attributionClass: [String]
-    color: String
-    dimensionRange: String
-    extraAggregationGeneIDs: [String]
-    includeArtworksByFollowedArtists: Boolean
-    includeMediumFilterInAggregation: Boolean
-    inquireableOnly: Boolean
-    forSale: Boolean
-    geneID: String
-    geneIDs: [String]
-    height: String
-    width: String
-
-    # When true, will only return `marketable` works (not nude or provocative).
-    marketable: Boolean
-
-    # A string from the list of allocations, or * to denote all mediums
-    medium: String
-    period: String
-    periods: [String]
-    majorPeriods: [String]
-    partnerID: ID
-    partnerCities: [String]
-    priceRange: String
-    page: Int
-    saleID: ID
-    size: Int
-    sort: String
-    tagID: String
-    keyword: String
-
-    # When true, will only return exact keyword match
-    keywordMatchExact: Boolean
-  ): FilterArtworks
 }
 
 type TrendingArtists {
@@ -7582,7 +7463,7 @@ type Viewer {
   ): FilterPartners
 
   # Artworks Elastic Search results
-  filterArtworks(
+  filterArtworksConnection(
     acquireable: Boolean
     offerable: Boolean
     aggregationPartnerCities: [String]
@@ -7623,7 +7504,11 @@ type Viewer {
 
     # When true, will only return exact keyword match
     keywordMatchExact: Boolean
-  ): FilterArtworks
+    after: String
+    first: Int
+    before: String
+    last: Int
+  ): FilterArtworksConnection
   gene(
     # The slug or ID of the Gene
     id: String!
@@ -7780,7 +7665,7 @@ type Viewer {
   ): SaleArtwork
 
   # Sale Artworks search results
-  saleArtworks(
+  saleArtworksConnection(
     aggregations: [SaleArtworkAggregation]
     artistIDs: [String]
     includeArtworksByFollowedArtists: Boolean
@@ -7819,7 +7704,7 @@ type Viewer {
   ): [Sale]
 
   # Global search
-  search(
+  searchConnection(
     # Search query to perform. Required.
     query: String!
 
