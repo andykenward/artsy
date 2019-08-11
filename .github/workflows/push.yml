@@ -10,7 +10,7 @@ jobs:
     - name: Set Node to lts
       uses: actions/setup-node@master
       with:
-        version: lts
+        version: '10.16.0'
     - name: install
       run: npm ci
     
