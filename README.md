@@ -8,8 +8,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Requirements
 
-- node `^10.15.3`
-- yarn `^1.16.0`
+- node `^10.16.0`
+- npm `^6.10.1`
 
 ### Node
 
@@ -23,19 +23,14 @@ Once NVM is installed go to the repos root directory
 $ nvm use
 ```
 
-### Yarn
-
-- [Yarn installation guide](https://yarnpkg.com/en/docs/install)
-
-
 ## Installation
 
 Please check the above [requirements](#Requirements) before installation.
 
 ```
-$ yarn
+$ npm i
 $ cp .env.sample .env
-$ yarn codegen && yarn start
+$ npm run codegen && npm start
 ```
 
 ## Development
@@ -43,18 +38,18 @@ $ yarn codegen && yarn start
 In seperate terminal windows run.
 
 ```
-$ yarn start
+$ npm start
 ```
 
 ```
-$ yarn codegen:watch
+$ npm run codegen:watch
 ```
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `yarn start`
+### `npm start`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -62,48 +57,48 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
-### `yarn test`
+### `npm test`
 
 Launches the test runner in the interactive watch mode.<br>
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn format`
+### `npm run format`
 
 Use [Prettier] to format `.css`, `.js`, `.jsx`, `.ts`, `.tsx` files in `/src` .
 
-### `yarn lint`
+### `npm run lint`
 
 Use [ESLint] to lint `.js`, `.ts`, `.tsx` files in `/src`.
 
-### `yarn type-check`
+### `npm run type-check`
 
 Use [TypeScript] to check typings in `.ts` and `.tsx` files.
 
-### `yarn type-check:watch`
+### `npm run type-check:watch`
 
 Use [TypeScript] to check typings in `.ts` and `.tsx` files and watch for changes.
 
-### `yarn sync-schema`
+### `npm run sync-schema`
 
 Downloads the [GraphQL] schema for [Artsy Metaphysics] endpoint to [data/schema.graphql]. We use this to generate the [TypeScript] typings for GraphQL queries and mutations.
 
-### `yarn codegen`
+### `npm run codegen`
 
 Generate [TypeScript] typings for GraphQL queries and mutations using [GraphQL Code Generator].
 
 See [`codegen.yml`] for configuration.
 
-Outputs [`src/generated/graphql.tsx`] & [`src/generated/introspection-result.ts`]. 
+Outputs [`src/generated/graphql.tsx`] & [`src/generated/introspection-result.ts`].
 
 **These are git ignored and will be generated on the CI during deployment, but you need them locally for typings.**
 
 Using [`@graphql-codegen/typescript-react-apollo`] to output [React Hooks] of [GraphQL] queries & mutations. Saves having to write out verbose typings manually.
 
-### `yarn codegen:watch`
+### `npm run codegen:watch`
 
-Runs the above `yarn codegen` in watch mode. Everytime you change a [GraphQL] query or mutation in the codebase the typings should update automatically.
+Runs the above `npm run codegen` in watch mode. Everytime you change a [GraphQL] query or mutation in the codebase the typings should update automatically.
 
-### `yarn build`
+### `npm run build`
 
 Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -145,9 +140,9 @@ npx now secrets add ci true
 
 Uses [GitHub Actions] to deploy to [zeit.co/now].
 
-Every branch in the repo is deployed to [zeit.co/now]. 
+Every branch in the repo is deployed to [zeit.co/now].
 
-And is aliased using a naming convention of `<project-name>-<branch>.<scope>.now.sh`. 
+And is aliased using a naming convention of `<project-name>-<branch>.<scope>.now.sh`.
 
 For example
 
@@ -158,6 +153,7 @@ The most recent committed branch will always alias to [ori-homework-artsy.andyke
 **`master` branch is aliased to [ori-homework-artsy.andykenward.com](https://ori-homework-artsy.andykenward.com)**
 
 ### Actions
+
 - install
 - codegen
 - lint

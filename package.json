@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": "^10.15.3",
-    "yarn": "^1.16.0"
+    "node": "^10.16.0",
+    "npm": "^6.10.1"
   },
   "dependencies": {
     "@apollo/react-hooks": "0.1.0-beta.11",
@@ -24,9 +24,9 @@
     "graphql-tag": "2.10.1",
     "query-string": "6.8.2",
     "ramda": "0.26.1",
-    "react": "^16.8.6",
+    "react": "16.8.6",
     "react-apollo": "2.5.8",
-    "react-dom": "^16.8.6",
+    "react-dom": "16.8.6",
     "react-error-boundary": "1.2.5",
     "react-scripts": "3.0.1",
     "styled-components": "4.3.2",
@@ -39,13 +39,13 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "type-check": "tsc --noEmit",
-    "type-check:watch": "yarn type-check -- --watch",
+    "type-check:watch": "npm run type-check -- --watch",
     "format": "prettier --write 'src/**/*.{css,js,jsx,ts,tsx}'",
     "lint": "eslint --ext .js,.ts,.tsx  src",
     "sync-schema": "curl https://raw.githubusercontent.com/artsy/metaphysics/master/_schemaV2.graphql -o data/schema.graphql; yarn prettier --write --parser graphql data/schema.graphql",
     "codegen": "graphql-codegen -r dotenv/config --config codegen.yml",
-    "codegen:watch": "yarn codegen --watch",
-    "now-build": "yarn run build"
+    "codegen:watch": "npm run codegen -- --watch",
+    "now-build": "npm run build"
   },
   "eslintConfig": {
     "extends": [
