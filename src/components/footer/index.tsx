@@ -14,7 +14,7 @@ export const Footer: React.FC = () => (
       <Serif size={['5', '6']}>andykenward.com</Serif>
     </Link>
     <Link
-      href="https://github.com/andykenward/ori-homework-artsy"
+      href="https://github.com/andykenward/artsy"
       target="_blank"
       rel="noopener noreferrer"
     >
