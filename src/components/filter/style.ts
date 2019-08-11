@@ -14,8 +14,8 @@ export const List = styled.ul`
   list-style: none;
   columns: 2;
 
-  @media (min-width: 900px) {
-    columns: 6 200px;
+  @media (min-width: 56.25rem) {
+    columns: 6 12.5rem;
   }
 `;
 
@@ -28,7 +28,7 @@ export const ListItem = styled.li`
 export const Link = styled(ReachLink)`
   text-decoration: none;
   :focus {
-    outline: 5px auto rgba(0, 103, 244, 0.247);
+    outline: 0.3125rem auto rgba(0, 103, 244, 0.247);
   }
 `;
 
