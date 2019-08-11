@@ -1,5 +1,5 @@
 on: [pull_request]
-name: Build and deploy on push
+name: Check Pull Request
 
 jobs:
   checks:
