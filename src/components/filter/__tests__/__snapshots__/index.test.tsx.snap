@@ -10,6 +10,9 @@ exports[`<Filter /> should render empty success response 1`] = `
 .c0 {
   background-color: #f4f4f4;
   padding: 1rem;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
 }
 
 <div
@@ -26,23 +29,31 @@ exports[`<Filter /> should render empty success response 1`] = `
 `;
 
 exports[`<Filter /> should render loading state initially 1`] = `
+.c1 {
+  font-family: 'Adobe Garamond W08','adobe-garamond-pro','AGaramondPro-Regular','Times New Roman',Times,serif;
+  font-size: 18px;
+  line-height: 26px;
+}
+
 .c0 {
-  -webkit-animation: FiaaB 1s infinite linear;
-  animation: FiaaB 1s infinite linear;
-  position: absolute;
-  background: #000;
-  width: 25px;
-  height: 6px;
-  top: calc(50% - 6px / 2);
-  left: calc(50% - 25px / 2);
+  background-color: #f4f4f4;
+  padding: 1rem;
+  opacity: 0.1;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
 }
 
 <div
   class="c0"
-  color="black100"
-  height="6"
-  width="25"
-/>
+>
+  <div
+    class="c1"
+    font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+    font-size="18px"
+  >
+    No Artwork found with that colour
+  </div>
+</div>
 `;
 
 exports[`<Filter /> should render success response 1`] = `
@@ -61,15 +72,15 @@ exports[`<Filter /> should render success response 1`] = `
 
 .c8 {
   font-family: 'Adobe Garamond W08','adobe-garamond-pro','AGaramondPro-Regular','Times New Roman',Times,serif;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 0.75rem;
+  line-height: 1rem;
   padding-top: 0.5rem;
 }
 
 .c9 {
   font-family: 'Adobe Garamond W08','adobe-garamond-pro','AGaramondPro-Regular','Times New Roman',Times,serif;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .c5 {
@@ -82,6 +93,9 @@ exports[`<Filter /> should render success response 1`] = `
 .c0 {
   background-color: #f4f4f4;
   padding: 1rem;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
 }
 
 .c1 {
@@ -108,7 +122,7 @@ exports[`<Filter /> should render success response 1`] = `
 }
 
 .c3:focus {
-  outline: 5px auto rgba(0,103,244,0.247);
+  outline: 0.3125rem auto rgba(0,103,244,0.247);
 }
 
 .c4 {
@@ -116,10 +130,10 @@ exports[`<Filter /> should render success response 1`] = `
   margin: 0;
 }
 
-@media (min-width:900px) {
+@media (min-width:56.25rem) {
   .c1 {
-    -webkit-columns: 6 200px;
-    columns: 6 200px;
+    -webkit-columns: 6 12.5rem;
+    columns: 6 12.5rem;
   }
 }
 
@@ -162,7 +176,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c8"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               <strong>
                 Bruno Walpoth
@@ -171,7 +185,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c9"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               Marlene
             </div>
@@ -212,7 +226,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c8"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               <strong>
                 Louis Appleby
@@ -221,7 +235,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c9"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               Endymion
             </div>
@@ -262,7 +276,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c8"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               <strong>
                 Lukman Glasgow
@@ -271,7 +285,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c9"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               Vintage Exhibition Poster
             </div>
@@ -312,7 +326,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c8"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               <strong>
                 Robert Harvey
@@ -321,7 +335,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c9"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               Vintage Exhibition Poster
             </div>
@@ -362,7 +376,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c8"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               <strong>
                 Tom Poelmans
@@ -371,7 +385,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c9"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               Painter's Hand
             </div>
@@ -412,7 +426,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c8"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               <strong>
                 Guillermo Kuitca
@@ -421,7 +435,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c9"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               Untitled
             </div>
@@ -462,7 +476,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c8"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               <strong>
                 Barbara Nanning
@@ -471,7 +485,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c9"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               Firebird
             </div>
@@ -512,7 +526,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c8"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               <strong>
                 Barbara Nanning
@@ -521,7 +535,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c9"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               18-73
             </div>
@@ -562,7 +576,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c8"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               <strong>
                 Barbara Nanning
@@ -571,7 +585,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c9"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               17-46
             </div>
@@ -612,7 +626,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c8"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               <strong>
                 Barbara Nanning
@@ -621,7 +635,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c9"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               18-82
             </div>
@@ -662,7 +676,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c8"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               <strong>
                 Barbara Nanning
@@ -671,7 +685,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c9"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               18-84
             </div>
@@ -712,7 +726,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c8"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               <strong>
                 Richard Diebenkorn
@@ -721,7 +735,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c9"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               Ojai Festival 1980
             </div>
@@ -762,7 +776,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c8"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               <strong>
                 Barbara Nanning
@@ -771,7 +785,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c9"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               17-32
             </div>
@@ -812,7 +826,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c8"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               <strong>
                 Barbara Nanning
@@ -821,7 +835,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c9"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               18-62
             </div>
@@ -862,7 +876,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c8"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               <strong>
                 KAXX
@@ -871,7 +885,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c9"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               Lamborghini
             </div>
@@ -912,7 +926,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c8"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               <strong>
                 Ryan Bock
@@ -921,7 +935,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c9"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               Mask 9
             </div>
@@ -962,7 +976,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c8"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               <strong>
                 Kilroy Savage
@@ -971,7 +985,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c9"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               Justice
             </div>
@@ -1012,7 +1026,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c8"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               <strong>
                 Alexis Kandra
@@ -1021,7 +1035,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c9"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               Alley Cat
             </div>
@@ -1062,7 +1076,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c8"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               <strong>
                 Ekaterina Popova
@@ -1071,7 +1085,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c9"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               New Beginning
             </div>
@@ -1112,7 +1126,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c8"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               <strong>
                 Alex Tea
@@ -1121,7 +1135,7 @@ exports[`<Filter /> should render success response 1`] = `
             <div
               class="c9"
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
-              font-size="12px"
+              font-size="0.75rem"
             >
               Milk 1
             </div>
