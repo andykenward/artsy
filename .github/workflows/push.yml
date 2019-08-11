@@ -2,89 +2,41 @@ on: [push, pull_request]
 name: Build and deploy on push
 
 jobs:
-  setup:
-    name: setup
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@master
-    - name: Set Node to lts
-      uses: actions/setup-node@master
-      with:
-        version: '10.16.0'
-    - name: install
-      run: npm ci
-    
   checks:
     name: checks
     runs-on: ubuntu-latest
-    needs: setup
     steps:
-    - uses: actions/checkout@master
-    - name: test
-      run: npm test
-      env:
-        CI: ${{ secrets.CI }}
-        REACT_APP_API: ${{ secrets.REACT_APP_API }}
-        SCHEMA_PATH: ${{ secrets.SCHEMA_PATH }}
-      
-    - name: lint
-      run: npm run lint
-      env:
-        REACT_APP_API: ${{ secrets.REACT_APP_API }}
-        SCHEMA_PATH: ${{ secrets.SCHEMA_PATH }}
-        
-    - name: codegen
-      run: npm run codegen
-      env:
-        REACT_APP_API: ${{ secrets.REACT_APP_API }}
-        SCHEMA_PATH: ${{ secrets.SCHEMA_PATH }}
+      - uses: actions/checkout@master
 
-    - name: typecheck
-      run: npm run type-check
-      env:
-        REACT_APP_API: ${{ secrets.REACT_APP_API }}
-        SCHEMA_PATH: ${{ secrets.SCHEMA_PATH }}
+      - name: setup node
+        uses: actions/setup-node@master
+        with:
+          version: '10.16.0'
 
-        
-#   test:
-#     runs-on: ubuntu-latest
-#     steps:
-#     - uses: actions/checkout@master
-#     - name: test
-#       uses: Borales/actions-yarn@master
-#       env:
-#         CI: ${{ secrets.CI }}
-#         REACT_APP_API: ${{ secrets.REACT_APP_API }}
-#         SCHEMA_PATH: ${{ secrets.SCHEMA_PATH }}
-#       with:
-#         args: test
-#     - name: type-check
-#       uses: Borales/actions-yarn@master
-#       env:
-#         REACT_APP_API: ${{ secrets.REACT_APP_API }}
-#         SCHEMA_PATH: ${{ secrets.SCHEMA_PATH }}
-#       with:
-#         args: type-check
-#     - name: lint
-#       uses: Borales/actions-yarn@master
-#       env:
-#         REACT_APP_API: ${{ secrets.REACT_APP_API }}
-#         SCHEMA_PATH: ${{ secrets.SCHEMA_PATH }}
-#       with:
-#         args: lint
-#     - name: codegen
-#       uses: Borales/actions-yarn@master
-#       env:
-#         REACT_APP_API: ${{ secrets.REACT_APP_API }}
-#         SCHEMA_PATH: ${{ secrets.SCHEMA_PATH }}
-#       with:
-#         args: codegen
-#     - name: install
-#       uses: Borales/actions-yarn@master
-#       with:
-#         args: install
-#     - name: deploy
-#       uses: andykenward/deploy-now@master
-#       env:
-#         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#         NOW_TOKEN: ${{ secrets.NOW_TOKEN }}
+      - name: install
+        run: npm ci
+
+      - name: codegen
+        run: npm run codegen
+        env:
+          REACT_APP_API: ${{ secrets.REACT_APP_API }}
+          SCHEMA_PATH: ${{ secrets.SCHEMA_PATH }}
+
+      - name: test
+        run: npm test
+        env:
+          CI: ${{ secrets.CI }}
+          REACT_APP_API: ${{ secrets.REACT_APP_API }}
+          SCHEMA_PATH: ${{ secrets.SCHEMA_PATH }}
+
+      - name: typecheck
+        run: npm run type-check
+        env:
+          REACT_APP_API: ${{ secrets.REACT_APP_API }}
+          SCHEMA_PATH: ${{ secrets.SCHEMA_PATH }}
+
+      - name: lint
+        run: npm run lint
+        env:
+          REACT_APP_API: ${{ secrets.REACT_APP_API }}
+          SCHEMA_PATH: ${{ secrets.SCHEMA_PATH }}
