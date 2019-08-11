@@ -27,7 +27,7 @@ describe('<Filter />', () => {
   });
   let cache: InMemoryCache;
   beforeEach(() => {
-    cache = new InMemoryCache({ fragmentMatcher });
+    cache = new InMemoryCache({ fragmentMatcher, addTypename: false });
   });
 
   const MOCKS: MockedResponse[] = [
