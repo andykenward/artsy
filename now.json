@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "name": "ori-homework-artsy",
-  "alias": "ori-homework-artsy.andykenward.com",
+  "name": "artsy",
+  "alias": "artsy.andykenward.com",
   "scope": "andykenward",
   "regions": ["lhr1"],
   "build": {

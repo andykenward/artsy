@@ -1,7 +1,12 @@
 {
-  "name": "ori-frontend-engineer",
+  "name": "artsy",
   "version": "0.1.0",
-  "private": true,
+  "author": "Andy Kenward <hello@andykenward.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andykenward/artsy/issues"
+  },
+  "homepage": "https://github.com/andykenward/artsy#readme",
   "engines": {
     "node": "^10.x",
     "npm": "^6.10.1"

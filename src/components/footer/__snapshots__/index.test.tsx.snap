@@ -109,7 +109,7 @@ exports[`<Footer /> renders correctly 1`] = `
   </a>
   <a
     class="c3"
-    href="https://github.com/andykenward/ori-homework-artsy"
+    href="https://github.com/andykenward/artsy"
     rel="noopener noreferrer"
     target="_blank"
   >

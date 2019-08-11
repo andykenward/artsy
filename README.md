@@ -1,14 +1,14 @@
-# ORI HOMEWORK ARTSY
+# ARTSY
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-[ori-homework-artsy.andykenward.com](https://ori-homework-artsy.andykenward.com)
+[artsy.andykenward.com](https://artsy.andykenward.com)
 
 [Artsy GraphQL API]
 
 ## Requirements
 
-- node `^10.16.0`
+- node `^10.x`
 - npm `^6.10.1`
 
 ### Node
@@ -146,11 +146,11 @@ And is aliased using a naming convention of `<project-name>-<branch>.<scope>.now
 
 For example
 
-[`ori-homework-artsy`-`develop`.andykenward.now.sh](https://ori-homework-artsy-develop.andykenward.now.sh)
+[`artsy`-`develop`.andykenward.now.sh](https://artsy-develop.andykenward.now.sh)
 
-The most recent committed branch will always alias to [ori-homework-artsy.andykenward.now.sh](https://ori-homework-artsy.andykenward.now.sh)
+The most recent committed branch will always alias to [artsy.andykenward.now.sh](https://artsy.andykenward.now.sh)
 
-**`master` branch is aliased to [ori-homework-artsy.andykenward.com](https://ori-homework-artsy.andykenward.com)**
+**`master` branch is aliased to [artsy.andykenward.com](https://artsy.andykenward.com)**
 
 ### Actions
 
@@ -162,7 +162,7 @@ The most recent committed branch will always alias to [ori-homework-artsy.andyke
 - build
 - deploy
 
-[GitHub Actions] configuration see [`.github/main.workflow`] and [ori-homework-artsy/actions]
+[GitHub Actions] configuration see [`.github/main.workflow`] and [artsy/actions]
 
 [zeit.co/now] configuration see [`now.json`]
 
@@ -170,8 +170,8 @@ Also see [Environment Variables](#environment-variables)
 
 #### URLS
 
-- [ori-homework-artsy.andykenward.now.sh](https://ori-homework-artsy.andykenward.now.sh)
-- [ori-homework-artsy.andykenward.com](https://ori-homework-artsy.andykenward.com)
+- [artsy.andykenward.now.sh](https://artsy.andykenward.now.sh)
+- [artsy.andykenward.com](https://artsy.andykenward.com)
 
 ## Learn More
 
@@ -191,7 +191,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 [react hooks]: https://reactjs.org/docs/hooks-intro.html
 [`.github/main.workflow`]: .github/main.workflow
 [github actions]: https://github.com/features/actions
-[ori-homework-artsy/actions]: https://github.com/andykenward/ori-homework-artsy/actions
+[artsy/actions]: https://github.com/andykenward/artsy/actions
 [`now.json`]: ./now.json
 [artsy graphql api]: https://metaphysics-production.artsy.net/v2/
 [apollo client]: https://www.apollographql.com
