@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@apollo/react-hooks": "3.0.0",
-    "@artsy/palette": "4.17.6",
+    "@artsy/palette": "4.17.7",
     "@reach/router": "1.2.1",
     "@types/graphql": "14.2.3",
     "@types/jest": "24.0.17",
