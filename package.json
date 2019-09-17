@@ -11,7 +11,7 @@
     "npm": "^6.10.1"
   },
   "dependencies": {
-    "@apollo/react-hooks": "3.0.0",
+    "@apollo/react-hooks": "3.1.1",
     "@artsy/palette": "4.17.7",
     "@reach/router": "1.2.1",
     "@types/graphql": "14.2.3",
