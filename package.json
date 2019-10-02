@@ -81,7 +81,7 @@
     "@graphql-codegen/cli": "1.5.0",
     "@graphql-codegen/fragment-matcher": "1.5.0",
     "@graphql-codegen/introspection": "1.7.0",
-    "@graphql-codegen/typescript": "1.5.0",
+    "@graphql-codegen/typescript": "1.8.0",
     "@graphql-codegen/typescript-operations": "1.5.0",
     "@graphql-codegen/typescript-react-apollo": "1.5.0",
     "@testing-library/jest-dom": "4.0.0",
