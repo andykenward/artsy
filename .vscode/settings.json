@@ -1,9 +1,9 @@
 {
   "typescript.tsdk": "node_modules/typescript/lib",
-  "prettier.eslintIntegration": true,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.organizeImports": true
+    "source.organizeImports": true,
+    "source.fixAll.eslint": true
   },
   "eslint.codeAction.disableRuleComment": {
     "enable": true,
@@ -18,7 +18,16 @@
     "typescript",
     "typescriptreact"
   ],
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "editor.wordWrap": "on",
+  "editor.minimap.enabled": false,
   "search.exclude": {
     "**/node_modules": true,
     "**/bower_components": true,
