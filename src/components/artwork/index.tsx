@@ -46,7 +46,7 @@ export const Artwork: React.FC<Props> = ({ slug }) => {
     );
   }
   if (data) {
-    const artwork = oc(data).viewer.artwork();
+    const artwork = oc(data).artwork();
 
     if (!artwork) return null;
 
