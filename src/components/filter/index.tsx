@@ -19,7 +19,7 @@ export const Filter: React.FC<Pick<RouteComponentProps, 'location'>> = ({
     return <Error error={error} />;
   }
 
-  const artworks = oc(data).viewer.filterArtworksConnection.edges([]);
+  const artworks = oc(data).artworksConnection.edges([]);
 
   return (
     <>

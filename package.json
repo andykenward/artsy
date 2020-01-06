@@ -46,7 +46,7 @@
     "type-check:watch": "npm run type-check -- --watch",
     "format": "prettier --write 'src/**/*.{css,js,jsx,ts,tsx}'",
     "lint": "eslint --ext .js,.ts,.tsx  src",
-    "sync-schema": "curl https://raw.githubusercontent.com/artsy/metaphysics/master/_schemaV2.graphql -o data/schema.graphql; yarn prettier --write --parser graphql data/schema.graphql",
+    "sync-schema": "curl https://raw.githubusercontent.com/artsy/metaphysics/master/_schemaV2.graphql -o data/schema.graphql; prettier --write --parser graphql data/schema.graphql",
     "codegen": "graphql-codegen -r dotenv/config --config codegen.yml",
     "codegen:watch": "npm run codegen -- --watch",
     "now-build": "npm run build"
@@ -79,7 +79,7 @@
   "devDependencies": {
     "@apollo/react-testing": "3.0.0",
     "@graphql-codegen/cli": "1.5.0",
-    "@graphql-codegen/fragment-matcher": "1.5.0",
+    "@graphql-codegen/fragment-matcher": "1.7.0",
     "@graphql-codegen/introspection": "1.7.0",
     "@graphql-codegen/typescript": "1.5.0",
     "@graphql-codegen/typescript-operations": "1.5.0",
