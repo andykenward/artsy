@@ -19,7 +19,7 @@
     "@types/node": "10.17.13",
     "@types/ramda": "0.26.19",
     "@types/reach__router": "1.2.4",
-    "@types/react": "16.9.2",
+    "@types/react": "16.9.17",
     "@types/react-dom": "16.8.5",
     "@types/styled-components": "4.1.19",
     "apollo-boost": "0.4.4",
