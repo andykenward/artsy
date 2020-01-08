@@ -15,11 +15,44 @@ exports[`<Filter /> should render empty success response 1`] = `
   transition: opacity 0.5s ease;
 }
 
+.c2 a {
+  color: inherit;
+}
+
+.c2 a:hover {
+  color: #000;
+}
+
+.c2 a:active {
+  color: #000;
+}
+
+.c2 a.noUnderline {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2 a.noUnderline:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c2 a.colorLink {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #6E1EFF;
+}
+
+.c2 a.colorLink:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 <div
   class="c0"
 >
   <div
-    class="c1"
+    class="c1 c2 "
     font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
     font-size="18px"
   >
@@ -63,7 +96,7 @@ exports[`<Filter /> should render success response 1`] = `
   padding-top: 0.5rem;
 }
 
-.c9 {
+.c10 {
   font-family: 'Adobe Garamond W08','adobe-garamond-pro','AGaramondPro-Regular','Times New Roman',Times,serif;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -116,6 +149,39 @@ exports[`<Filter /> should render success response 1`] = `
   margin: 0;
 }
 
+.c9 a {
+  color: inherit;
+}
+
+.c9 a:hover {
+  color: #000;
+}
+
+.c9 a:active {
+  color: #000;
+}
+
+.c9 a.noUnderline {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c9 a.noUnderline:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c9 a.colorLink {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #6E1EFF;
+}
+
+.c9 a.colorLink:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 @media (min-width:56.25rem) {
   .c1 {
     -webkit-columns: 6 12.5rem;
@@ -160,7 +226,7 @@ exports[`<Filter /> should render success response 1`] = `
           </div>
           <figcaption>
             <div
-              class="c8"
+              class="c8 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -169,7 +235,7 @@ exports[`<Filter /> should render success response 1`] = `
               </strong>
             </div>
             <div
-              class="c9"
+              class="c10 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -210,7 +276,7 @@ exports[`<Filter /> should render success response 1`] = `
           </div>
           <figcaption>
             <div
-              class="c8"
+              class="c8 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -219,7 +285,7 @@ exports[`<Filter /> should render success response 1`] = `
               </strong>
             </div>
             <div
-              class="c9"
+              class="c10 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -260,7 +326,7 @@ exports[`<Filter /> should render success response 1`] = `
           </div>
           <figcaption>
             <div
-              class="c8"
+              class="c8 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -269,7 +335,7 @@ exports[`<Filter /> should render success response 1`] = `
               </strong>
             </div>
             <div
-              class="c9"
+              class="c10 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -310,7 +376,7 @@ exports[`<Filter /> should render success response 1`] = `
           </div>
           <figcaption>
             <div
-              class="c8"
+              class="c8 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -319,7 +385,7 @@ exports[`<Filter /> should render success response 1`] = `
               </strong>
             </div>
             <div
-              class="c9"
+              class="c10 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -360,7 +426,7 @@ exports[`<Filter /> should render success response 1`] = `
           </div>
           <figcaption>
             <div
-              class="c8"
+              class="c8 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -369,7 +435,7 @@ exports[`<Filter /> should render success response 1`] = `
               </strong>
             </div>
             <div
-              class="c9"
+              class="c10 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -410,7 +476,7 @@ exports[`<Filter /> should render success response 1`] = `
           </div>
           <figcaption>
             <div
-              class="c8"
+              class="c8 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -419,7 +485,7 @@ exports[`<Filter /> should render success response 1`] = `
               </strong>
             </div>
             <div
-              class="c9"
+              class="c10 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -460,7 +526,7 @@ exports[`<Filter /> should render success response 1`] = `
           </div>
           <figcaption>
             <div
-              class="c8"
+              class="c8 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -469,7 +535,7 @@ exports[`<Filter /> should render success response 1`] = `
               </strong>
             </div>
             <div
-              class="c9"
+              class="c10 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -510,7 +576,7 @@ exports[`<Filter /> should render success response 1`] = `
           </div>
           <figcaption>
             <div
-              class="c8"
+              class="c8 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -519,7 +585,7 @@ exports[`<Filter /> should render success response 1`] = `
               </strong>
             </div>
             <div
-              class="c9"
+              class="c10 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -560,7 +626,7 @@ exports[`<Filter /> should render success response 1`] = `
           </div>
           <figcaption>
             <div
-              class="c8"
+              class="c8 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -569,7 +635,7 @@ exports[`<Filter /> should render success response 1`] = `
               </strong>
             </div>
             <div
-              class="c9"
+              class="c10 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -610,7 +676,7 @@ exports[`<Filter /> should render success response 1`] = `
           </div>
           <figcaption>
             <div
-              class="c8"
+              class="c8 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -619,7 +685,7 @@ exports[`<Filter /> should render success response 1`] = `
               </strong>
             </div>
             <div
-              class="c9"
+              class="c10 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -660,7 +726,7 @@ exports[`<Filter /> should render success response 1`] = `
           </div>
           <figcaption>
             <div
-              class="c8"
+              class="c8 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -669,7 +735,7 @@ exports[`<Filter /> should render success response 1`] = `
               </strong>
             </div>
             <div
-              class="c9"
+              class="c10 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -710,7 +776,7 @@ exports[`<Filter /> should render success response 1`] = `
           </div>
           <figcaption>
             <div
-              class="c8"
+              class="c8 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -719,7 +785,7 @@ exports[`<Filter /> should render success response 1`] = `
               </strong>
             </div>
             <div
-              class="c9"
+              class="c10 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -760,7 +826,7 @@ exports[`<Filter /> should render success response 1`] = `
           </div>
           <figcaption>
             <div
-              class="c8"
+              class="c8 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -769,7 +835,7 @@ exports[`<Filter /> should render success response 1`] = `
               </strong>
             </div>
             <div
-              class="c9"
+              class="c10 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -810,7 +876,7 @@ exports[`<Filter /> should render success response 1`] = `
           </div>
           <figcaption>
             <div
-              class="c8"
+              class="c8 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -819,7 +885,7 @@ exports[`<Filter /> should render success response 1`] = `
               </strong>
             </div>
             <div
-              class="c9"
+              class="c10 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -860,7 +926,7 @@ exports[`<Filter /> should render success response 1`] = `
           </div>
           <figcaption>
             <div
-              class="c8"
+              class="c8 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -869,7 +935,7 @@ exports[`<Filter /> should render success response 1`] = `
               </strong>
             </div>
             <div
-              class="c9"
+              class="c10 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -910,7 +976,7 @@ exports[`<Filter /> should render success response 1`] = `
           </div>
           <figcaption>
             <div
-              class="c8"
+              class="c8 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -919,7 +985,7 @@ exports[`<Filter /> should render success response 1`] = `
               </strong>
             </div>
             <div
-              class="c9"
+              class="c10 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -960,7 +1026,7 @@ exports[`<Filter /> should render success response 1`] = `
           </div>
           <figcaption>
             <div
-              class="c8"
+              class="c8 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -969,7 +1035,7 @@ exports[`<Filter /> should render success response 1`] = `
               </strong>
             </div>
             <div
-              class="c9"
+              class="c10 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -1010,7 +1076,7 @@ exports[`<Filter /> should render success response 1`] = `
           </div>
           <figcaption>
             <div
-              class="c8"
+              class="c8 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -1019,7 +1085,7 @@ exports[`<Filter /> should render success response 1`] = `
               </strong>
             </div>
             <div
-              class="c9"
+              class="c10 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -1060,7 +1126,7 @@ exports[`<Filter /> should render success response 1`] = `
           </div>
           <figcaption>
             <div
-              class="c8"
+              class="c8 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -1069,7 +1135,7 @@ exports[`<Filter /> should render success response 1`] = `
               </strong>
             </div>
             <div
-              class="c9"
+              class="c10 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -1110,7 +1176,7 @@ exports[`<Filter /> should render success response 1`] = `
           </div>
           <figcaption>
             <div
-              class="c8"
+              class="c8 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
@@ -1119,7 +1185,7 @@ exports[`<Filter /> should render success response 1`] = `
               </strong>
             </div>
             <div
-              class="c9"
+              class="c10 c9 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >

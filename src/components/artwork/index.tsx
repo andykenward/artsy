@@ -1,7 +1,6 @@
 import { Flex, Link, Sans, Serif, Spinner } from '@artsy/palette';
 import { RouteComponentProps } from '@reach/router';
 import React from 'react';
-import { oc } from 'ts-optchain';
 import { useArtworkQuery } from '../../generated/graphql';
 import { Error } from '../error';
 import { Page } from '../page';
@@ -26,9 +25,9 @@ const Container: React.FC = ({ children }) => (
   </Page>
 );
 
-export const Artwork: React.FC<Props> = ({ slug }) => {
+export const Artwork: React.FC<Props> = ({ slug = '' }) => {
   const { loading, error, data } = useArtworkQuery({
-    variables: { id: slug as string },
+    variables: { id: slug },
   });
 
   if (error) {
@@ -45,24 +44,21 @@ export const Artwork: React.FC<Props> = ({ slug }) => {
       </Container>
     );
   }
-  if (data) {
-    const artwork = oc(data).artwork();
-
-    if (!artwork) return null;
-
-    const image = oc(artwork).image.resized();
-    const imageRetina = oc(artwork).image.resizedRetina();
+  if (data?.artwork) {
+    const artwork = data.artwork;
+    const image = artwork.image?.resized;
+    const imageRetina = artwork.image?.resizedRetina;
 
     return (
       <Container>
-        <ImageContainer orientation={oc(artwork).image.orientation('portrait')}>
+        <ImageContainer orientation={artwork.image?.orientation || 'portrait'}>
           {image && (
             <Image
-              alt={oc(artwork).imageTitle('')}
+              alt={artwork.imageTitle || ''}
               width={image.width as number}
               height={image.height as number}
-              srcSet={`${oc(image).url('')}, ${oc(imageRetina).url('')} 2x`}
-              src={oc(image).url('')}
+              srcSet={`${image?.url || ''}, ${imageRetina?.url || ''} 2x`}
+              src={image?.url || ''}
             />
           )}
           <Flex as="figcaption" mx="1rem" pt="1rem" flexDirection="column">
