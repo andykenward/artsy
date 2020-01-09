@@ -49,7 +49,8 @@
     "sync-schema": "curl https://raw.githubusercontent.com/artsy/metaphysics/master/_schemaV2.graphql -o data/schema.graphql; prettier --write --parser graphql data/schema.graphql",
     "codegen": "graphql-codegen -r dotenv/config --config codegen.yml",
     "codegen:watch": "npm run codegen -- --watch",
-    "now-build": "npm run build"
+    "now-build": "npm run build",
+    "ci": "npm run codegen && npm run type-check && npm run lint && CI=true npm test "
   },
   "eslintConfig": {
     "extends": [
