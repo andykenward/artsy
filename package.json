@@ -33,7 +33,6 @@
     "react-error-boundary": "1.2.5",
     "react-scripts": "3.3.0",
     "styled-components": "4.4.1",
-    "ts-optchain": "0.1.8",
     "typescript": "3.7.4"
   },
   "scripts": {
