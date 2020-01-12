@@ -1,6 +1,7 @@
+import { DocumentNode } from 'graphql';
 import gql from 'graphql-tag';
 
-export const QUERY_ARTWORK = gql`
+export const QUERY_ARTWORK: DocumentNode = gql`
   query Artwork($id: String!) {
     artwork(id: $id) {
       id

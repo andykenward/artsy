@@ -16,7 +16,7 @@ exports[`<Header /> renders correctly 1`] = `
   margin: 1rem;
 }
 
-.c3 {
+.c2 {
   font-family: 'Adobe Garamond W08','adobe-garamond-pro','AGaramondPro-Regular','Times New Roman',Times,serif;
   font-size: 2rem;
   line-height: 2.375rem;
@@ -40,47 +40,47 @@ exports[`<Header /> renders correctly 1`] = `
   color: #000;
 }
 
-.c2 a {
+.c3 a {
   color: inherit;
 }
 
-.c2 a:hover {
+.c3 a:hover {
   color: #000;
 }
 
-.c2 a:active {
+.c3 a:active {
   color: #000;
 }
 
-.c2 a.noUnderline {
+.c3 a.noUnderline {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c2 a.noUnderline:hover {
+.c3 a.noUnderline:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c2 a.colorLink {
+.c3 a.colorLink {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #6E1EFF;
 }
 
-.c2 a.colorLink:hover {
+.c3 a.colorLink:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 @media screen and (min-width:768px) {
-  .c3 {
+  .c2 {
     font-size: 2.75rem;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c3 {
+  .c2 {
     line-height: 3.125rem;
   }
 }
@@ -95,7 +95,7 @@ exports[`<Header /> renders correctly 1`] = `
     target="_blank"
   >
     <h1
-      class="c2 c3"
+      class="c2 c3 "
       display="inline-flex"
       font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
       font-size="2rem,2.75rem"

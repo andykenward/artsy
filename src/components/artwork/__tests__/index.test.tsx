@@ -1,34 +1,17 @@
-import { MockedProvider, MockedResponse, wait } from '@apollo/react-testing';
-import { act, render, RenderResult } from '@testing-library/react';
-import { InMemoryCache, IntrospectionFragmentMatcher } from 'apollo-boost';
+import { MockedResponse, wait } from '@apollo/react-testing';
+import { act } from '@testing-library/react';
 import React from 'react';
 import { Artwork } from '..';
 import { useArtworkQuery } from '../../../generated/graphql';
-import introspectionResult from '../../../generated/introspection-result';
-import { renderWithRouter } from '../../../utils/tests';
+import { renderWithApp } from '../../../utils/tests';
 import { QUERY_ARTWORK } from '../query';
 import { ARTWORK_RESULT_DATA, ARTWORK_RESULT_ERROR } from '../__fixtures__';
-
-/**
- * FYI there is a warning of
- * `Warning: An update to Component inside a test was not wrapped in act(...).`
- * relates to https://github.com/trojanowski/react-apollo-hooks/issues/84
- * next release of react-dom 16.9.0 should fix it
- * https://github.com/trojanowski/react-apollo-hooks/issues/84#issuecomment-479972513
- */
 
 /**
  * FYI GraphQL Fragments do not currently work in Queries for testing
  */
 
 describe('<Artwork />', () => {
-  const fragmentMatcher = new IntrospectionFragmentMatcher({
-    introspectionQueryResultData: introspectionResult,
-  });
-  let cache: InMemoryCache;
-  beforeEach(() => {
-    cache = new InMemoryCache({ fragmentMatcher });
-  });
   const SLUG = 'hossam-dirar-nefertiti-9';
   const SLUG_FAIL = 'fail';
   const MOCKS: MockedResponse[] = [
@@ -43,51 +26,30 @@ describe('<Artwork />', () => {
     },
   ];
 
-  it('should handle Artwork query', done => {
+  it('should handle Artwork query', async () => {
     const Component = () => {
       const { data, loading } = useArtworkQuery({ variables: { id: SLUG } });
       if (!loading) {
         expect(data).toEqual(ARTWORK_RESULT_DATA);
-        done();
       }
       return null;
     };
-
-    render(
-      <MockedProvider mocks={MOCKS} cache={cache}>
-        <Component />
-      </MockedProvider>
-    );
+    act(() => {
+      renderWithApp(<Component />, MOCKS);
+    });
   });
 
   it('should render loading state initially', async () => {
-    let root: RenderResult;
-    act(() => {
-      root = renderWithRouter(
-        <MockedProvider mocks={MOCKS}>
-          <Artwork slug={SLUG} />
-        </MockedProvider>
-      );
-    });
-
-    act(() => {
+    await act(async () => {
+      const root = renderWithApp(<Artwork slug={SLUG} />, MOCKS);
       expect(root.container.firstChild).toMatchSnapshot();
     });
   });
-  it('should render success response', async () => {
-    let root: RenderResult;
-    await act(async () => {
-      root = renderWithRouter(
-        <MockedProvider mocks={MOCKS}>
-          <Artwork slug={SLUG} />
-        </MockedProvider>
-      );
-    });
-    await act(async () => {
-      await wait(0); // wait for response
-    });
 
-    act(() => {
+  it('should render success response', async () => {
+    await act(async () => {
+      const root = renderWithApp(<Artwork slug={SLUG} />, MOCKS);
+      await wait(0); // wait for response
       expect(root.container.firstChild).toMatchSnapshot();
     });
   });
@@ -99,25 +61,18 @@ describe('<Artwork />', () => {
           query: QUERY_ARTWORK,
           variables: { id: SLUG_FAIL },
         },
-        error: new Error('error'),
         result: {
           data: ARTWORK_RESULT_ERROR.data,
         },
       },
     ];
-    let root: RenderResult;
-    act(() => {
-      root = renderWithRouter(
-        <MockedProvider mocks={MOCKS}>
-          <Artwork slug={SLUG_FAIL} />
-        </MockedProvider>
-      );
-    });
     await act(async () => {
+      const root = renderWithApp(<Artwork slug={SLUG_FAIL} />, MOCKS);
       await wait(0); // wait for response
-    });
-    act(() => {
       expect(root.container.firstChild).toMatchSnapshot();
+      // TODO check dom for text "no matching artwork"
     });
   });
+
+  it.todo('error state');
 });
