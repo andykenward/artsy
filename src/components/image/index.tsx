@@ -1,7 +1,6 @@
 import { Image as PaletteImage } from '@artsy/palette';
 import React from 'react';
 import styled from 'styled-components';
-import { oc } from 'ts-optchain';
 import {
   Artwork,
   Image as GImage,
@@ -35,26 +34,25 @@ export const Image: React.FC<Props> = ({
   lazyLoad = false,
   placeholder,
 }) => {
-  const imageUrl = oc(image).resized.url();
+  const imageUrl = image?.resized?.url;
+
+  if (!imageUrl) return null;
 
   const Wrap = placeholder ? Placeholder : React.Fragment;
 
   return (
-    (imageUrl && (
-      <Wrap style={placeholder ? { paddingBottom: placeholder } : {}}>
-        <PaletteImage
-          style={{
-            position: placeholder ? 'absolute' : 'relative',
-            objectFit: 'contain',
-            width: '100%',
-            height: '100%',
-          }}
-          lazyLoad={lazyLoad}
-          alt={imageTitle || ''}
-          src={imageUrl}
-        />
-      </Wrap>
-    )) ||
-    null
+    <Wrap style={placeholder ? { paddingBottom: placeholder } : {}}>
+      <PaletteImage
+        style={{
+          position: placeholder ? 'absolute' : 'relative',
+          objectFit: 'contain',
+          width: '100%',
+          height: '100%',
+        }}
+        lazyLoad={lazyLoad}
+        alt={imageTitle || ''}
+        src={imageUrl}
+      />
+    </Wrap>
   );
 };

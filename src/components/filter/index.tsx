@@ -1,7 +1,6 @@
 import { Serif, Spinner } from '@artsy/palette';
 import { RouteComponentProps } from '@reach/router';
 import React from 'react';
-import { oc } from 'ts-optchain';
 import { useFilterArtworksQuery } from '../../generated/graphql';
 import { getFilter } from '../../utils/routes';
 import { Error } from '../error';
@@ -12,35 +11,30 @@ export const Filter: React.FC<Pick<RouteComponentProps, 'location'>> = ({
   location,
 }) => {
   const { data, error, loading } = useFilterArtworksQuery({
-    variables: { ...getFilter(oc(location).search()) },
+    variables: { ...getFilter(location?.search) },
   });
 
   if (error) {
     return <Error error={error} />;
   }
 
-  const artworks = oc(data).artworksConnection.edges([]);
+  const artworks = data?.artworksConnection?.edges;
 
   return (
     <>
       <Container loading={loading}>
-        {artworks.length > 0 ? (
+        {artworks && artworks.length > 0 ? (
           <List>
             {artworks.map(item => {
-              const node = oc(item).node();
+              const node = item?.node;
               return (
-                node && (
+                node != null && (
                   <ListItem key={node.id}>
-                    <Link
-                      aria-label={oc(node).title('')}
-                      to={oc(node).href('')}
-                    >
+                    <Link aria-label={node?.title || ''} to={node?.href || ''}>
                       <Figure>
                         <Image
                           lazyLoad
-                          placeholder={
-                            oc(node).image.placeholder() || undefined
-                          }
+                          placeholder={node?.image?.placeholder || undefined}
                           imageTitle={node.imageTitle}
                           image={node.image}
                         />
@@ -71,6 +65,4 @@ export const Filter: React.FC<Pick<RouteComponentProps, 'location'>> = ({
       {loading && <Spinner />}
     </>
   );
-  // }
-  // return null;
 };
