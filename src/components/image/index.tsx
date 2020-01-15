@@ -50,7 +50,7 @@ export const Image: React.FC<Props> = ({
           height: '100%',
         }}
         lazyLoad={lazyLoad}
-        alt={imageTitle || ''}
+        alt={imageTitle ?? undefined}
         src={imageUrl}
       />
     </Wrap>

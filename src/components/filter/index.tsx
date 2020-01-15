@@ -30,11 +30,11 @@ export const Filter: React.FC<Pick<RouteComponentProps, 'location'>> = ({
               return (
                 node != null && (
                   <ListItem key={node.id}>
-                    <Link aria-label={node?.title || ''} to={node?.href || ''}>
+                    <Link aria-label={node?.title ?? ''} to={node?.href ?? ''}>
                       <Figure>
                         <Image
                           lazyLoad
-                          placeholder={node?.image?.placeholder || undefined}
+                          placeholder={node?.image?.placeholder ?? undefined}
                           imageTitle={node.imageTitle}
                           image={node.image}
                         />

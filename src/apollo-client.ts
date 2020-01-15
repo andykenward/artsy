@@ -13,7 +13,7 @@ console.log('GRAPHQL API', process.env.REACT_APP_API);
 
 export const client = new ApolloClient({
   uri:
-    process.env.REACT_APP_API || 'https://metaphysics-production.artsy.net/v2/',
+    process.env.REACT_APP_API ?? 'https://metaphysics-production.artsy.net/v2/',
   fetchOptions: {
     credentials: 'same-origin',
   },
