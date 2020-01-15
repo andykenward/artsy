@@ -51,14 +51,15 @@ export const Artwork: React.FC<Props> = ({ slug = '' }) => {
 
     return (
       <Container>
-        <ImageContainer orientation={artwork.image?.orientation || 'portrait'}>
+        <ImageContainer orientation={artwork.image?.orientation ?? 'portrait'}>
           {image && (
             <Image
-              alt={artwork.imageTitle || ''}
+              alt={artwork?.imageTitle ?? undefined}
               width={image.width as number}
               height={image.height as number}
-              srcSet={`${image?.url || ''}, ${imageRetina?.url || ''} 2x`}
-              src={image?.url || ''}
+              srcSet={`${image?.url ?? undefined}, ${imageRetina?.url ??
+                undefined} 2x`}
+              src={image?.url ?? undefined}
             />
           )}
           <Flex as="figcaption" mx="1rem" pt="1rem" flexDirection="column">
