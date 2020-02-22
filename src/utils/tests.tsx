@@ -1,5 +1,5 @@
 import { MockedProvider, MockedResponse } from '@apollo/react-testing';
-import { injectGlobalStyles, Theme } from '@artsy/palette';
+import { Theme } from '@artsy/palette';
 import {
   createHistory,
   createMemorySource,
@@ -8,17 +8,19 @@ import {
 import { render } from '@testing-library/react';
 import { InMemoryCache, IntrospectionFragmentMatcher } from 'apollo-boost';
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import introspectionResult from '../generated/introspection-result';
-
-export const { GlobalStyles } = injectGlobalStyles(`
-  @import url("https://webfonts.artsy.net/all-webfonts.css")
-`);
 
 export const renderWithTheme = (element: React.ReactElement<any>) =>
   render(
     <Theme>
       <>
-        <GlobalStyles />
+        <Helmet>
+          <link
+            rel="stylesheet"
+            href="https://webfonts.artsy.net/all-webfonts.css"
+          />
+        </Helmet>
         {element}
       </>
     </Theme>
@@ -49,7 +51,12 @@ export const renderWithApp = (
     <MockedProvider mocks={MOCKS} cache={cache}>
       <Theme>
         <>
-          <GlobalStyles />
+          <Helmet>
+            <link
+              rel="stylesheet"
+              href="https://webfonts.artsy.net/all-webfonts.css"
+            />
+          </Helmet>
           <LocationProvider history={history}>{element}</LocationProvider>
         </>
       </Theme>
