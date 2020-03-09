@@ -26,6 +26,7 @@ yarn-error.log*
 
 # cache
 .eslintcache
+.stylelintcache
 
 # generated
 /src/generated
