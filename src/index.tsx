@@ -1,20 +1,22 @@
 import { ApolloProvider } from '@apollo/react-hooks';
-import { injectGlobalStyles, Theme } from '@artsy/palette';
+import { Theme } from '@artsy/palette';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Helmet } from 'react-helmet';
 import { client } from './apollo-client';
 import App from './App';
 import './index.css';
-
-const { GlobalStyles } = injectGlobalStyles(`
-  @import url("https://webfonts.artsy.net/all-webfonts.css")
-`);
 
 ReactDOM.render(
   <ApolloProvider client={client}>
     <Theme>
       <>
-        <GlobalStyles />
+        <Helmet>
+          <link
+            rel="stylesheet"
+            href="https://webfonts.artsy.net/all-webfonts.css"
+          />
+        </Helmet>
         <App />
       </>
     </Theme>

@@ -7,7 +7,7 @@ exports[`<Artwork /> should render empty success response 1`] = `
   line-height: 26px;
 }
 
-.c5 {
+.c4 {
   font-family: 'Adobe Garamond W08','adobe-garamond-pro','AGaramondPro-Regular','Times New Roman',Times,serif;
   font-size: 18px;
   line-height: 26px;
@@ -26,70 +26,8 @@ exports[`<Artwork /> should render empty success response 1`] = `
   display: inline-block;
 }
 
-.c4 a {
-  color: inherit;
-}
+@media screen and (min-width:768px) {
 
-.c4 a:hover {
-  color: #000;
-}
-
-.c4 a:active {
-  color: #000;
-}
-
-.c4 a.noUnderline {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c4 a.noUnderline:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c4 a.colorLink {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #6E1EFF;
-}
-
-.c4 a.colorLink:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c6 a {
-  color: inherit;
-}
-
-.c6 a:hover {
-  color: #000;
-}
-
-.c6 a:active {
-  color: #000;
-}
-
-.c6 a.noUnderline {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c6 a.noUnderline:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c6 a.colorLink {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #6E1EFF;
-}
-
-.c6 a.colorLink:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
 }
 
 <main
@@ -103,7 +41,7 @@ exports[`<Artwork /> should render empty success response 1`] = `
       href="/collect"
     >
       <div
-        class="c3 c4 "
+        class="c3 "
         font-family="Unica77LLWebRegular, 'Helvetica Neue', Helvetica, Arial, sans-serif"
         font-size="16px"
       >
@@ -111,7 +49,7 @@ exports[`<Artwork /> should render empty success response 1`] = `
       </div>
     </a>
     <div
-      class="c5 c6 "
+      class="c4 "
       font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
       font-size="18px"
     >
@@ -128,9 +66,9 @@ exports[`<Artwork /> should render loading state initially 1`] = `
   line-height: 26px;
 }
 
-.c5 {
-  -webkit-animation: FiaaB 1s infinite linear;
-  animation: FiaaB 1s infinite linear;
+.c4 {
+  -webkit-animation: dDtqwY 1s infinite linear;
+  animation: dDtqwY 1s infinite linear;
   position: absolute;
   background: #000;
   width: 25px;
@@ -152,37 +90,8 @@ exports[`<Artwork /> should render loading state initially 1`] = `
   display: inline-block;
 }
 
-.c4 a {
-  color: inherit;
-}
+@media screen and (min-width:768px) {
 
-.c4 a:hover {
-  color: #000;
-}
-
-.c4 a:active {
-  color: #000;
-}
-
-.c4 a.noUnderline {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c4 a.noUnderline:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c4 a.colorLink {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #6E1EFF;
-}
-
-.c4 a.colorLink:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
 }
 
 <main
@@ -196,7 +105,7 @@ exports[`<Artwork /> should render loading state initially 1`] = `
       href="/collect"
     >
       <div
-        class="c3 c4 "
+        class="c3 "
         font-family="Unica77LLWebRegular, 'Helvetica Neue', Helvetica, Arial, sans-serif"
         font-size="16px"
       >
@@ -204,7 +113,7 @@ exports[`<Artwork /> should render loading state initially 1`] = `
       </div>
     </a>
     <div
-      class="c5"
+      class="c4"
       color="black100"
       height="6"
       width="25"
@@ -214,7 +123,7 @@ exports[`<Artwork /> should render loading state initially 1`] = `
 `;
 
 exports[`<Artwork /> should render success response 1`] = `
-.c7 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -233,13 +142,13 @@ exports[`<Artwork /> should render success response 1`] = `
   line-height: 26px;
 }
 
-.c8 {
+.c7 {
   font-family: 'Adobe Garamond W08','adobe-garamond-pro','AGaramondPro-Regular','Times New Roman',Times,serif;
   font-size: 18px;
   line-height: 26px;
 }
 
-.c10 {
+.c8 {
   color: #000;
   -webkit-transition: color 0.25s;
   transition: color 0.25s;
@@ -247,7 +156,7 @@ exports[`<Artwork /> should render success response 1`] = `
   text-decoration: underline;
 }
 
-.c10:hover {
+.c8:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
   color: #000;
@@ -261,7 +170,7 @@ exports[`<Artwork /> should render success response 1`] = `
   margin: 1rem;
 }
 
-.c5 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -279,81 +188,19 @@ exports[`<Artwork /> should render success response 1`] = `
   display: inline-block;
 }
 
-.c6 {
+.c5 {
   object-fit: contain;
   width: 100%;
   height: 100%;
   vertical-align: middle;
 }
 
-.c4 a {
-  color: inherit;
-}
+@media screen and (min-width:768px) {
 
-.c4 a:hover {
-  color: #000;
-}
-
-.c4 a:active {
-  color: #000;
-}
-
-.c4 a.noUnderline {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c4 a.noUnderline:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c4 a.colorLink {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #6E1EFF;
-}
-
-.c4 a.colorLink:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c9 a {
-  color: inherit;
-}
-
-.c9 a:hover {
-  color: #000;
-}
-
-.c9 a:active {
-  color: #000;
-}
-
-.c9 a.noUnderline {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c9 a.noUnderline:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c9 a.colorLink {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #6E1EFF;
-}
-
-.c9 a.colorLink:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
 }
 
 @media (orientation:landscape) and (max-width:899px) {
-  .c5 {
+  .c4 {
     min-width: 50vw;
   }
 }
@@ -369,7 +216,7 @@ exports[`<Artwork /> should render success response 1`] = `
       href="/collect"
     >
       <div
-        class="c3 c4 "
+        class="c3 "
         font-family="Unica77LLWebRegular, 'Helvetica Neue', Helvetica, Arial, sans-serif"
         font-size="16px"
       >
@@ -377,22 +224,22 @@ exports[`<Artwork /> should render success response 1`] = `
       </div>
     </a>
     <figure
-      class="c5"
+      class="c4"
       orientation="landscape"
     >
       <img
         alt="Hossam Dirar, ‘Nefertiti’, 2018"
-        class="c6"
+        class="c5"
         height="803"
         src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=799&height=803&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FCbM3QgRJTqffp_SwZV5FxQ%2Flarge.jpg"
         srcset="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=799&height=803&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FCbM3QgRJTqffp_SwZV5FxQ%2Flarge.jpg, https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=799&height=803&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FCbM3QgRJTqffp_sdsdsSwZV5FxQ%2Flarge.jpg 2x"
         width="400"
       />
       <figcaption
-        class="c7"
+        class="c6"
       >
         <div
-          class="c8 c9 "
+          class="c7 "
           font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
           font-size="18px"
         >
@@ -401,20 +248,20 @@ exports[`<Artwork /> should render success response 1`] = `
           </strong>
         </div>
         <div
-          class="c8 c9 "
+          class="c7 "
           font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
           font-size="18px"
         >
           Hossam Dirar, ‘Nefertiti’, 2018
         </div>
         <a
-          class="c10"
+          class="c8"
           href="https://www.artsy.nethttps://artsy.net"
           rel="noopener noreferrer"
           target="_blank"
         >
           <div
-            class="c8 c9 "
+            class="c7 "
             font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
             font-size="18px"
           >

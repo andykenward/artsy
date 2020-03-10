@@ -1,11 +1,10 @@
 name: Check Pull Request
 on:
   push:
-    branches: 
+    branches:
       - master
-      - staging
   pull_request:
-    branches: 
+    branches:
       - master
       - staging
       - test
@@ -16,12 +15,12 @@ jobs:
     name: checks
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
 
       - name: setup node
         uses: actions/setup-node@v1
         with:
-          node-version: "10.18.x"
+          node-version: '12.x'
       - uses: actions/cache@v1
         id: cache
         with:
