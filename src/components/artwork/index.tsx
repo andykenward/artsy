@@ -56,8 +56,9 @@ export const Artwork: React.FC<Props> = ({ slug = '' }) => {
             alt=""
             width={image?.width ?? undefined}
             height={image?.height ?? undefined}
-            srcSet={`${image?.url ?? undefined}, ${imageRetina?.url ??
-              undefined} 2x`}
+            srcSet={`${image?.url ?? undefined}, ${
+              imageRetina?.url ?? undefined
+            } 2x`}
             src={image?.url ?? undefined}
           />
 

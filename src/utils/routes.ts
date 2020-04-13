@@ -12,7 +12,7 @@ export const validateFilterObject = (
 ): Filter | null => {
   if (!searchQuery || searchQuery === '') return null;
   const filter = pick(allowedFilters, queryString.parse(searchQuery));
-  return pickBy(v => !isNil(v), filter);
+  return pickBy((v) => !isNil(v), filter);
 };
 
 export const getFilter = (

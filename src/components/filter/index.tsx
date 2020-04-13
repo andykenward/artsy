@@ -24,7 +24,7 @@ export const Filter: React.FC<Pick<RouteComponentProps, 'location'>> = ({
       <Container loading={loading}>
         {artworks && artworks.length > 0 ? (
           <List>
-            {artworks.map(item => {
+            {artworks.map((item) => {
               const node = item?.node;
               return (
                 node != null && (

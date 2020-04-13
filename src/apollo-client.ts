@@ -18,7 +18,7 @@ export const client = new ApolloClient({
     credentials: 'same-origin',
   },
   cache: cache,
-  request: async operation => {
+  request: async (operation) => {
     const token = process.env.REACT_APP_USER_TOKEN;
 
     operation.setContext({
