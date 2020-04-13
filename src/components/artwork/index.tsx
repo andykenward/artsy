@@ -1,10 +1,10 @@
-import { Flex, Link, Sans, Serif, Spinner } from '@artsy/palette';
+import { Link, Sans, Serif, Spinner } from '@artsy/palette';
 import { RouteComponentProps } from '@reach/router';
 import React from 'react';
 import { useArtworkQuery } from '../../generated/graphql';
 import { Error } from '../error';
 import { Page } from '../page';
-import { Image, ImageContainer, LinkStyle, Section } from './style';
+import { Figure, Image, LinkStyle, Section } from './style';
 
 interface Props extends RouteComponentProps {
   slug?: string;
@@ -51,18 +51,18 @@ export const Artwork: React.FC<Props> = ({ slug = '' }) => {
 
     return (
       <Container>
-        <ImageContainer orientation={artwork.image?.orientation ?? 'portrait'}>
-          {image && (
-            <Image
-              alt={artwork?.imageTitle ?? undefined}
-              width={image.width as number}
-              height={image.height as number}
-              srcSet={`${image?.url ?? undefined}, ${imageRetina?.url ??
-                undefined} 2x`}
-              src={image?.url ?? undefined}
-            />
-          )}
-          <Flex as="figcaption" mx="1rem" pt="1rem" flexDirection="column">
+        <Figure>
+          <Image
+            alt=""
+            width={image?.width ?? undefined}
+            height={image?.height ?? undefined}
+            srcSet={`${image?.url ?? undefined}, ${
+              imageRetina?.url ?? undefined
+            } 2x`}
+            src={image?.url ?? undefined}
+          />
+
+          <figcaption style={{ maxWidth: `${image?.width}px` }}>
             <Serif size="4">
               <strong>{artwork.artistNames}</strong>
             </Serif>
@@ -74,8 +74,8 @@ export const Artwork: React.FC<Props> = ({ slug = '' }) => {
             >
               <Serif size="4">Source</Serif>
             </Link>
-          </Flex>
-        </ImageContainer>
+          </figcaption>
+        </Figure>
       </Container>
     );
   }

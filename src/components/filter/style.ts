@@ -2,29 +2,25 @@ import { Link as ReachLink } from '@reach/router';
 import styled from 'styled-components';
 
 export const Container = styled.div<{ loading?: boolean }>`
-  background-color: #f4f4f4;
   padding: 1rem;
+  background-color: #f4f4f4;
   opacity: ${({ loading = false }) => (loading ? '0.1' : '1')};
   transition: opacity 0.5s ease;
 `;
 
 export const List = styled.ul`
-  column-gap: 1rem;
-  columns: 1 100%;
-  padding: 0;
+  display: grid;
+  grid-row-gap: 1rem;
+  grid-column-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  align-items: center;
   margin: 0;
+  padding: 0;
   list-style: none;
-  columns: 2;
-
-  @media (min-width: 56.25rem) {
-    columns: 6 12.5rem;
-  }
 `;
 
 export const ListItem = styled.li`
-  display: inline-block;
-  width: 100%;
-  padding: 0.5rem 0;
+  height: 100%;
 `;
 
 export const Link = styled(ReachLink)`
@@ -35,6 +31,17 @@ export const Link = styled(ReachLink)`
 `;
 
 export const Figure = styled.figure`
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   margin: 0;
+  padding: 0;
+`;
+
+export const Img = styled.img`
+  width: 100%;
+  height: auto;
+  max-height: 20rem;
+  margin: auto;
+  object-fit: contain;
 `;

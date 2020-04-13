@@ -8,10 +8,10 @@ export const Square = styled.div<{ color: string }>`
 `;
 
 export const LinkColor = styled(Link)`
+  display: inline-flex;
   width: 2.6rem;
   height: 2.6rem;
   transition: all 0.2s ease;
-  display: inline-flex;
   :focus,
   :hover {
     transform: scale(0.9);
@@ -22,12 +22,12 @@ export const LinkColor = styled(Link)`
   }
 `;
 export const List = styled.ul`
-  list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 `;
 
 export const ListItem = styled.li`

@@ -1,12 +1,12 @@
-import { MockedResponse, wait } from '@apollo/react-testing';
+import { MockedResponse } from '@apollo/client/testing';
 import { act } from '@testing-library/react';
 import React from 'react';
+import wait from 'waait';
 import { Artwork } from '..';
 import { useArtworkQuery } from '../../../generated/graphql';
 import { renderWithApp } from '../../../utils/tests';
 import { QUERY_ARTWORK } from '../query';
 import { ARTWORK_RESULT_DATA, ARTWORK_RESULT_ERROR } from '../__fixtures__';
-
 /**
  * FYI GraphQL Fragments do not currently work in Queries for testing
  */
@@ -48,9 +48,19 @@ describe('<Artwork />', () => {
 
   it('should render success response', async () => {
     await act(async () => {
-      const root = renderWithApp(<Artwork slug={SLUG} />, MOCKS);
+      const { container, getByText } = renderWithApp(
+        <Artwork slug={SLUG} />,
+        MOCKS
+      );
       await wait(0); // wait for response
-      expect(root.container.firstChild).toMatchSnapshot();
+
+      getByText('Hossam Dirar');
+      getByText('Hossam Dirar, ‘Nefertiti’, 2018');
+      expect(getByText('Source').closest('a')).toHaveAttribute(
+        'href',
+        'https://www.artsy.net/artwork/hossam-dirar-nefertiti-9'
+      );
+      expect(container.firstChild).toMatchSnapshot();
     });
   });
 
@@ -67,10 +77,13 @@ describe('<Artwork />', () => {
       },
     ];
     await act(async () => {
-      const root = renderWithApp(<Artwork slug={SLUG_FAIL} />, MOCKS);
+      const { container, getByText } = renderWithApp(
+        <Artwork slug={SLUG_FAIL} />,
+        MOCKS
+      );
       await wait(0); // wait for response
-      expect(root.container.firstChild).toMatchSnapshot();
-      // TODO check dom for text "no matching artwork"
+      expect(container.firstChild).toMatchSnapshot();
+      getByText('No matching Artwork');
     });
   });
 

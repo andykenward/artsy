@@ -1,4 +1,4 @@
-import { ApolloProvider } from '@apollo/react-hooks';
+import { ApolloProvider } from '@apollo/client';
 import { Theme } from '@artsy/palette';
 import React from 'react';
 import ReactDOM from 'react-dom';

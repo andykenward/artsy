@@ -1,4 +1,5 @@
-import { MockedProvider, MockedResponse } from '@apollo/react-testing';
+import { InMemoryCache } from '@apollo/client';
+import { MockedProvider, MockedResponse } from '@apollo/client/testing';
 import { Theme } from '@artsy/palette';
 import {
   createHistory,
@@ -6,10 +7,9 @@ import {
   LocationProvider,
 } from '@reach/router';
 import { render } from '@testing-library/react';
-import { InMemoryCache, IntrospectionFragmentMatcher } from 'apollo-boost';
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import introspectionResult from '../generated/introspection-result';
+import { possibleTypes } from '../generated/introspection-result.json';
 
 export const renderWithTheme = (element: React.ReactElement<any>) =>
   render(
@@ -37,16 +37,14 @@ export const renderWithRouter = (
   history,
 });
 
-const fragmentMatcher = new IntrospectionFragmentMatcher({
-  introspectionQueryResultData: introspectionResult,
-});
-
 export const renderWithApp = (
   element: React.ReactElement,
   MOCKS: MockedResponse[] = [],
   { route = '/', history = createHistory(createMemorySource(route)) } = {}
 ) => {
-  const cache = new InMemoryCache({ fragmentMatcher, addTypename: false });
+  const cache = new InMemoryCache({
+    possibleTypes,
+  });
   return render(
     <MockedProvider mocks={MOCKS} cache={cache}>
       <Theme>

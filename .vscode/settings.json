@@ -42,7 +42,7 @@
     "**/.git": true,
     "**/.svn": true,
     "**/.hg": true,
-    "**/.vscode": true,
+    "**/.vscode": false,
     "**/CVS": true,
     "**/.DS_Store": true,
     "**/.cache": true,
@@ -51,5 +51,6 @@
     "**/storybook-static": true,
     "**/build": true,
     ".eslintcache": true
-  }
+  },
+  "terminal.integrated.fontSize": 9
 }
