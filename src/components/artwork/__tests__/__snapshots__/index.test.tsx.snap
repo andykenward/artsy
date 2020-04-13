@@ -18,12 +18,19 @@ exports[`<Artwork /> should render empty success response 1`] = `
 }
 
 .c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: 1rem;
 }
 
 .c2 {
-  margin-bottom: 1rem;
   display: inline-block;
+  margin-bottom: 1rem;
 }
 
 @media screen and (min-width:768px) {
@@ -82,12 +89,19 @@ exports[`<Artwork /> should render loading state initially 1`] = `
 }
 
 .c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: 1rem;
 }
 
 .c2 {
-  margin-bottom: 1rem;
   display: inline-block;
+  margin-bottom: 1rem;
 }
 
 @media screen and (min-width:768px) {
@@ -123,32 +137,19 @@ exports[`<Artwork /> should render loading state initially 1`] = `
 `;
 
 exports[`<Artwork /> should render success response 1`] = `
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  padding-top: 1rem;
-}
-
 .c3 {
   font-family: Unica77LLWebRegular,'Helvetica Neue',Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 26px;
 }
 
-.c7 {
+.c6 {
   font-family: 'Adobe Garamond W08','adobe-garamond-pro','AGaramondPro-Regular','Times New Roman',Times,serif;
   font-size: 18px;
   line-height: 26px;
 }
 
-.c8 {
+.c7 {
   color: #000;
   -webkit-transition: color 0.25s;
   transition: color 0.25s;
@@ -156,7 +157,7 @@ exports[`<Artwork /> should render success response 1`] = `
   text-decoration: underline;
 }
 
-.c8:hover {
+.c7:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
   color: #000;
@@ -167,10 +168,6 @@ exports[`<Artwork /> should render success response 1`] = `
 }
 
 .c1 {
-  margin: 1rem;
-}
-
-.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -178,31 +175,31 @@ exports[`<Artwork /> should render success response 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin: 0 auto;
-  padding: 0;
-  max-width: calc(-300px + 149.986vh);
+  margin: 1rem;
 }
 
 .c2 {
-  margin-bottom: 1rem;
   display: inline-block;
+  margin-bottom: 1rem;
 }
 
 .c5 {
+  max-width: 100%;
+  height: auto;
+  max-height: 58vh;
   object-fit: contain;
-  width: 100%;
-  height: 100%;
-  vertical-align: middle;
+}
+
+.c4 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (min-width:768px) {
 
-}
-
-@media (orientation:landscape) and (max-width:899px) {
-  .c4 {
-    min-width: 50vw;
-  }
 }
 
 <main
@@ -225,21 +222,20 @@ exports[`<Artwork /> should render success response 1`] = `
     </a>
     <figure
       class="c4"
-      orientation="landscape"
     >
       <img
-        alt="Hossam Dirar, ‘Nefertiti’, 2018"
+        alt=""
         class="c5"
-        height="803"
-        src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=799&height=803&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FCbM3QgRJTqffp_SwZV5FxQ%2Flarge.jpg"
-        srcset="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=799&height=803&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FCbM3QgRJTqffp_SwZV5FxQ%2Flarge.jpg, https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=799&height=803&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FCbM3QgRJTqffp_sdsdsSwZV5FxQ%2Flarge.jpg 2x"
-        width="400"
+        height="602"
+        src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=602&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FCbM3QgRJTqffp_SwZV5FxQ%2Flarge.jpg"
+        srcset="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=602&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FCbM3QgRJTqffp_SwZV5FxQ%2Flarge.jpg, https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=1200&height=1204&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FCbM3QgRJTqffp_SwZV5FxQ%2Flarge.jpg 2x"
+        width="600"
       />
       <figcaption
-        class="c6"
+        style="max-width: 600px;"
       >
         <div
-          class="c7 "
+          class="c6 "
           font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
           font-size="18px"
         >
@@ -248,20 +244,20 @@ exports[`<Artwork /> should render success response 1`] = `
           </strong>
         </div>
         <div
-          class="c7 "
+          class="c6 "
           font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
           font-size="18px"
         >
           Hossam Dirar, ‘Nefertiti’, 2018
         </div>
         <a
-          class="c8"
-          href="https://www.artsy.nethttps://artsy.net"
+          class="c7"
+          href="https://www.artsy.net/artwork/hossam-dirar-nefertiti-9"
           rel="noopener noreferrer"
           target="_blank"
         >
           <div
-            class="c7 "
+            class="c6 "
             font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
             font-size="18px"
           >

@@ -65,10 +65,12 @@ describe('<Filter />', () => {
           },
         },
       ];
-      const root = renderWithApp(<Filter />, MOCKS);
+      const { container, getByText } = renderWithApp(<Filter />, MOCKS);
+
       await wait(0); // wait for response
-      expect(root.container.firstChild).toMatchSnapshot();
-      // TODO check for string in dom
+
+      getByText('No Artwork found with that colour');
+      expect(container.firstChild).toMatchSnapshot();
     });
   });
 

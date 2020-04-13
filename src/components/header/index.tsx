@@ -7,6 +7,7 @@ export const Header: React.FC = () => (
       <Serif
         element="h1"
         display="inline-flex"
+        m="0"
         size={['8', '10']}
         fontSize={['2rem', '2.75rem']}
         lineHeight={['2.375rem', '3.125rem']}

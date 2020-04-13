@@ -13,356 +13,1129 @@ export const FILTER_RESULT_DATA_EMPTY: FilterArtworksQuery = {
 
 export const FILTER_RESULT_DATA: FilterArtworksQuery = {
   artworksConnection: {
-    id:
-      'ZmlsdGVyQXJ0d29ya3NDb25uZWN0aW9uOnsiYWdncmVnYXRpb25zIjpbInRvdGFsIl0sInBhZ2UiOjEsInNpemUiOjIwfQ==',
     pageInfo: {
-      hasNextPage: false,
-      endCursor: 'YXJyYXljb25uZWN0aW9uOjE5',
+      hasNextPage: true,
+      endCursor: 'YXJyYXljb25uZWN0aW9uOjI5',
+      __typename: 'PageInfo',
     },
+    id:
+      'ZmlsdGVyQXJ0d29ya3NDb25uZWN0aW9uOnsiYWdncmVnYXRpb25zIjpbInRvdGFsIl0sInBhZ2UiOjEsInNpemUiOjMwfQ==',
     edges: [
       {
         cursor: 'YXJyYXljb25uZWN0aW9uOjA=',
         node: {
-          id: 'QXJ0d29yazpicnVuby13YWxwb3RoLW1hcmxlbmUtMQ==',
-          href: '/artwork/bruno-walpoth-marlene-1',
-          title: 'Marlene',
-          artistNames: 'Bruno Walpoth',
-          imageTitle: 'Bruno Walpoth, ‘Marlene’, 2016',
+          id: 'QXJ0d29yazo1ZGMyOTU1NGQ4MmVkYjAwMTI3YzQ5NTQ=',
+          href: '/artwork/yorgos-kypris-butterflies-1',
+          slug: 'yorgos-kypris-butterflies-1',
+          title: 'Butterflies ',
+          artistNames: 'Yorgos Kypris',
+          imageTitle: 'Yorgos Kypris, ‘Butterflies ’, ca. 2000',
           image: {
-            placeholder: '152.74463007159903%',
             resized: {
               url:
-                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=610&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F1zY9HAtBJIbj5UDL-4u9ag%2Flarge.jpg',
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=381&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FrnXaUB-ev-ebmcsOAUMazA%2Fmedium.jpg',
+              width: 600,
+              height: 381,
+              __typename: 'ResizedImageUrl',
             },
+            resizedThumb: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=254&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FrnXaUB-ev-ebmcsOAUMazA%2Fmedium.jpg',
+              width: 400,
+              height: 254,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedRetina: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=1200&height=763&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FrnXaUB-ev-ebmcsOAUMazA%2Fmedium.jpg',
+              width: 1200,
+              height: 763,
+              __typename: 'ResizedImageUrl',
+            },
+            __typename: 'Image',
           },
+          __typename: 'Artwork',
         },
+        __typename: 'FilterArtworksEdge',
       },
       {
         cursor: 'YXJyYXljb25uZWN0aW9uOjE=',
         node: {
-          id: 'QXJ0d29yazpsb3Vpcy1hcHBsZWJ5LWVuZHltaW9uLTE=',
-          href: '/artwork/louis-appleby-endymion-1',
-          title: 'Endymion',
-          artistNames: 'Louis Appleby',
-          imageTitle: 'Louis Appleby, ‘Endymion’, 2019',
+          id: 'QXJ0d29yazo1ZGMyOThkZWQ4MmVkYjAwMGUwN2FiN2M=',
+          href: '/artwork/yorgos-kypris-bronze-fish',
+          slug: 'yorgos-kypris-bronze-fish',
+          title: 'Bronze Fish',
+          artistNames: 'Yorgos Kypris',
+          imageTitle: 'Yorgos Kypris, ‘Bronze Fish’, ca. 2000',
           image: {
-            placeholder: '133.33333333333331%',
             resized: {
               url:
-                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=533&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2Fogu2T1JEBnzpwAyn2Jgziw%2Flarge.jpg',
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=400&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FLgKzxAEZjwp_HuAyrPG3Dg%2Flarge.jpg',
+              width: 600,
+              height: 400,
+              __typename: 'ResizedImageUrl',
             },
+            resizedThumb: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=266&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FLgKzxAEZjwp_HuAyrPG3Dg%2Flarge.jpg',
+              width: 400,
+              height: 266,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedRetina: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=1200&height=800&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FLgKzxAEZjwp_HuAyrPG3Dg%2Flarge.jpg',
+              width: 1200,
+              height: 800,
+              __typename: 'ResizedImageUrl',
+            },
+            __typename: 'Image',
           },
+          __typename: 'Artwork',
         },
+        __typename: 'FilterArtworksEdge',
       },
       {
         cursor: 'YXJyYXljb25uZWN0aW9uOjI=',
         node: {
-          id:
-            'QXJ0d29yazpsdWttYW4tZ2xhc2dvdy12aW50YWdlLWV4aGliaXRpb24tcG9zdGVy',
-          href: '/artwork/lukman-glasgow-vintage-exhibition-poster',
-          title: 'Vintage Exhibition Poster',
-          artistNames: 'Lukman Glasgow',
-          imageTitle: 'Lukman Glasgow, ‘Vintage Exhibition Poster’, 1974',
+          id: 'QXJ0d29yazo1ZGM5NDZlZjA3NzYwNzAwMTEwNjQ2YTQ=',
+          href: '/artwork/yorgos-kypris-vortex-emigration-2',
+          slug: 'yorgos-kypris-vortex-emigration-2',
+          title: 'Vortex Emigration',
+          artistNames: 'Yorgos Kypris',
+          imageTitle: 'Yorgos Kypris, ‘Vortex Emigration’, ca. 2000',
           image: {
-            placeholder: '132.1705426356589%',
             resized: {
               url:
-                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=399&height=528&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FD6YZGkuGQ1be1ueHWiW2mg%2Flarge.jpg',
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=515&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FnOyoyEFhMFAPk72Lu0iHLw%2Flarge.jpg',
+              width: 600,
+              height: 515,
+              __typename: 'ResizedImageUrl',
             },
+            resizedThumb: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=343&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FnOyoyEFhMFAPk72Lu0iHLw%2Flarge.jpg',
+              width: 400,
+              height: 343,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedRetina: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=1200&height=1030&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FnOyoyEFhMFAPk72Lu0iHLw%2Flarge.jpg',
+              width: 1200,
+              height: 1030,
+              __typename: 'ResizedImageUrl',
+            },
+            __typename: 'Image',
           },
+          __typename: 'Artwork',
         },
+        __typename: 'FilterArtworksEdge',
       },
       {
         cursor: 'YXJyYXljb25uZWN0aW9uOjM=',
         node: {
-          id:
-            'QXJ0d29yazpyb2JlcnQtaGFydmV5LXZpbnRhZ2UtZXhoaWJpdGlvbi1wb3N0ZXI=',
-          href: '/artwork/robert-harvey-vintage-exhibition-poster',
-          title: 'Vintage Exhibition Poster',
-          artistNames: 'Robert Harvey',
-          imageTitle: 'Robert Harvey, ‘Vintage Exhibition Poster’, 1969/1970',
+          id: 'QXJ0d29yazo1ZGQyZDdkZmE3NGIxNzAwMGQxMGM3M2Y=',
+          href: '/artwork/yorgos-kypris-bronze-fish-1',
+          slug: 'yorgos-kypris-bronze-fish-1',
+          title: 'Bronze Fish',
+          artistNames: 'Yorgos Kypris',
+          imageTitle: 'Yorgos Kypris, ‘Bronze Fish’, ca. 2010',
           image: {
-            placeholder: '146.484375%',
             resized: {
               url:
-                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=585&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2Ftq63_4bkB2iiaabz7fJ6fg%2Flarge.jpg',
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=900&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FJMDYfB9MXKZrbzZ7cmtOSQ%2Flarge.jpg',
+              width: 600,
+              height: 900,
+              __typename: 'ResizedImageUrl',
             },
+            resizedThumb: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=600&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FJMDYfB9MXKZrbzZ7cmtOSQ%2Flarge.jpg',
+              width: 400,
+              height: 600,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedRetina: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=1200&height=1800&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FJMDYfB9MXKZrbzZ7cmtOSQ%2Flarge.jpg',
+              width: 1200,
+              height: 1800,
+              __typename: 'ResizedImageUrl',
+            },
+            __typename: 'Image',
           },
+          __typename: 'Artwork',
         },
+        __typename: 'FilterArtworksEdge',
       },
       {
         cursor: 'YXJyYXljb25uZWN0aW9uOjQ=',
         node: {
-          id: 'QXJ0d29yazp0b20tcG9lbG1hbnMtcGFpbnRlcnMtaGFuZA==',
-          href: '/artwork/tom-poelmans-painters-hand',
-          title: "Painter's Hand",
-          artistNames: 'Tom Poelmans',
-          imageTitle: "Tom Poelmans, ‘Painter's Hand’, 2019",
+          id: 'QXJ0d29yazo1ZGQ5NDVmZTA0YzhhNjAwMGQxYWU2ZDQ=',
+          href: '/artwork/alex-kypris-blue-macaw',
+          slug: 'alex-kypris-blue-macaw',
+          title: 'Blue Macaw',
+          artistNames: 'Alex Kypris',
+          imageTitle: 'Alex Kypris, ‘Blue Macaw’, 2018',
           image: {
-            placeholder: '72.52094028640907%',
             resized: {
               url:
-                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=290&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FTnsdDAU9G38R9OLAo9R5Pw%2Flarge.jpg',
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=805&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F64oIJXCfiG7uwipWuRrEHg%2Flarge.jpg',
+              width: 600,
+              height: 805,
+              __typename: 'ResizedImageUrl',
             },
+            resizedThumb: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=537&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F64oIJXCfiG7uwipWuRrEHg%2Flarge.jpg',
+              width: 400,
+              height: 537,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedRetina: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=1200&height=1611&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F64oIJXCfiG7uwipWuRrEHg%2Flarge.jpg',
+              width: 1200,
+              height: 1611,
+              __typename: 'ResizedImageUrl',
+            },
+            __typename: 'Image',
           },
+          __typename: 'Artwork',
         },
+        __typename: 'FilterArtworksEdge',
       },
       {
         cursor: 'YXJyYXljb25uZWN0aW9uOjU=',
         node: {
-          id: 'QXJ0d29yazpndWlsbGVybW8ta3VpdGNhLXVudGl0bGVkLTQ0',
-          href: '/artwork/guillermo-kuitca-untitled-44',
-          title: 'Untitled',
-          artistNames: 'Guillermo Kuitca',
-          imageTitle: 'Guillermo Kuitca, ‘Untitled’, 2001',
+          id: 'QXJ0d29yazo1ZTk0NWY0OWYzMmEzZDAwMTI0NTE1NTU=',
+          href: '/artwork/tom-hammick-traverse',
+          slug: 'tom-hammick-traverse',
+          title: 'Traverse',
+          artistNames: 'Tom Hammick',
+          imageTitle: 'Tom Hammick, ‘Traverse’, 2017',
           image: {
-            placeholder: '22.65331664580726%',
             resized: {
               url:
-                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=90&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FXNeaMm3MJG1xh8zJJRi3eQ%2Flarge.jpg',
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=916&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FLt3GZUlLe_i3hKyce202Qg%2Flarge.jpg',
+              width: 600,
+              height: 916,
+              __typename: 'ResizedImageUrl',
             },
+            resizedThumb: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=610&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FLt3GZUlLe_i3hKyce202Qg%2Flarge.jpg',
+              width: 400,
+              height: 610,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedRetina: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=1200&height=1832&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FLt3GZUlLe_i3hKyce202Qg%2Flarge.jpg',
+              width: 1200,
+              height: 1832,
+              __typename: 'ResizedImageUrl',
+            },
+            __typename: 'Image',
           },
+          __typename: 'Artwork',
         },
+        __typename: 'FilterArtworksEdge',
       },
       {
         cursor: 'YXJyYXljb25uZWN0aW9uOjY=',
         node: {
-          id: 'QXJ0d29yazpiYXJiYXJhLW5hbm5pbmctZmlyZWJpcmQ=',
-          href: '/artwork/barbara-nanning-firebird',
-          title: 'Firebird',
-          artistNames: 'Barbara Nanning',
-          imageTitle: 'Barbara Nanning, ‘Firebird’, 2018',
+          id: 'QXJ0d29yazo1ZGQ5NDcwNzk5Yzc2NDAwMGRkMDQ3MWQ=',
+          href: '/artwork/alex-kypris-brown-pelican',
+          slug: 'alex-kypris-brown-pelican',
+          title: 'Brown Pelican',
+          artistNames: 'Alex Kypris',
+          imageTitle: 'Alex Kypris, ‘Brown Pelican’, 2018',
           image: {
-            placeholder: '75%',
             resized: {
               url:
-                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=300&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2Fu1hVHmBBp3eknM9A8bUKkQ%2Flarge.jpg',
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=846&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FEyddsQMKdG_Id3UsUukC6Q%2Flarge.jpg',
+              width: 600,
+              height: 846,
+              __typename: 'ResizedImageUrl',
             },
+            resizedThumb: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=564&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FEyddsQMKdG_Id3UsUukC6Q%2Flarge.jpg',
+              width: 400,
+              height: 564,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedRetina: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=1200&height=1693&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FEyddsQMKdG_Id3UsUukC6Q%2Flarge.jpg',
+              width: 1200,
+              height: 1693,
+              __typename: 'ResizedImageUrl',
+            },
+            __typename: 'Image',
           },
+          __typename: 'Artwork',
         },
+        __typename: 'FilterArtworksEdge',
       },
       {
         cursor: 'YXJyYXljb25uZWN0aW9uOjc=',
         node: {
-          id: 'QXJ0d29yazpiYXJiYXJhLW5hbm5pbmctMTgtNzM=',
-          href: '/artwork/barbara-nanning-18-73',
-          title: '18-73',
-          artistNames: 'Barbara Nanning',
-          imageTitle: 'Barbara Nanning, ‘18-73’, 2018',
+          id: 'QXJ0d29yazo1ZGQ5NDk5YmY0YWI1YjAwMGRhYjlkZWE=',
+          href: '/artwork/alex-kypris-keel-billed-toucan',
+          slug: 'alex-kypris-keel-billed-toucan',
+          title: 'Keel-Billed Toucan',
+          artistNames: 'Alex Kypris',
+          imageTitle: 'Alex Kypris, ‘Keel-Billed Toucan’, 2018',
           image: {
-            placeholder: '75%',
             resized: {
               url:
-                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=300&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FPMUVqcWLyxm_AcVYqUiVkg%2Flarge.jpg',
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=845&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FXEU-8TL52DxSvtqEFv0ROQ%2Flarge.jpg',
+              width: 600,
+              height: 845,
+              __typename: 'ResizedImageUrl',
             },
+            resizedThumb: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=563&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FXEU-8TL52DxSvtqEFv0ROQ%2Flarge.jpg',
+              width: 400,
+              height: 563,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedRetina: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=1200&height=1690&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FXEU-8TL52DxSvtqEFv0ROQ%2Flarge.jpg',
+              width: 1200,
+              height: 1690,
+              __typename: 'ResizedImageUrl',
+            },
+            __typename: 'Image',
           },
+          __typename: 'Artwork',
         },
+        __typename: 'FilterArtworksEdge',
       },
       {
         cursor: 'YXJyYXljb25uZWN0aW9uOjg=',
         node: {
-          id: 'QXJ0d29yazpiYXJiYXJhLW5hbm5pbmctMTctNDY=',
-          href: '/artwork/barbara-nanning-17-46',
-          title: '17-46',
-          artistNames: 'Barbara Nanning',
-          imageTitle: 'Barbara Nanning, ‘17-46’, 2019',
+          id: 'QXJ0d29yazo1Y2FjY2UxOTBmNDhjZjU4YjQ0Nzk4ZDI=',
+          href: '/artwork/leon-polk-smith-werkubersicht-1946-1986-print-no-05',
+          slug: 'leon-polk-smith-werkubersicht-1946-1986-print-no-05',
+          title: 'werkübersicht 1946 -1986 - print no. 05',
+          artistNames: 'Leon Polk Smith',
+          imageTitle:
+            'Leon Polk Smith, ‘werkübersicht 1946 -1986 - print no. 05’, 1986',
           image: {
-            placeholder: '75%',
             resized: {
               url:
-                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=300&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FwSouvhTmDKDmyGKQLGeeHw%2Flarge.jpg',
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=831&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FNlqZ9uFsZtBuZhpftxrzLw%2Flarge.jpg',
+              width: 600,
+              height: 831,
+              __typename: 'ResizedImageUrl',
             },
+            resizedThumb: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=554&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FNlqZ9uFsZtBuZhpftxrzLw%2Flarge.jpg',
+              width: 400,
+              height: 554,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedRetina: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=1200&height=1662&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FNlqZ9uFsZtBuZhpftxrzLw%2Flarge.jpg',
+              width: 1200,
+              height: 1662,
+              __typename: 'ResizedImageUrl',
+            },
+            __typename: 'Image',
           },
+          __typename: 'Artwork',
         },
+        __typename: 'FilterArtworksEdge',
       },
       {
         cursor: 'YXJyYXljb25uZWN0aW9uOjk=',
         node: {
-          id: 'QXJ0d29yazpiYXJiYXJhLW5hbm5pbmctMTgtODI=',
-          href: '/artwork/barbara-nanning-18-82',
-          title: '18-82',
-          artistNames: 'Barbara Nanning',
-          imageTitle: 'Barbara Nanning, ‘18-82’, 2019',
+          id: 'QXJ0d29yazo1ZGQ5NDQyMmNiODZjNDAwMGUzMGM3OTQ=',
+          href: '/artwork/alex-kypris-inca-tern',
+          slug: 'alex-kypris-inca-tern',
+          title: 'Inca tern',
+          artistNames: 'Alex Kypris',
+          imageTitle: 'Alex Kypris, ‘Inca tern’, 2018',
           image: {
-            placeholder: '75%',
             resized: {
               url:
-                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=300&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F0rp_TbaNy7uMIY3LAa_W8Q%2Flarge.jpg',
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=850&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F2ZzdUlNq4bcuYVl5FzXVTQ%2Flarge.jpg',
+              width: 600,
+              height: 850,
+              __typename: 'ResizedImageUrl',
             },
+            resizedThumb: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=566&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F2ZzdUlNq4bcuYVl5FzXVTQ%2Flarge.jpg',
+              width: 400,
+              height: 566,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedRetina: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=1200&height=1700&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F2ZzdUlNq4bcuYVl5FzXVTQ%2Flarge.jpg',
+              width: 1200,
+              height: 1700,
+              __typename: 'ResizedImageUrl',
+            },
+            __typename: 'Image',
           },
+          __typename: 'Artwork',
         },
+        __typename: 'FilterArtworksEdge',
       },
       {
         cursor: 'YXJyYXljb25uZWN0aW9uOjEw',
         node: {
-          id: 'QXJ0d29yazpiYXJiYXJhLW5hbm5pbmctMTgtODQ=',
-          href: '/artwork/barbara-nanning-18-84',
-          title: '18-84',
-          artistNames: 'Barbara Nanning',
-          imageTitle: 'Barbara Nanning, ‘18-84’, 2018',
+          id: 'QXJ0d29yazo1ZGQ5NDRkODIyZjlkZTAwMTE3ZDg0NDI=',
+          href: '/artwork/alex-kypris-kingfisher',
+          slug: 'alex-kypris-kingfisher',
+          title: 'Kingfisher',
+          artistNames: 'Alex Kypris',
+          imageTitle: 'Alex Kypris, ‘Kingfisher’, 2018',
           image: {
-            placeholder: '75%',
             resized: {
               url:
-                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=300&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FksgMLxFHs3qR_PGI3AUnFg%2Flarge.jpg',
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=853&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FgBnsTS6Y33uZF5KViGhnzA%2Flarge.jpg',
+              width: 600,
+              height: 853,
+              __typename: 'ResizedImageUrl',
             },
+            resizedThumb: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=568&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FgBnsTS6Y33uZF5KViGhnzA%2Flarge.jpg',
+              width: 400,
+              height: 568,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedRetina: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=1200&height=1706&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FgBnsTS6Y33uZF5KViGhnzA%2Flarge.jpg',
+              width: 1200,
+              height: 1706,
+              __typename: 'ResizedImageUrl',
+            },
+            __typename: 'Image',
           },
+          __typename: 'Artwork',
         },
+        __typename: 'FilterArtworksEdge',
       },
       {
         cursor: 'YXJyYXljb25uZWN0aW9uOjEx',
         node: {
-          id:
-            'QXJ0d29yazpyaWNoYXJkLWRpZWJlbmtvcm4tb2phaS1mZXN0aXZhbC0xOTgwLTE=',
-          href: '/artwork/richard-diebenkorn-ojai-festival-1980-1',
-          title: 'Ojai Festival 1980',
-          artistNames: 'Richard Diebenkorn',
-          imageTitle: 'Richard Diebenkorn, ‘Ojai Festival 1980’, 1980',
+          id: 'QXJ0d29yazo1ZGQ5NDgxNDc1MmI5ZTAwMTEwODEwMzQ=',
+          href: '/artwork/alex-kypris-saddle-billed-stork',
+          slug: 'alex-kypris-saddle-billed-stork',
+          title: 'Saddle-billed stork',
+          artistNames: 'Alex Kypris',
+          imageTitle: 'Alex Kypris, ‘Saddle-billed stork’, 2018',
           image: {
-            placeholder: '174.42307692307693%',
             resized: {
               url:
-                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=697&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FpgxynIUzaIHktXnHd491qg%2Flarge.jpg',
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=852&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FWK63n2MxfGHsYAgZ-KK7Ig%2Flarge.jpg',
+              width: 600,
+              height: 852,
+              __typename: 'ResizedImageUrl',
             },
+            resizedThumb: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=568&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FWK63n2MxfGHsYAgZ-KK7Ig%2Flarge.jpg',
+              width: 400,
+              height: 568,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedRetina: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=1200&height=1705&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FWK63n2MxfGHsYAgZ-KK7Ig%2Flarge.jpg',
+              width: 1200,
+              height: 1705,
+              __typename: 'ResizedImageUrl',
+            },
+            __typename: 'Image',
           },
+          __typename: 'Artwork',
         },
+        __typename: 'FilterArtworksEdge',
       },
       {
         cursor: 'YXJyYXljb25uZWN0aW9uOjEy',
         node: {
-          id: 'QXJ0d29yazpiYXJiYXJhLW5hbm5pbmctMTctMzI=',
-          href: '/artwork/barbara-nanning-17-32',
-          title: '17-32',
-          artistNames: 'Barbara Nanning',
-          imageTitle: 'Barbara Nanning, ‘17-32’, 2019',
+          id: 'QXJ0d29yazo1ZGRlYjc4OWYxMmE5ODAwMGUxMGVmZTY=',
+          href: '/artwork/yorgos-kypris-oxidised-city',
+          slug: 'yorgos-kypris-oxidised-city',
+          title: 'Oxidised City',
+          artistNames: 'Yorgos Kypris',
+          imageTitle: 'Yorgos Kypris, ‘Oxidised City’, 2015',
           image: {
-            placeholder: '75%',
             resized: {
               url:
-                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=300&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F7S_LY7ehO2skDt8p7Pp3WA%2Flarge.jpg',
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=400&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FY-AV6U-y1Gmy9Ll6zbysNQ%2Flarge.jpg',
+              width: 600,
+              height: 400,
+              __typename: 'ResizedImageUrl',
             },
+            resizedThumb: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=267&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FY-AV6U-y1Gmy9Ll6zbysNQ%2Flarge.jpg',
+              width: 400,
+              height: 267,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedRetina: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=1200&height=801&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FY-AV6U-y1Gmy9Ll6zbysNQ%2Flarge.jpg',
+              width: 1200,
+              height: 801,
+              __typename: 'ResizedImageUrl',
+            },
+            __typename: 'Image',
           },
+          __typename: 'Artwork',
         },
+        __typename: 'FilterArtworksEdge',
       },
       {
         cursor: 'YXJyYXljb25uZWN0aW9uOjEz',
         node: {
-          id: 'QXJ0d29yazpiYXJiYXJhLW5hbm5pbmctMTgtNjI=',
-          href: '/artwork/barbara-nanning-18-62',
-          title: '18-62',
-          artistNames: 'Barbara Nanning',
-          imageTitle: 'Barbara Nanning, ‘18-62’, 2019',
+          id: 'QXJ0d29yazo1ZTk0NWYwY2E4Njg2YTAwMTIyNWNkYTY=',
+          href:
+            '/artwork/caroline-coolen-berkenbast-number-18-vraag-hem-waar-hij-kwartier-maakt',
+          slug:
+            'caroline-coolen-berkenbast-number-18-vraag-hem-waar-hij-kwartier-maakt',
+          title: 'Berkenbast #18 - vraag hem waar hij kwartier maakt',
+          artistNames: 'Caroline Coolen',
+          imageTitle:
+            'Caroline Coolen, ‘Berkenbast #18 - vraag hem waar hij kwartier maakt’, 2017',
           image: {
-            placeholder: '75%',
             resized: {
               url:
-                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=300&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FuK6Sk3wPAd1nJrbgo1R62A%2Flarge.jpg',
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=720&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F3qX0NZBr3n1QQqZVtLtqXg%2Flarge.jpg',
+              width: 600,
+              height: 720,
+              __typename: 'ResizedImageUrl',
             },
+            resizedThumb: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=480&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F3qX0NZBr3n1QQqZVtLtqXg%2Flarge.jpg',
+              width: 400,
+              height: 480,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedRetina: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=1200&height=1440&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F3qX0NZBr3n1QQqZVtLtqXg%2Flarge.jpg',
+              width: 1200,
+              height: 1440,
+              __typename: 'ResizedImageUrl',
+            },
+            __typename: 'Image',
           },
+          __typename: 'Artwork',
         },
+        __typename: 'FilterArtworksEdge',
       },
       {
         cursor: 'YXJyYXljb25uZWN0aW9uOjE0',
         node: {
-          id: 'QXJ0d29yazprYXh4LWxhbWJvcmdoaW5p',
-          href: '/artwork/kaxx-lamborghini',
-          title: 'Lamborghini',
-          artistNames: 'KAXX',
-          imageTitle: 'KAXX, ‘Lamborghini’, 2018',
+          id: 'QXJ0d29yazo1ZTk0NWYxNWM1YTM0MTAwMGQxZjIyOWU=',
+          href: '/artwork/takashi-murakami-doraemon-here-we-go-2',
+          slug: 'takashi-murakami-doraemon-here-we-go-2',
+          title: 'Doraemon: Here We Go!',
+          artistNames: 'Takashi Murakami',
+          imageTitle: 'Takashi Murakami, ‘Doraemon: Here We Go!’, 2020',
           image: {
-            placeholder: '178.27298050139277%',
             resized: {
               url:
-                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=713&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FgVIfGaBnjIFW-poUvqgmBA%2Flarge.jpg',
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=684&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FX_QtmoxojaElexHjPlKTbg%2Flarge.jpg',
+              width: 600,
+              height: 684,
+              __typename: 'ResizedImageUrl',
             },
+            resizedThumb: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=456&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FX_QtmoxojaElexHjPlKTbg%2Flarge.jpg',
+              width: 400,
+              height: 456,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedRetina: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=1200&height=1369&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FX_QtmoxojaElexHjPlKTbg%2Flarge.jpg',
+              width: 1200,
+              height: 1369,
+              __typename: 'ResizedImageUrl',
+            },
+            __typename: 'Image',
           },
+          __typename: 'Artwork',
         },
+        __typename: 'FilterArtworksEdge',
       },
       {
         cursor: 'YXJyYXljb25uZWN0aW9uOjE1',
         node: {
-          id: 'QXJ0d29yazpyeWFuLWJvY2stbWFzay05',
-          href: '/artwork/ryan-bock-mask-9',
-          title: 'Mask 9',
-          artistNames: 'Ryan Bock',
-          imageTitle: 'Ryan Bock, ‘Mask 9’, 2018',
+          id: 'QXJ0d29yazo1ZTA0YzY4YTk4NmVlMjAwMTIxN2UxMzk=',
+          href: '/artwork/yorgos-kypris-fish-in-the-net',
+          slug: 'yorgos-kypris-fish-in-the-net',
+          title: 'Fish in the net',
+          artistNames: 'Yorgos Kypris',
+          imageTitle: 'Yorgos Kypris, ‘Fish in the net’, 2013',
           image: {
-            placeholder: '139.93362831858406%',
             resized: {
               url:
-                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=559&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F78YENpVkLDNOv_Hje7ugJg%2Flarge.jpg',
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=807&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F_OBJKNcr67g4gGrpqStefw%2Flarge.jpg',
+              width: 600,
+              height: 807,
+              __typename: 'ResizedImageUrl',
             },
+            resizedThumb: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=538&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F_OBJKNcr67g4gGrpqStefw%2Flarge.jpg',
+              width: 400,
+              height: 538,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedRetina: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=1200&height=1614&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F_OBJKNcr67g4gGrpqStefw%2Flarge.jpg',
+              width: 1200,
+              height: 1614,
+              __typename: 'ResizedImageUrl',
+            },
+            __typename: 'Image',
           },
+          __typename: 'Artwork',
         },
+        __typename: 'FilterArtworksEdge',
       },
       {
         cursor: 'YXJyYXljb25uZWN0aW9uOjE2',
         node: {
-          id: 'QXJ0d29yazpraWxyb3ktc2F2YWdlLWp1c3RpY2U=',
-          href: '/artwork/kilroy-savage-justice',
-          title: 'Justice',
-          artistNames: 'Kilroy Savage',
-          imageTitle: 'Kilroy Savage, ‘Justice’, 2019',
+          id: 'QXJ0d29yazo1ZTA1ZTQ4N2NiNWM5OTAwMGQxYmRhMzc=',
+          href: '/artwork/yorgos-kypris-vortex-30',
+          slug: 'yorgos-kypris-vortex-30',
+          title: 'Vortex',
+          artistNames: 'Yorgos Kypris',
+          imageTitle: 'Yorgos Kypris, ‘Vortex’, 2015',
           image: {
-            placeholder: '125.73099415204678%',
             resized: {
               url:
-                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=502&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FcLyedwd3zCUYvxlNJVuwsg%2Flarge.jpg',
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=609&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F5LVfXRXmexkSc8WP5kzQtw%2Flarge.jpg',
+              width: 600,
+              height: 609,
+              __typename: 'ResizedImageUrl',
             },
+            resizedThumb: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=406&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F5LVfXRXmexkSc8WP5kzQtw%2Flarge.jpg',
+              width: 400,
+              height: 406,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedRetina: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=1200&height=1219&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F5LVfXRXmexkSc8WP5kzQtw%2Flarge.jpg',
+              width: 1200,
+              height: 1219,
+              __typename: 'ResizedImageUrl',
+            },
+            __typename: 'Image',
           },
+          __typename: 'Artwork',
         },
+        __typename: 'FilterArtworksEdge',
       },
       {
         cursor: 'YXJyYXljb25uZWN0aW9uOjE3',
         node: {
-          id: 'QXJ0d29yazphbGV4aXMta2FuZHJhLWFsbGV5LWNhdA==',
-          href: '/artwork/alexis-kandra-alley-cat',
-          title: 'Alley Cat',
-          artistNames: 'Alexis Kandra',
-          imageTitle: 'Alexis Kandra, ‘Alley Cat’, 2019',
+          id: 'QXJ0d29yazo1ZTI1YjQ2ZmQ1MjNlOTAwMTIwMmRlMGM=',
+          href: '/artwork/yorgos-kypris-butterflies-2',
+          slug: 'yorgos-kypris-butterflies-2',
+          title: 'Butterflies ',
+          artistNames: 'Yorgos Kypris',
+          imageTitle: 'Yorgos Kypris, ‘Butterflies ’, ca. 2000',
           image: {
-            placeholder: '101.86757215619696%',
             resized: {
               url:
-                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=407&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FaCtYVJPYHxCkpRZsAEsylw%2Flarge.jpg',
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=398&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F5ksG7m1GzCrrZB08-6twRA%2Flarge.jpg',
+              width: 600,
+              height: 398,
+              __typename: 'ResizedImageUrl',
             },
+            resizedThumb: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=265&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F5ksG7m1GzCrrZB08-6twRA%2Flarge.jpg',
+              width: 400,
+              height: 265,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedRetina: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=1200&height=797&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F5ksG7m1GzCrrZB08-6twRA%2Flarge.jpg',
+              width: 1200,
+              height: 797,
+              __typename: 'ResizedImageUrl',
+            },
+            __typename: 'Image',
           },
+          __typename: 'Artwork',
         },
+        __typename: 'FilterArtworksEdge',
       },
       {
         cursor: 'YXJyYXljb25uZWN0aW9uOjE4',
         node: {
-          id: 'QXJ0d29yazpla2F0ZXJpbmEtcG9wb3ZhLW5ldy1iZWdpbm5pbmc=',
-          href: '/artwork/ekaterina-popova-new-beginning',
-          title: 'New Beginning',
-          artistNames: 'Ekaterina Popova',
-          imageTitle: 'Ekaterina Popova, ‘New Beginning’, 2019',
+          id: 'QXJ0d29yazo1ZTE5YTZjNWFlNWQxMjAwMGVmNjY2ZDQ=',
+          href: '/artwork/yorgos-kypris-ceremonial-boat-6',
+          slug: 'yorgos-kypris-ceremonial-boat-6',
+          title: 'Ceremonial boat',
+          artistNames: 'Yorgos Kypris',
+          imageTitle: 'Yorgos Kypris, ‘Ceremonial boat’, 2017',
           image: {
-            placeholder: '132.6963906581741%',
             resized: {
               url:
-                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=530&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FEmXbo80hXQzZk37JDo5JQw%2Flarge.jpg',
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=271&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FXr7gWeNoMxYXLTGsGJBE2w%2Flarge.jpg',
+              width: 600,
+              height: 271,
+              __typename: 'ResizedImageUrl',
             },
+            resizedThumb: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=181&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FXr7gWeNoMxYXLTGsGJBE2w%2Flarge.jpg',
+              width: 400,
+              height: 181,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedRetina: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=1200&height=543&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FXr7gWeNoMxYXLTGsGJBE2w%2Flarge.jpg',
+              width: 1200,
+              height: 543,
+              __typename: 'ResizedImageUrl',
+            },
+            __typename: 'Image',
           },
+          __typename: 'Artwork',
         },
+        __typename: 'FilterArtworksEdge',
       },
       {
         cursor: 'YXJyYXljb25uZWN0aW9uOjE5',
         node: {
-          id: 'QXJ0d29yazphbGV4LXRlYS1taWxrLTE=',
-          href: '/artwork/alex-tea-milk-1',
-          title: 'Milk 1',
-          artistNames: 'Alex Tea',
-          imageTitle: 'Alex Tea, ‘Milk 1’, 2018',
+          id: 'QXJ0d29yazo1ZTExY2MzMGE4OTA5YzAwMTJkMmFhODQ=',
+          href: '/artwork/yorgos-kypris-frozen-fish-7',
+          slug: 'yorgos-kypris-frozen-fish-7',
+          title: 'Frozen Fish',
+          artistNames: 'Yorgos Kypris',
+          imageTitle: 'Yorgos Kypris, ‘Frozen Fish’, 2018',
           image: {
-            placeholder: '106.94121554300897%',
             resized: {
               url:
-                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=427&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FJ206kpxw9BxzUVb5cPYt-w%2Flarge.jpg',
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=291&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FgCG7rHzBchBZQWDfm0cDwQ%2Flarge.jpg',
+              width: 600,
+              height: 291,
+              __typename: 'ResizedImageUrl',
             },
+            resizedThumb: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=194&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FgCG7rHzBchBZQWDfm0cDwQ%2Flarge.jpg',
+              width: 400,
+              height: 194,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedRetina: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=1200&height=582&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FgCG7rHzBchBZQWDfm0cDwQ%2Flarge.jpg',
+              width: 1200,
+              height: 582,
+              __typename: 'ResizedImageUrl',
+            },
+            __typename: 'Image',
           },
+          __typename: 'Artwork',
         },
+        __typename: 'FilterArtworksEdge',
+      },
+      {
+        cursor: 'YXJyYXljb25uZWN0aW9uOjIw',
+        node: {
+          id: 'QXJ0d29yazo1ZTE3MDkyNTcyMGVkZjAwMTJmOTkxM2I=',
+          href: '/artwork/yorgos-kypris-frozen-fish-9',
+          slug: 'yorgos-kypris-frozen-fish-9',
+          title: 'Frozen Fish',
+          artistNames: 'Yorgos Kypris',
+          imageTitle: 'Yorgos Kypris, ‘Frozen Fish’, 2018',
+          image: {
+            resized: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=302&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FLKGKgy9bwIglVcGfFlq7XA%2Flarge.jpg',
+              width: 600,
+              height: 302,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedThumb: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=201&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FLKGKgy9bwIglVcGfFlq7XA%2Flarge.jpg',
+              width: 400,
+              height: 201,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedRetina: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=1200&height=604&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FLKGKgy9bwIglVcGfFlq7XA%2Flarge.jpg',
+              width: 1200,
+              height: 604,
+              __typename: 'ResizedImageUrl',
+            },
+            __typename: 'Image',
+          },
+          __typename: 'Artwork',
+        },
+        __typename: 'FilterArtworksEdge',
+      },
+      {
+        cursor: 'YXJyYXljb25uZWN0aW9uOjIx',
+        node: {
+          id: 'QXJ0d29yazo1Y2I4NWNmNDY5ODE1NTAwMTExNWU2ZTU=',
+          href: '/artwork/stacey-gillian-abe-indigogo-1',
+          slug: 'stacey-gillian-abe-indigogo-1',
+          title: 'Indigogo 1',
+          artistNames: 'Stacey Gillian Abe',
+          imageTitle: 'Stacey Gillian Abe, ‘Indigogo 1’, 2018',
+          image: {
+            resized: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=400&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FNz2AKzP7Up4qhqvKAhJ_aQ%2Flarge.jpg',
+              width: 600,
+              height: 400,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedThumb: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=266&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FNz2AKzP7Up4qhqvKAhJ_aQ%2Flarge.jpg',
+              width: 400,
+              height: 266,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedRetina: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=1200&height=800&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FNz2AKzP7Up4qhqvKAhJ_aQ%2Flarge.jpg',
+              width: 1200,
+              height: 800,
+              __typename: 'ResizedImageUrl',
+            },
+            __typename: 'Image',
+          },
+          __typename: 'Artwork',
+        },
+        __typename: 'FilterArtworksEdge',
+      },
+      {
+        cursor: 'YXJyYXljb25uZWN0aW9uOjIy',
+        node: {
+          id: 'QXJ0d29yazo1ZTI1YjVlM2NiODc2YjAwMTFjOTIyMTg=',
+          href: '/artwork/yorgos-kypris-diving-fish-1',
+          slug: 'yorgos-kypris-diving-fish-1',
+          title: 'Diving Fish',
+          artistNames: 'Yorgos Kypris',
+          imageTitle: 'Yorgos Kypris, ‘Diving Fish’, 2017',
+          image: {
+            resized: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=343&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F2wgebQh0tvBImyDmIiBGqg%2Flarge.jpg',
+              width: 600,
+              height: 343,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedThumb: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=228&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F2wgebQh0tvBImyDmIiBGqg%2Flarge.jpg',
+              width: 400,
+              height: 228,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedRetina: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=1200&height=686&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F2wgebQh0tvBImyDmIiBGqg%2Flarge.jpg',
+              width: 1200,
+              height: 686,
+              __typename: 'ResizedImageUrl',
+            },
+            __typename: 'Image',
+          },
+          __typename: 'Artwork',
+        },
+        __typename: 'FilterArtworksEdge',
+      },
+      {
+        cursor: 'YXJyYXljb25uZWN0aW9uOjIz',
+        node: {
+          id: 'QXJ0d29yazo1ZTMxYTBjYThhYzgxNzAwMTNiOWYxYmY=',
+          href: '/artwork/yorgos-kypris-muscle-exercices-1',
+          slug: 'yorgos-kypris-muscle-exercices-1',
+          title: 'Muscle Exercices',
+          artistNames: 'Yorgos Kypris',
+          imageTitle: 'Yorgos Kypris, ‘Muscle Exercices’, 2007',
+          image: {
+            resized: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=900&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FNFEvAnSD8RprIYbow4gr7g%2Flarge.jpg',
+              width: 600,
+              height: 900,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedThumb: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=600&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FNFEvAnSD8RprIYbow4gr7g%2Flarge.jpg',
+              width: 400,
+              height: 600,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedRetina: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=1200&height=1800&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FNFEvAnSD8RprIYbow4gr7g%2Flarge.jpg',
+              width: 1200,
+              height: 1800,
+              __typename: 'ResizedImageUrl',
+            },
+            __typename: 'Image',
+          },
+          __typename: 'Artwork',
+        },
+        __typename: 'FilterArtworksEdge',
+      },
+      {
+        cursor: 'YXJyYXljb25uZWN0aW9uOjI0',
+        node: {
+          id: 'QXJ0d29yazo1ZTMxYTY2YTVlODM0NTAwMTM1NDQzYTQ=',
+          href: '/artwork/yorgos-kypris-vortex-33',
+          slug: 'yorgos-kypris-vortex-33',
+          title: 'Vortex',
+          artistNames: 'Yorgos Kypris',
+          imageTitle: 'Yorgos Kypris, ‘Vortex’, 2017',
+          image: {
+            resized: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=613&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FqUOOF__wqb7vN-L2ShVjGw%2Flarge.jpg',
+              width: 600,
+              height: 613,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedThumb: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=409&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FqUOOF__wqb7vN-L2ShVjGw%2Flarge.jpg',
+              width: 400,
+              height: 409,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedRetina: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=1200&height=1227&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FqUOOF__wqb7vN-L2ShVjGw%2Flarge.jpg',
+              width: 1200,
+              height: 1227,
+              __typename: 'ResizedImageUrl',
+            },
+            __typename: 'Image',
+          },
+          __typename: 'Artwork',
+        },
+        __typename: 'FilterArtworksEdge',
+      },
+      {
+        cursor: 'YXJyYXljb25uZWN0aW9uOjI1',
+        node: {
+          id: 'QXJ0d29yazo1YTA1YzY2ZTljMThkYjFjYjFkZjdlNDQ=',
+          href: '/artwork/tetiana-malinovska-easy-game-2',
+          slug: 'tetiana-malinovska-easy-game-2',
+          title: 'Easy game-2',
+          artistNames: 'Tetiana Malinovska',
+          imageTitle: 'Tetiana Malinovska, ‘Easy game-2’, 2015',
+          image: {
+            resized: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=536&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FL_rwIYe4wQcGoDr-0zGQLA%2Flarge.jpg',
+              width: 600,
+              height: 536,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedThumb: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=357&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FL_rwIYe4wQcGoDr-0zGQLA%2Flarge.jpg',
+              width: 400,
+              height: 357,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedRetina: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=1200&height=1073&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FL_rwIYe4wQcGoDr-0zGQLA%2Flarge.jpg',
+              width: 1200,
+              height: 1073,
+              __typename: 'ResizedImageUrl',
+            },
+            __typename: 'Image',
+          },
+          __typename: 'Artwork',
+        },
+        __typename: 'FilterArtworksEdge',
+      },
+      {
+        cursor: 'YXJyYXljb25uZWN0aW9uOjI2',
+        node: {
+          id: 'QXJ0d29yazo1ZTNjM2Q2YTNjYmY2MTAwMTI5OGY1NjI=',
+          href: '/artwork/ariadni-kypri-helias-ring',
+          slug: 'ariadni-kypri-helias-ring',
+          title: 'Helias ring ',
+          artistNames: 'Ariadni Kypri',
+          imageTitle: 'Ariadni Kypri, ‘Helias ring ’, 2019',
+          image: {
+            resized: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=337&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F74isrT3aKdaVIkc-hkKGmg%2Flarge.jpg',
+              width: 600,
+              height: 337,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedThumb: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=225&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F74isrT3aKdaVIkc-hkKGmg%2Flarge.jpg',
+              width: 400,
+              height: 225,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedRetina: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=1200&height=675&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F74isrT3aKdaVIkc-hkKGmg%2Flarge.jpg',
+              width: 1200,
+              height: 675,
+              __typename: 'ResizedImageUrl',
+            },
+            __typename: 'Image',
+          },
+          __typename: 'Artwork',
+        },
+        __typename: 'FilterArtworksEdge',
+      },
+      {
+        cursor: 'YXJyYXljb25uZWN0aW9uOjI3',
+        node: {
+          id: 'QXJ0d29yazo1ZTNjNDE1NjBhNzcwNTAwMGQ2NjQwODc=',
+          href: '/artwork/ariadni-kypri-nicolas-ring',
+          slug: 'ariadni-kypri-nicolas-ring',
+          title: 'Nicolas Ring ',
+          artistNames: 'Ariadni Kypri',
+          imageTitle: 'Ariadni Kypri, ‘Nicolas Ring ’, 2019',
+          image: {
+            resized: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=337&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FgZyCZx4JhSUYwpKKUIEP6w%2Flarge.jpg',
+              width: 600,
+              height: 337,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedThumb: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=225&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FgZyCZx4JhSUYwpKKUIEP6w%2Flarge.jpg',
+              width: 400,
+              height: 225,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedRetina: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=1200&height=675&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FgZyCZx4JhSUYwpKKUIEP6w%2Flarge.jpg',
+              width: 1200,
+              height: 675,
+              __typename: 'ResizedImageUrl',
+            },
+            __typename: 'Image',
+          },
+          __typename: 'Artwork',
+        },
+        __typename: 'FilterArtworksEdge',
+      },
+      {
+        cursor: 'YXJyYXljb25uZWN0aW9uOjI4',
+        node: {
+          id: 'QXJ0d29yazo1ZThjZTBmM2E4MDFhNTAwMTJjODBlODI=',
+          href: '/artwork/serena-scapagnini-hemispheres',
+          slug: 'serena-scapagnini-hemispheres',
+          title: 'Hemispheres',
+          artistNames: 'Serena Scapagnini',
+          imageTitle: 'Serena Scapagnini, ‘Hemispheres’, 2013',
+          image: {
+            resized: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=337&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FoOcJrALfRhpMxWBBlJhNfg%2Flarge.jpg',
+              width: 600,
+              height: 337,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedThumb: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=225&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FoOcJrALfRhpMxWBBlJhNfg%2Flarge.jpg',
+              width: 400,
+              height: 225,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedRetina: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=1200&height=675&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FoOcJrALfRhpMxWBBlJhNfg%2Flarge.jpg',
+              width: 1200,
+              height: 675,
+              __typename: 'ResizedImageUrl',
+            },
+            __typename: 'Image',
+          },
+          __typename: 'Artwork',
+        },
+        __typename: 'FilterArtworksEdge',
+      },
+      {
+        cursor: 'YXJyYXljb25uZWN0aW9uOjI5',
+        node: {
+          id: 'QXJ0d29yazo1ZTRhY2E0ZjJiZDliZTAwMGU1YWY2NGI=',
+          href: '/artwork/yorgos-kypris-entrapped-fish-4',
+          slug: 'yorgos-kypris-entrapped-fish-4',
+          title: 'Entrapped Fish',
+          artistNames: 'Yorgos Kypris',
+          imageTitle: 'Yorgos Kypris, ‘Entrapped Fish’, ca. 2000',
+          image: {
+            resized: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=600&height=589&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FvzxWMUzlgctEvHw2HU_xMg%2Flarge.jpg',
+              width: 600,
+              height: 589,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedThumb: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=392&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FvzxWMUzlgctEvHw2HU_xMg%2Flarge.jpg',
+              width: 400,
+              height: 392,
+              __typename: 'ResizedImageUrl',
+            },
+            resizedRetina: {
+              url:
+                'https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=1200&height=1178&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FvzxWMUzlgctEvHw2HU_xMg%2Flarge.jpg',
+              width: 1200,
+              height: 1178,
+              __typename: 'ResizedImageUrl',
+            },
+            __typename: 'Image',
+          },
+          __typename: 'Artwork',
+        },
+        __typename: 'FilterArtworksEdge',
       },
     ],
+    __typename: 'FilterArtworksConnection',
   },
 };

@@ -48,9 +48,19 @@ describe('<Artwork />', () => {
 
   it('should render success response', async () => {
     await act(async () => {
-      const root = renderWithApp(<Artwork slug={SLUG} />, MOCKS);
+      const { container, getByText } = renderWithApp(
+        <Artwork slug={SLUG} />,
+        MOCKS
+      );
       await wait(0); // wait for response
-      expect(root.container.firstChild).toMatchSnapshot();
+
+      getByText('Hossam Dirar');
+      getByText('Hossam Dirar, ‘Nefertiti’, 2018');
+      expect(getByText('Source').closest('a')).toHaveAttribute(
+        'href',
+        'https://www.artsy.net/artwork/hossam-dirar-nefertiti-9'
+      );
+      expect(container.firstChild).toMatchSnapshot();
     });
   });
 
@@ -67,10 +77,13 @@ describe('<Artwork />', () => {
       },
     ];
     await act(async () => {
-      const root = renderWithApp(<Artwork slug={SLUG_FAIL} />, MOCKS);
+      const { container, getByText } = renderWithApp(
+        <Artwork slug={SLUG_FAIL} />,
+        MOCKS
+      );
       await wait(0); // wait for response
-      expect(root.container.firstChild).toMatchSnapshot();
-      // TODO check dom for text "no matching artwork"
+      expect(container.firstChild).toMatchSnapshot();
+      getByText('No matching Artwork');
     });
   });
 

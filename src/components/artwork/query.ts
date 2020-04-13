@@ -5,13 +5,17 @@ export const QUERY_ARTWORK: DocumentNode = gql`
   query Artwork($id: String!) {
     artwork(id: $id) {
       id
+      href
       slug
+      title
       artistNames
       imageTitle
-      href
       image {
-        placeholder
-        orientation
+        resizedThumb: resized(width: 400) {
+          url
+          width
+          height
+        }
         resized(width: 600) {
           url
           width

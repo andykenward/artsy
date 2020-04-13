@@ -14,13 +14,25 @@ export const QUERY_FILTER: DocumentNode = gql`
         node {
           id
           href
+          slug
           title
           artistNames
           imageTitle
           image {
-            placeholder
-            resized(width: 400) {
+            resized(width: 600) {
               url
+              width
+              height
+            }
+            resizedThumb: resized(width: 400) {
+              url
+              width
+              height
+            }
+            resizedRetina: resized(width: 1200) {
+              url
+              width
+              height
             }
           }
         }

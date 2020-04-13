@@ -8,8 +8,8 @@ exports[`<Filter /> should render empty success response 1`] = `
 }
 
 .c0 {
-  background-color: #f4f4f4;
   padding: 1rem;
+  background-color: #f4f4f4;
   opacity: 1;
   -webkit-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
@@ -30,8 +30,8 @@ exports[`<Filter /> should render empty success response 1`] = `
 
 exports[`<Filter /> should render loading state initially 1`] = `
 .c0 {
-  background-color: #f4f4f4;
   padding: 1rem;
+  background-color: #f4f4f4;
   opacity: 0.1;
   -webkit-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
@@ -43,63 +43,43 @@ exports[`<Filter /> should render loading state initially 1`] = `
 `;
 
 exports[`<Filter /> should render success response 1`] = `
-.c7 {
-  width: 100%;
-  height: 100%;
-  -webkit-transition: opacity 0.25s;
-  transition: opacity 0.25s;
-}
-
 .c6 {
-  background-color: #E5E5E5;
-  -webkit-animation: hJdJWq 2s ease-in-out infinite;
-  animation: hJdJWq 2s ease-in-out infinite;
-}
-
-.c8 {
   font-family: 'Adobe Garamond W08','adobe-garamond-pro','AGaramondPro-Regular','Times New Roman',Times,serif;
   font-size: 0.75rem;
   line-height: 1rem;
   padding-top: 0.5rem;
 }
 
-.c9 {
+.c7 {
   font-family: 'Adobe Garamond W08','adobe-garamond-pro','AGaramondPro-Regular','Times New Roman',Times,serif;
   font-size: 0.75rem;
   line-height: 1rem;
 }
 
-.c5 {
-  background-color: white;
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
 .c0 {
-  background-color: #f4f4f4;
   padding: 1rem;
+  background-color: #f4f4f4;
   opacity: 1;
   -webkit-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
 }
 
 .c1 {
-  -webkit-column-gap: 1rem;
-  column-gap: 1rem;
-  -webkit-columns: 1 100%;
-  columns: 1 100%;
-  padding: 0;
+  display: grid;
+  grid-row-gap: 1rem;
+  grid-column-gap: 1rem;
+  grid-template-columns: repeat(auto-fit,minmax(12.5rem,1fr));
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 0;
+  padding: 0;
   list-style: none;
-  -webkit-columns: 2;
-  columns: 2;
 }
 
 .c2 {
-  display: inline-block;
-  width: 100%;
-  padding: 0.5rem 0;
+  height: 100%;
 }
 
 .c3 {
@@ -112,15 +92,24 @@ exports[`<Filter /> should render success response 1`] = `
 }
 
 .c4 {
-  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
   margin: 0;
+  padding: 0;
 }
 
-@media (min-width:56.25rem) {
-  .c1 {
-    -webkit-columns: 6 12.5rem;
-    columns: 6 12.5rem;
-  }
+.c5 {
+  width: 100%;
+  height: auto;
+  max-height: 20rem;
+  margin: auto;
+  object-fit: contain;
 }
 
 <div
@@ -133,47 +122,37 @@ exports[`<Filter /> should render success response 1`] = `
       class="c2"
     >
       <a
-        aria-label="Marlene"
+        aria-label="Butterflies "
         class="c3"
-        href="/artwork/bruno-walpoth-marlene-1"
+        href="/artwork/yorgos-kypris-butterflies-1"
       >
         <figure
           class="c4"
         >
-          <div
+          <img
+            alt="Yorgos Kypris, ‘Butterflies ’, ca. 2000"
             class="c5"
-            style="padding-bottom: 152.74463007159903%;"
-          >
-            <div
-              class="sc-AxjAm c6"
-            >
-              <img
-                alt="Bruno Walpoth, ‘Marlene’, 2016"
-                class="c7"
-                height="100%"
-                src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=610&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F1zY9HAtBJIbj5UDL-4u9ag%2Flarge.jpg"
-                style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
-                width="100%"
-              />
-              <noscript />
-            </div>
-          </div>
+            height="254"
+            src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=254&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FrnXaUB-ev-ebmcsOAUMazA%2Fmedium.jpg"
+            width="400"
+          />
           <figcaption>
             <div
-              class="c8 "
+              class="c6 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
               <strong>
-                Bruno Walpoth
+                Yorgos Kypris
               </strong>
             </div>
             <div
-              class="c9 "
+              class="c7 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
+              style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"
             >
-              Marlene
+              Butterflies 
             </div>
           </figcaption>
         </figure>
@@ -183,47 +162,37 @@ exports[`<Filter /> should render success response 1`] = `
       class="c2"
     >
       <a
-        aria-label="Endymion"
+        aria-label="Bronze Fish"
         class="c3"
-        href="/artwork/louis-appleby-endymion-1"
+        href="/artwork/yorgos-kypris-bronze-fish"
       >
         <figure
           class="c4"
         >
-          <div
+          <img
+            alt="Yorgos Kypris, ‘Bronze Fish’, ca. 2000"
             class="c5"
-            style="padding-bottom: 133.33333333333331%;"
-          >
-            <div
-              class="sc-AxjAm c6"
-            >
-              <img
-                alt="Louis Appleby, ‘Endymion’, 2019"
-                class="c7"
-                height="100%"
-                src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=533&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2Fogu2T1JEBnzpwAyn2Jgziw%2Flarge.jpg"
-                style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
-                width="100%"
-              />
-              <noscript />
-            </div>
-          </div>
+            height="266"
+            src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=266&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FLgKzxAEZjwp_HuAyrPG3Dg%2Flarge.jpg"
+            width="400"
+          />
           <figcaption>
             <div
-              class="c8 "
+              class="c6 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
               <strong>
-                Louis Appleby
+                Yorgos Kypris
               </strong>
             </div>
             <div
-              class="c9 "
+              class="c7 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
+              style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"
             >
-              Endymion
+              Bronze Fish
             </div>
           </figcaption>
         </figure>
@@ -233,47 +202,37 @@ exports[`<Filter /> should render success response 1`] = `
       class="c2"
     >
       <a
-        aria-label="Vintage Exhibition Poster"
+        aria-label="Vortex Emigration"
         class="c3"
-        href="/artwork/lukman-glasgow-vintage-exhibition-poster"
+        href="/artwork/yorgos-kypris-vortex-emigration-2"
       >
         <figure
           class="c4"
         >
-          <div
+          <img
+            alt="Yorgos Kypris, ‘Vortex Emigration’, ca. 2000"
             class="c5"
-            style="padding-bottom: 132.1705426356589%;"
-          >
-            <div
-              class="sc-AxjAm c6"
-            >
-              <img
-                alt="Lukman Glasgow, ‘Vintage Exhibition Poster’, 1974"
-                class="c7"
-                height="100%"
-                src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=399&height=528&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FD6YZGkuGQ1be1ueHWiW2mg%2Flarge.jpg"
-                style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
-                width="100%"
-              />
-              <noscript />
-            </div>
-          </div>
+            height="343"
+            src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=343&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FnOyoyEFhMFAPk72Lu0iHLw%2Flarge.jpg"
+            width="400"
+          />
           <figcaption>
             <div
-              class="c8 "
+              class="c6 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
               <strong>
-                Lukman Glasgow
+                Yorgos Kypris
               </strong>
             </div>
             <div
-              class="c9 "
+              class="c7 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
+              style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"
             >
-              Vintage Exhibition Poster
+              Vortex Emigration
             </div>
           </figcaption>
         </figure>
@@ -283,47 +242,37 @@ exports[`<Filter /> should render success response 1`] = `
       class="c2"
     >
       <a
-        aria-label="Vintage Exhibition Poster"
+        aria-label="Bronze Fish"
         class="c3"
-        href="/artwork/robert-harvey-vintage-exhibition-poster"
+        href="/artwork/yorgos-kypris-bronze-fish-1"
       >
         <figure
           class="c4"
         >
-          <div
+          <img
+            alt="Yorgos Kypris, ‘Bronze Fish’, ca. 2010"
             class="c5"
-            style="padding-bottom: 146.484375%;"
-          >
-            <div
-              class="sc-AxjAm c6"
-            >
-              <img
-                alt="Robert Harvey, ‘Vintage Exhibition Poster’, 1969/1970"
-                class="c7"
-                height="100%"
-                src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=585&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2Ftq63_4bkB2iiaabz7fJ6fg%2Flarge.jpg"
-                style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
-                width="100%"
-              />
-              <noscript />
-            </div>
-          </div>
+            height="600"
+            src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=600&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FJMDYfB9MXKZrbzZ7cmtOSQ%2Flarge.jpg"
+            width="400"
+          />
           <figcaption>
             <div
-              class="c8 "
+              class="c6 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
               <strong>
-                Robert Harvey
+                Yorgos Kypris
               </strong>
             </div>
             <div
-              class="c9 "
+              class="c7 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
+              style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"
             >
-              Vintage Exhibition Poster
+              Bronze Fish
             </div>
           </figcaption>
         </figure>
@@ -333,47 +282,37 @@ exports[`<Filter /> should render success response 1`] = `
       class="c2"
     >
       <a
-        aria-label="Painter's Hand"
+        aria-label="Blue Macaw"
         class="c3"
-        href="/artwork/tom-poelmans-painters-hand"
+        href="/artwork/alex-kypris-blue-macaw"
       >
         <figure
           class="c4"
         >
-          <div
+          <img
+            alt="Alex Kypris, ‘Blue Macaw’, 2018"
             class="c5"
-            style="padding-bottom: 72.52094028640907%;"
-          >
-            <div
-              class="sc-AxjAm c6"
-            >
-              <img
-                alt="Tom Poelmans, ‘Painter's Hand’, 2019"
-                class="c7"
-                height="100%"
-                src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=290&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FTnsdDAU9G38R9OLAo9R5Pw%2Flarge.jpg"
-                style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
-                width="100%"
-              />
-              <noscript />
-            </div>
-          </div>
+            height="537"
+            src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=537&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F64oIJXCfiG7uwipWuRrEHg%2Flarge.jpg"
+            width="400"
+          />
           <figcaption>
             <div
-              class="c8 "
+              class="c6 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
               <strong>
-                Tom Poelmans
+                Alex Kypris
               </strong>
             </div>
             <div
-              class="c9 "
+              class="c7 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
+              style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"
             >
-              Painter's Hand
+              Blue Macaw
             </div>
           </figcaption>
         </figure>
@@ -383,47 +322,37 @@ exports[`<Filter /> should render success response 1`] = `
       class="c2"
     >
       <a
-        aria-label="Untitled"
+        aria-label="Traverse"
         class="c3"
-        href="/artwork/guillermo-kuitca-untitled-44"
+        href="/artwork/tom-hammick-traverse"
       >
         <figure
           class="c4"
         >
-          <div
+          <img
+            alt="Tom Hammick, ‘Traverse’, 2017"
             class="c5"
-            style="padding-bottom: 22.65331664580726%;"
-          >
-            <div
-              class="sc-AxjAm c6"
-            >
-              <img
-                alt="Guillermo Kuitca, ‘Untitled’, 2001"
-                class="c7"
-                height="100%"
-                src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=90&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FXNeaMm3MJG1xh8zJJRi3eQ%2Flarge.jpg"
-                style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
-                width="100%"
-              />
-              <noscript />
-            </div>
-          </div>
+            height="610"
+            src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=610&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FLt3GZUlLe_i3hKyce202Qg%2Flarge.jpg"
+            width="400"
+          />
           <figcaption>
             <div
-              class="c8 "
+              class="c6 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
               <strong>
-                Guillermo Kuitca
+                Tom Hammick
               </strong>
             </div>
             <div
-              class="c9 "
+              class="c7 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
+              style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"
             >
-              Untitled
+              Traverse
             </div>
           </figcaption>
         </figure>
@@ -433,47 +362,37 @@ exports[`<Filter /> should render success response 1`] = `
       class="c2"
     >
       <a
-        aria-label="Firebird"
+        aria-label="Brown Pelican"
         class="c3"
-        href="/artwork/barbara-nanning-firebird"
+        href="/artwork/alex-kypris-brown-pelican"
       >
         <figure
           class="c4"
         >
-          <div
+          <img
+            alt="Alex Kypris, ‘Brown Pelican’, 2018"
             class="c5"
-            style="padding-bottom: 75%;"
-          >
-            <div
-              class="sc-AxjAm c6"
-            >
-              <img
-                alt="Barbara Nanning, ‘Firebird’, 2018"
-                class="c7"
-                height="100%"
-                src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=300&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2Fu1hVHmBBp3eknM9A8bUKkQ%2Flarge.jpg"
-                style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
-                width="100%"
-              />
-              <noscript />
-            </div>
-          </div>
+            height="564"
+            src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=564&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FEyddsQMKdG_Id3UsUukC6Q%2Flarge.jpg"
+            width="400"
+          />
           <figcaption>
             <div
-              class="c8 "
+              class="c6 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
               <strong>
-                Barbara Nanning
+                Alex Kypris
               </strong>
             </div>
             <div
-              class="c9 "
+              class="c7 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
+              style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"
             >
-              Firebird
+              Brown Pelican
             </div>
           </figcaption>
         </figure>
@@ -483,47 +402,37 @@ exports[`<Filter /> should render success response 1`] = `
       class="c2"
     >
       <a
-        aria-label="18-73"
+        aria-label="Keel-Billed Toucan"
         class="c3"
-        href="/artwork/barbara-nanning-18-73"
+        href="/artwork/alex-kypris-keel-billed-toucan"
       >
         <figure
           class="c4"
         >
-          <div
+          <img
+            alt="Alex Kypris, ‘Keel-Billed Toucan’, 2018"
             class="c5"
-            style="padding-bottom: 75%;"
-          >
-            <div
-              class="sc-AxjAm c6"
-            >
-              <img
-                alt="Barbara Nanning, ‘18-73’, 2018"
-                class="c7"
-                height="100%"
-                src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=300&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FPMUVqcWLyxm_AcVYqUiVkg%2Flarge.jpg"
-                style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
-                width="100%"
-              />
-              <noscript />
-            </div>
-          </div>
+            height="563"
+            src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=563&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FXEU-8TL52DxSvtqEFv0ROQ%2Flarge.jpg"
+            width="400"
+          />
           <figcaption>
             <div
-              class="c8 "
+              class="c6 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
               <strong>
-                Barbara Nanning
+                Alex Kypris
               </strong>
             </div>
             <div
-              class="c9 "
+              class="c7 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
+              style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"
             >
-              18-73
+              Keel-Billed Toucan
             </div>
           </figcaption>
         </figure>
@@ -533,47 +442,37 @@ exports[`<Filter /> should render success response 1`] = `
       class="c2"
     >
       <a
-        aria-label="17-46"
+        aria-label="werkübersicht 1946 -1986 - print no. 05"
         class="c3"
-        href="/artwork/barbara-nanning-17-46"
+        href="/artwork/leon-polk-smith-werkubersicht-1946-1986-print-no-05"
       >
         <figure
           class="c4"
         >
-          <div
+          <img
+            alt="Leon Polk Smith, ‘werkübersicht 1946 -1986 - print no. 05’, 1986"
             class="c5"
-            style="padding-bottom: 75%;"
-          >
-            <div
-              class="sc-AxjAm c6"
-            >
-              <img
-                alt="Barbara Nanning, ‘17-46’, 2019"
-                class="c7"
-                height="100%"
-                src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=300&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FwSouvhTmDKDmyGKQLGeeHw%2Flarge.jpg"
-                style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
-                width="100%"
-              />
-              <noscript />
-            </div>
-          </div>
+            height="554"
+            src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=554&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FNlqZ9uFsZtBuZhpftxrzLw%2Flarge.jpg"
+            width="400"
+          />
           <figcaption>
             <div
-              class="c8 "
+              class="c6 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
               <strong>
-                Barbara Nanning
+                Leon Polk Smith
               </strong>
             </div>
             <div
-              class="c9 "
+              class="c7 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
+              style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"
             >
-              17-46
+              werkübersicht 1946 -1986 - print no. 05
             </div>
           </figcaption>
         </figure>
@@ -583,47 +482,37 @@ exports[`<Filter /> should render success response 1`] = `
       class="c2"
     >
       <a
-        aria-label="18-82"
+        aria-label="Inca tern"
         class="c3"
-        href="/artwork/barbara-nanning-18-82"
+        href="/artwork/alex-kypris-inca-tern"
       >
         <figure
           class="c4"
         >
-          <div
+          <img
+            alt="Alex Kypris, ‘Inca tern’, 2018"
             class="c5"
-            style="padding-bottom: 75%;"
-          >
-            <div
-              class="sc-AxjAm c6"
-            >
-              <img
-                alt="Barbara Nanning, ‘18-82’, 2019"
-                class="c7"
-                height="100%"
-                src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=300&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F0rp_TbaNy7uMIY3LAa_W8Q%2Flarge.jpg"
-                style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
-                width="100%"
-              />
-              <noscript />
-            </div>
-          </div>
+            height="566"
+            src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=566&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F2ZzdUlNq4bcuYVl5FzXVTQ%2Flarge.jpg"
+            width="400"
+          />
           <figcaption>
             <div
-              class="c8 "
+              class="c6 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
               <strong>
-                Barbara Nanning
+                Alex Kypris
               </strong>
             </div>
             <div
-              class="c9 "
+              class="c7 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
+              style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"
             >
-              18-82
+              Inca tern
             </div>
           </figcaption>
         </figure>
@@ -633,47 +522,37 @@ exports[`<Filter /> should render success response 1`] = `
       class="c2"
     >
       <a
-        aria-label="18-84"
+        aria-label="Kingfisher"
         class="c3"
-        href="/artwork/barbara-nanning-18-84"
+        href="/artwork/alex-kypris-kingfisher"
       >
         <figure
           class="c4"
         >
-          <div
+          <img
+            alt="Alex Kypris, ‘Kingfisher’, 2018"
             class="c5"
-            style="padding-bottom: 75%;"
-          >
-            <div
-              class="sc-AxjAm c6"
-            >
-              <img
-                alt="Barbara Nanning, ‘18-84’, 2018"
-                class="c7"
-                height="100%"
-                src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=300&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FksgMLxFHs3qR_PGI3AUnFg%2Flarge.jpg"
-                style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
-                width="100%"
-              />
-              <noscript />
-            </div>
-          </div>
+            height="568"
+            src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=568&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FgBnsTS6Y33uZF5KViGhnzA%2Flarge.jpg"
+            width="400"
+          />
           <figcaption>
             <div
-              class="c8 "
+              class="c6 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
               <strong>
-                Barbara Nanning
+                Alex Kypris
               </strong>
             </div>
             <div
-              class="c9 "
+              class="c7 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
+              style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"
             >
-              18-84
+              Kingfisher
             </div>
           </figcaption>
         </figure>
@@ -683,47 +562,37 @@ exports[`<Filter /> should render success response 1`] = `
       class="c2"
     >
       <a
-        aria-label="Ojai Festival 1980"
+        aria-label="Saddle-billed stork"
         class="c3"
-        href="/artwork/richard-diebenkorn-ojai-festival-1980-1"
+        href="/artwork/alex-kypris-saddle-billed-stork"
       >
         <figure
           class="c4"
         >
-          <div
+          <img
+            alt="Alex Kypris, ‘Saddle-billed stork’, 2018"
             class="c5"
-            style="padding-bottom: 174.42307692307693%;"
-          >
-            <div
-              class="sc-AxjAm c6"
-            >
-              <img
-                alt="Richard Diebenkorn, ‘Ojai Festival 1980’, 1980"
-                class="c7"
-                height="100%"
-                src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=697&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FpgxynIUzaIHktXnHd491qg%2Flarge.jpg"
-                style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
-                width="100%"
-              />
-              <noscript />
-            </div>
-          </div>
+            height="568"
+            src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=568&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FWK63n2MxfGHsYAgZ-KK7Ig%2Flarge.jpg"
+            width="400"
+          />
           <figcaption>
             <div
-              class="c8 "
+              class="c6 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
               <strong>
-                Richard Diebenkorn
+                Alex Kypris
               </strong>
             </div>
             <div
-              class="c9 "
+              class="c7 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
+              style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"
             >
-              Ojai Festival 1980
+              Saddle-billed stork
             </div>
           </figcaption>
         </figure>
@@ -733,47 +602,37 @@ exports[`<Filter /> should render success response 1`] = `
       class="c2"
     >
       <a
-        aria-label="17-32"
+        aria-label="Oxidised City"
         class="c3"
-        href="/artwork/barbara-nanning-17-32"
+        href="/artwork/yorgos-kypris-oxidised-city"
       >
         <figure
           class="c4"
         >
-          <div
+          <img
+            alt="Yorgos Kypris, ‘Oxidised City’, 2015"
             class="c5"
-            style="padding-bottom: 75%;"
-          >
-            <div
-              class="sc-AxjAm c6"
-            >
-              <img
-                alt="Barbara Nanning, ‘17-32’, 2019"
-                class="c7"
-                height="100%"
-                src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=300&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F7S_LY7ehO2skDt8p7Pp3WA%2Flarge.jpg"
-                style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
-                width="100%"
-              />
-              <noscript />
-            </div>
-          </div>
+            height="267"
+            src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=267&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FY-AV6U-y1Gmy9Ll6zbysNQ%2Flarge.jpg"
+            width="400"
+          />
           <figcaption>
             <div
-              class="c8 "
+              class="c6 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
               <strong>
-                Barbara Nanning
+                Yorgos Kypris
               </strong>
             </div>
             <div
-              class="c9 "
+              class="c7 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
+              style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"
             >
-              17-32
+              Oxidised City
             </div>
           </figcaption>
         </figure>
@@ -783,47 +642,37 @@ exports[`<Filter /> should render success response 1`] = `
       class="c2"
     >
       <a
-        aria-label="18-62"
+        aria-label="Berkenbast #18 - vraag hem waar hij kwartier maakt"
         class="c3"
-        href="/artwork/barbara-nanning-18-62"
+        href="/artwork/caroline-coolen-berkenbast-number-18-vraag-hem-waar-hij-kwartier-maakt"
       >
         <figure
           class="c4"
         >
-          <div
+          <img
+            alt="Caroline Coolen, ‘Berkenbast #18 - vraag hem waar hij kwartier maakt’, 2017"
             class="c5"
-            style="padding-bottom: 75%;"
-          >
-            <div
-              class="sc-AxjAm c6"
-            >
-              <img
-                alt="Barbara Nanning, ‘18-62’, 2019"
-                class="c7"
-                height="100%"
-                src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=300&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FuK6Sk3wPAd1nJrbgo1R62A%2Flarge.jpg"
-                style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
-                width="100%"
-              />
-              <noscript />
-            </div>
-          </div>
+            height="480"
+            src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=480&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F3qX0NZBr3n1QQqZVtLtqXg%2Flarge.jpg"
+            width="400"
+          />
           <figcaption>
             <div
-              class="c8 "
+              class="c6 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
               <strong>
-                Barbara Nanning
+                Caroline Coolen
               </strong>
             </div>
             <div
-              class="c9 "
+              class="c7 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
+              style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"
             >
-              18-62
+              Berkenbast #18 - vraag hem waar hij kwartier maakt
             </div>
           </figcaption>
         </figure>
@@ -833,47 +682,37 @@ exports[`<Filter /> should render success response 1`] = `
       class="c2"
     >
       <a
-        aria-label="Lamborghini"
+        aria-label="Doraemon: Here We Go!"
         class="c3"
-        href="/artwork/kaxx-lamborghini"
+        href="/artwork/takashi-murakami-doraemon-here-we-go-2"
       >
         <figure
           class="c4"
         >
-          <div
+          <img
+            alt="Takashi Murakami, ‘Doraemon: Here We Go!’, 2020"
             class="c5"
-            style="padding-bottom: 178.27298050139277%;"
-          >
-            <div
-              class="sc-AxjAm c6"
-            >
-              <img
-                alt="KAXX, ‘Lamborghini’, 2018"
-                class="c7"
-                height="100%"
-                src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=713&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FgVIfGaBnjIFW-poUvqgmBA%2Flarge.jpg"
-                style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
-                width="100%"
-              />
-              <noscript />
-            </div>
-          </div>
+            height="456"
+            src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=456&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FX_QtmoxojaElexHjPlKTbg%2Flarge.jpg"
+            width="400"
+          />
           <figcaption>
             <div
-              class="c8 "
+              class="c6 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
               <strong>
-                KAXX
+                Takashi Murakami
               </strong>
             </div>
             <div
-              class="c9 "
+              class="c7 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
+              style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"
             >
-              Lamborghini
+              Doraemon: Here We Go!
             </div>
           </figcaption>
         </figure>
@@ -883,47 +722,37 @@ exports[`<Filter /> should render success response 1`] = `
       class="c2"
     >
       <a
-        aria-label="Mask 9"
+        aria-label="Fish in the net"
         class="c3"
-        href="/artwork/ryan-bock-mask-9"
+        href="/artwork/yorgos-kypris-fish-in-the-net"
       >
         <figure
           class="c4"
         >
-          <div
+          <img
+            alt="Yorgos Kypris, ‘Fish in the net’, 2013"
             class="c5"
-            style="padding-bottom: 139.93362831858406%;"
-          >
-            <div
-              class="sc-AxjAm c6"
-            >
-              <img
-                alt="Ryan Bock, ‘Mask 9’, 2018"
-                class="c7"
-                height="100%"
-                src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=559&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F78YENpVkLDNOv_Hje7ugJg%2Flarge.jpg"
-                style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
-                width="100%"
-              />
-              <noscript />
-            </div>
-          </div>
+            height="538"
+            src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=538&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F_OBJKNcr67g4gGrpqStefw%2Flarge.jpg"
+            width="400"
+          />
           <figcaption>
             <div
-              class="c8 "
+              class="c6 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
               <strong>
-                Ryan Bock
+                Yorgos Kypris
               </strong>
             </div>
             <div
-              class="c9 "
+              class="c7 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
+              style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"
             >
-              Mask 9
+              Fish in the net
             </div>
           </figcaption>
         </figure>
@@ -933,47 +762,37 @@ exports[`<Filter /> should render success response 1`] = `
       class="c2"
     >
       <a
-        aria-label="Justice"
+        aria-label="Vortex"
         class="c3"
-        href="/artwork/kilroy-savage-justice"
+        href="/artwork/yorgos-kypris-vortex-30"
       >
         <figure
           class="c4"
         >
-          <div
+          <img
+            alt="Yorgos Kypris, ‘Vortex’, 2015"
             class="c5"
-            style="padding-bottom: 125.73099415204678%;"
-          >
-            <div
-              class="sc-AxjAm c6"
-            >
-              <img
-                alt="Kilroy Savage, ‘Justice’, 2019"
-                class="c7"
-                height="100%"
-                src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=502&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FcLyedwd3zCUYvxlNJVuwsg%2Flarge.jpg"
-                style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
-                width="100%"
-              />
-              <noscript />
-            </div>
-          </div>
+            height="406"
+            src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=406&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F5LVfXRXmexkSc8WP5kzQtw%2Flarge.jpg"
+            width="400"
+          />
           <figcaption>
             <div
-              class="c8 "
+              class="c6 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
               <strong>
-                Kilroy Savage
+                Yorgos Kypris
               </strong>
             </div>
             <div
-              class="c9 "
+              class="c7 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
+              style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"
             >
-              Justice
+              Vortex
             </div>
           </figcaption>
         </figure>
@@ -983,47 +802,37 @@ exports[`<Filter /> should render success response 1`] = `
       class="c2"
     >
       <a
-        aria-label="Alley Cat"
+        aria-label="Butterflies "
         class="c3"
-        href="/artwork/alexis-kandra-alley-cat"
+        href="/artwork/yorgos-kypris-butterflies-2"
       >
         <figure
           class="c4"
         >
-          <div
+          <img
+            alt="Yorgos Kypris, ‘Butterflies ’, ca. 2000"
             class="c5"
-            style="padding-bottom: 101.86757215619696%;"
-          >
-            <div
-              class="sc-AxjAm c6"
-            >
-              <img
-                alt="Alexis Kandra, ‘Alley Cat’, 2019"
-                class="c7"
-                height="100%"
-                src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=407&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FaCtYVJPYHxCkpRZsAEsylw%2Flarge.jpg"
-                style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
-                width="100%"
-              />
-              <noscript />
-            </div>
-          </div>
+            height="265"
+            src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=265&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F5ksG7m1GzCrrZB08-6twRA%2Flarge.jpg"
+            width="400"
+          />
           <figcaption>
             <div
-              class="c8 "
+              class="c6 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
               <strong>
-                Alexis Kandra
+                Yorgos Kypris
               </strong>
             </div>
             <div
-              class="c9 "
+              class="c7 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
+              style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"
             >
-              Alley Cat
+              Butterflies 
             </div>
           </figcaption>
         </figure>
@@ -1033,47 +842,37 @@ exports[`<Filter /> should render success response 1`] = `
       class="c2"
     >
       <a
-        aria-label="New Beginning"
+        aria-label="Ceremonial boat"
         class="c3"
-        href="/artwork/ekaterina-popova-new-beginning"
+        href="/artwork/yorgos-kypris-ceremonial-boat-6"
       >
         <figure
           class="c4"
         >
-          <div
+          <img
+            alt="Yorgos Kypris, ‘Ceremonial boat’, 2017"
             class="c5"
-            style="padding-bottom: 132.6963906581741%;"
-          >
-            <div
-              class="sc-AxjAm c6"
-            >
-              <img
-                alt="Ekaterina Popova, ‘New Beginning’, 2019"
-                class="c7"
-                height="100%"
-                src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=530&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FEmXbo80hXQzZk37JDo5JQw%2Flarge.jpg"
-                style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
-                width="100%"
-              />
-              <noscript />
-            </div>
-          </div>
+            height="181"
+            src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=181&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FXr7gWeNoMxYXLTGsGJBE2w%2Flarge.jpg"
+            width="400"
+          />
           <figcaption>
             <div
-              class="c8 "
+              class="c6 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
               <strong>
-                Ekaterina Popova
+                Yorgos Kypris
               </strong>
             </div>
             <div
-              class="c9 "
+              class="c7 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
+              style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"
             >
-              New Beginning
+              Ceremonial boat
             </div>
           </figcaption>
         </figure>
@@ -1083,47 +882,437 @@ exports[`<Filter /> should render success response 1`] = `
       class="c2"
     >
       <a
-        aria-label="Milk 1"
+        aria-label="Frozen Fish"
         class="c3"
-        href="/artwork/alex-tea-milk-1"
+        href="/artwork/yorgos-kypris-frozen-fish-7"
       >
         <figure
           class="c4"
         >
-          <div
+          <img
+            alt="Yorgos Kypris, ‘Frozen Fish’, 2018"
             class="c5"
-            style="padding-bottom: 106.94121554300897%;"
-          >
-            <div
-              class="sc-AxjAm c6"
-            >
-              <img
-                alt="Alex Tea, ‘Milk 1’, 2018"
-                class="c7"
-                height="100%"
-                src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=427&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FJ206kpxw9BxzUVb5cPYt-w%2Flarge.jpg"
-                style="position: absolute; object-fit: contain; width: 100%; height: 100%; opacity: 0;"
-                width="100%"
-              />
-              <noscript />
-            </div>
-          </div>
+            height="194"
+            src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=194&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FgCG7rHzBchBZQWDfm0cDwQ%2Flarge.jpg"
+            width="400"
+          />
           <figcaption>
             <div
-              class="c8 "
+              class="c6 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
               <strong>
-                Alex Tea
+                Yorgos Kypris
               </strong>
             </div>
             <div
-              class="c9 "
+              class="c7 "
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="0.75rem"
+              style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"
+            >
+              Frozen Fish
+            </div>
+          </figcaption>
+        </figure>
+      </a>
+    </li>
+    <li
+      class="c2"
+    >
+      <a
+        aria-label="Frozen Fish"
+        class="c3"
+        href="/artwork/yorgos-kypris-frozen-fish-9"
+      >
+        <figure
+          class="c4"
+        >
+          <img
+            alt="Yorgos Kypris, ‘Frozen Fish’, 2018"
+            class="c5"
+            height="201"
+            src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=201&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FLKGKgy9bwIglVcGfFlq7XA%2Flarge.jpg"
+            width="400"
+          />
+          <figcaption>
+            <div
+              class="c6 "
               font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
               font-size="0.75rem"
             >
-              Milk 1
+              <strong>
+                Yorgos Kypris
+              </strong>
+            </div>
+            <div
+              class="c7 "
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="0.75rem"
+              style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"
+            >
+              Frozen Fish
+            </div>
+          </figcaption>
+        </figure>
+      </a>
+    </li>
+    <li
+      class="c2"
+    >
+      <a
+        aria-label="Indigogo 1"
+        class="c3"
+        href="/artwork/stacey-gillian-abe-indigogo-1"
+      >
+        <figure
+          class="c4"
+        >
+          <img
+            alt="Stacey Gillian Abe, ‘Indigogo 1’, 2018"
+            class="c5"
+            height="266"
+            src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=266&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FNz2AKzP7Up4qhqvKAhJ_aQ%2Flarge.jpg"
+            width="400"
+          />
+          <figcaption>
+            <div
+              class="c6 "
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="0.75rem"
+            >
+              <strong>
+                Stacey Gillian Abe
+              </strong>
+            </div>
+            <div
+              class="c7 "
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="0.75rem"
+              style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"
+            >
+              Indigogo 1
+            </div>
+          </figcaption>
+        </figure>
+      </a>
+    </li>
+    <li
+      class="c2"
+    >
+      <a
+        aria-label="Diving Fish"
+        class="c3"
+        href="/artwork/yorgos-kypris-diving-fish-1"
+      >
+        <figure
+          class="c4"
+        >
+          <img
+            alt="Yorgos Kypris, ‘Diving Fish’, 2017"
+            class="c5"
+            height="228"
+            src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=228&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F2wgebQh0tvBImyDmIiBGqg%2Flarge.jpg"
+            width="400"
+          />
+          <figcaption>
+            <div
+              class="c6 "
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="0.75rem"
+            >
+              <strong>
+                Yorgos Kypris
+              </strong>
+            </div>
+            <div
+              class="c7 "
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="0.75rem"
+              style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"
+            >
+              Diving Fish
+            </div>
+          </figcaption>
+        </figure>
+      </a>
+    </li>
+    <li
+      class="c2"
+    >
+      <a
+        aria-label="Muscle Exercices"
+        class="c3"
+        href="/artwork/yorgos-kypris-muscle-exercices-1"
+      >
+        <figure
+          class="c4"
+        >
+          <img
+            alt="Yorgos Kypris, ‘Muscle Exercices’, 2007"
+            class="c5"
+            height="600"
+            src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=600&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FNFEvAnSD8RprIYbow4gr7g%2Flarge.jpg"
+            width="400"
+          />
+          <figcaption>
+            <div
+              class="c6 "
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="0.75rem"
+            >
+              <strong>
+                Yorgos Kypris
+              </strong>
+            </div>
+            <div
+              class="c7 "
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="0.75rem"
+              style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"
+            >
+              Muscle Exercices
+            </div>
+          </figcaption>
+        </figure>
+      </a>
+    </li>
+    <li
+      class="c2"
+    >
+      <a
+        aria-label="Vortex"
+        class="c3"
+        href="/artwork/yorgos-kypris-vortex-33"
+      >
+        <figure
+          class="c4"
+        >
+          <img
+            alt="Yorgos Kypris, ‘Vortex’, 2017"
+            class="c5"
+            height="409"
+            src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=409&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FqUOOF__wqb7vN-L2ShVjGw%2Flarge.jpg"
+            width="400"
+          />
+          <figcaption>
+            <div
+              class="c6 "
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="0.75rem"
+            >
+              <strong>
+                Yorgos Kypris
+              </strong>
+            </div>
+            <div
+              class="c7 "
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="0.75rem"
+              style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"
+            >
+              Vortex
+            </div>
+          </figcaption>
+        </figure>
+      </a>
+    </li>
+    <li
+      class="c2"
+    >
+      <a
+        aria-label="Easy game-2"
+        class="c3"
+        href="/artwork/tetiana-malinovska-easy-game-2"
+      >
+        <figure
+          class="c4"
+        >
+          <img
+            alt="Tetiana Malinovska, ‘Easy game-2’, 2015"
+            class="c5"
+            height="357"
+            src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=357&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FL_rwIYe4wQcGoDr-0zGQLA%2Flarge.jpg"
+            width="400"
+          />
+          <figcaption>
+            <div
+              class="c6 "
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="0.75rem"
+            >
+              <strong>
+                Tetiana Malinovska
+              </strong>
+            </div>
+            <div
+              class="c7 "
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="0.75rem"
+              style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"
+            >
+              Easy game-2
+            </div>
+          </figcaption>
+        </figure>
+      </a>
+    </li>
+    <li
+      class="c2"
+    >
+      <a
+        aria-label="Helias ring "
+        class="c3"
+        href="/artwork/ariadni-kypri-helias-ring"
+      >
+        <figure
+          class="c4"
+        >
+          <img
+            alt="Ariadni Kypri, ‘Helias ring ’, 2019"
+            class="c5"
+            height="225"
+            src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=225&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F74isrT3aKdaVIkc-hkKGmg%2Flarge.jpg"
+            width="400"
+          />
+          <figcaption>
+            <div
+              class="c6 "
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="0.75rem"
+            >
+              <strong>
+                Ariadni Kypri
+              </strong>
+            </div>
+            <div
+              class="c7 "
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="0.75rem"
+              style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"
+            >
+              Helias ring 
+            </div>
+          </figcaption>
+        </figure>
+      </a>
+    </li>
+    <li
+      class="c2"
+    >
+      <a
+        aria-label="Nicolas Ring "
+        class="c3"
+        href="/artwork/ariadni-kypri-nicolas-ring"
+      >
+        <figure
+          class="c4"
+        >
+          <img
+            alt="Ariadni Kypri, ‘Nicolas Ring ’, 2019"
+            class="c5"
+            height="225"
+            src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=225&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FgZyCZx4JhSUYwpKKUIEP6w%2Flarge.jpg"
+            width="400"
+          />
+          <figcaption>
+            <div
+              class="c6 "
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="0.75rem"
+            >
+              <strong>
+                Ariadni Kypri
+              </strong>
+            </div>
+            <div
+              class="c7 "
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="0.75rem"
+              style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"
+            >
+              Nicolas Ring 
+            </div>
+          </figcaption>
+        </figure>
+      </a>
+    </li>
+    <li
+      class="c2"
+    >
+      <a
+        aria-label="Hemispheres"
+        class="c3"
+        href="/artwork/serena-scapagnini-hemispheres"
+      >
+        <figure
+          class="c4"
+        >
+          <img
+            alt="Serena Scapagnini, ‘Hemispheres’, 2013"
+            class="c5"
+            height="225"
+            src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=225&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FoOcJrALfRhpMxWBBlJhNfg%2Flarge.jpg"
+            width="400"
+          />
+          <figcaption>
+            <div
+              class="c6 "
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="0.75rem"
+            >
+              <strong>
+                Serena Scapagnini
+              </strong>
+            </div>
+            <div
+              class="c7 "
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="0.75rem"
+              style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"
+            >
+              Hemispheres
+            </div>
+          </figcaption>
+        </figure>
+      </a>
+    </li>
+    <li
+      class="c2"
+    >
+      <a
+        aria-label="Entrapped Fish"
+        class="c3"
+        href="/artwork/yorgos-kypris-entrapped-fish-4"
+      >
+        <figure
+          class="c4"
+        >
+          <img
+            alt="Yorgos Kypris, ‘Entrapped Fish’, ca. 2000"
+            class="c5"
+            height="392"
+            src="https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=400&height=392&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FvzxWMUzlgctEvHw2HU_xMg%2Flarge.jpg"
+            width="400"
+          />
+          <figcaption>
+            <div
+              class="c6 "
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="0.75rem"
+            >
+              <strong>
+                Yorgos Kypris
+              </strong>
+            </div>
+            <div
+              class="c7 "
+              font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
+              font-size="0.75rem"
+              style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;"
+            >
+              Entrapped Fish
             </div>
           </figcaption>
         </figure>
