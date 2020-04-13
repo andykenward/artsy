@@ -9,13 +9,15 @@ generates:
       - 'typescript-react-apollo'
       - 'fragment-matcher'
     config:
+      reactApolloVersion: 3
       withHooks: true
       withHOC: false
       withComponent: false
-      hooksImportFrom: '@apollo/react-hooks'
   src/generated/introspection-result.json:
     plugins:
       - fragment-matcher
+    config:
+      apolloClientVersion: 3
 config:
   namingConvention:
     enumValues: keep

@@ -1,5 +1,6 @@
 import { DocumentNode } from 'graphql';
 import gql from 'graphql-tag';
+import { ARTWORK_FRAGMENT } from '../artwork/query';
 
 export const QUERY_FILTER: DocumentNode = gql`
   query FilterArtworks($color: String, $page: Int) {
@@ -12,31 +13,10 @@ export const QUERY_FILTER: DocumentNode = gql`
       edges {
         cursor
         node {
-          id
-          href
-          slug
-          title
-          artistNames
-          imageTitle
-          image {
-            resized(width: 600) {
-              url
-              width
-              height
-            }
-            resizedThumb: resized(width: 400) {
-              url
-              width
-              height
-            }
-            resizedRetina: resized(width: 1200) {
-              url
-              width
-              height
-            }
-          }
+          ...ArtworkFragment
         }
       }
     }
   }
+  ${ARTWORK_FRAGMENT}
 `;

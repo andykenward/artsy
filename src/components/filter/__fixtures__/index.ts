@@ -6,8 +6,10 @@ export const FILTER_RESULT_DATA_EMPTY: FilterArtworksQuery = {
     pageInfo: {
       hasNextPage: false,
       endCursor: 'YXJyYXljb25uZWN0aW9uOjI5',
+      __typename: 'PageInfo',
     },
     edges: [],
+    __typename: 'FilterArtworksConnection',
   },
 };
 

@@ -1,12 +1,12 @@
-import { MockedResponse, wait } from '@apollo/react-testing';
+import { MockedResponse } from '@apollo/client/testing';
 import { act } from '@testing-library/react';
 import React from 'react';
+import wait from 'waait';
 import { Artwork } from '..';
 import { useArtworkQuery } from '../../../generated/graphql';
 import { renderWithApp } from '../../../utils/tests';
 import { QUERY_ARTWORK } from '../query';
 import { ARTWORK_RESULT_DATA, ARTWORK_RESULT_ERROR } from '../__fixtures__';
-
 /**
  * FYI GraphQL Fragments do not currently work in Queries for testing
  */

@@ -1,6 +1,7 @@
-import { MockedResponse, wait } from '@apollo/react-testing';
+import { MockedResponse } from '@apollo/client/testing';
 import { act } from '@testing-library/react';
 import React from 'react';
+import wait from 'waait';
 import { Filter } from '..';
 import { useFilterArtworksQuery } from '../../../generated/graphql';
 import { renderWithApp } from '../../../utils/tests';

@@ -1,48 +1,50 @@
-import ApolloClient, {
+import {
+  ApolloClient,
+  ApolloLink,
+  HttpLink,
   InMemoryCache,
-  IntrospectionFragmentMatcher,
-} from 'apollo-boost';
-import result from './generated/graphql';
-
-const fragmentMatcher = new IntrospectionFragmentMatcher({
-  introspectionQueryResultData: result,
-});
-export const cache = new InMemoryCache({ fragmentMatcher });
+} from '@apollo/client';
+import { onError } from '@apollo/link-error';
+import { possibleTypes } from './generated/introspection-result.json';
 
 console.log('GRAPHQL API', process.env.REACT_APP_API);
 
-export const client = new ApolloClient({
-  uri:
-    process.env.REACT_APP_API ?? 'https://metaphysics-production.artsy.net/v2/',
-  fetchOptions: {
-    credentials: 'same-origin',
+const cache = new InMemoryCache({
+  possibleTypes,
+  typePolicies: {
+    Artwork: {
+      keyFields: ['slug'],
+    },
+    Query: {
+      fields: {
+        artwork(existingData, { args, toReference }) {
+          return (
+            existingData ||
+            toReference({ __typename: 'Artwork', slug: args?.id })
+          );
+        },
+      },
+    },
   },
-  cache: cache,
-  request: async (operation) => {
-    const token = process.env.REACT_APP_USER_TOKEN;
+});
 
-    operation.setContext({
-      headers: token
-        ? {
-            'x-access-token': token,
-          }
-        : {},
-    });
-  },
-  onError: ({ graphQLErrors, networkError }) => {
-    /**
-     * Server error responses are bad
-     * message response is bad formatted JSON
-     * there are no error codes to denote unauthorized user
-     */
-    if (graphQLErrors)
-      graphQLErrors.map(({ message, locations, path }) =>
-        console.log(
-          `[GraphQL error]: Message: ${message}, Location: ${JSON.stringify(
-            locations
-          )}, Path: ${path}`
-        )
-      );
-    if (networkError) console.log(`[Network error]: ${networkError}`);
-  },
+export const client = new ApolloClient({
+  link: ApolloLink.from([
+    onError(({ graphQLErrors, networkError }) => {
+      if (graphQLErrors && Array.isArray(graphQLErrors))
+        graphQLErrors?.forEach(({ message, locations, path }) =>
+          console.log(
+            `[GraphQL error]: Message: ${message}, Location: ${locations}, Path: ${path}`
+          )
+        );
+      if (networkError) console.log(`[Network error]: ${networkError}`);
+    }),
+    new HttpLink({
+      uri:
+        process.env.REACT_APP_API ??
+        'https://metaphysics-production.artsy.net/v2/',
+      credentials: 'same-origin',
+    }),
+  ]),
+  cache,
 });
