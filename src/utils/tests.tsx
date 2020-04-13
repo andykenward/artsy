@@ -9,7 +9,7 @@ import { render } from '@testing-library/react';
 import { InMemoryCache, IntrospectionFragmentMatcher } from 'apollo-boost';
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import introspectionResult from '../generated/introspection-result';
+import result from '../generated/graphql';
 
 export const renderWithTheme = (element: React.ReactElement<any>) =>
   render(
@@ -38,7 +38,7 @@ export const renderWithRouter = (
 });
 
 const fragmentMatcher = new IntrospectionFragmentMatcher({
-  introspectionQueryResultData: introspectionResult,
+  introspectionQueryResultData: result,
 });
 
 export const renderWithApp = (

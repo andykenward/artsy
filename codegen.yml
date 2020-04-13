@@ -1,18 +1,19 @@
 overwrite: true
 schema: ${SCHEMA_PATH:./data/schema.graphql}
-documents: './src/components/**/*.{ts,tsx}'
+documents: './src/components/**/query.ts'
 generates:
   src/generated/graphql.tsx:
     plugins:
       - 'typescript'
       - 'typescript-operations'
       - 'typescript-react-apollo'
+      - 'fragment-matcher'
     config:
       withHooks: true
       withHOC: false
       withComponent: false
       hooksImportFrom: '@apollo/react-hooks'
-  src/generated/introspection-result.ts:
+  src/generated/introspection-result.json:
     plugins:
       - fragment-matcher
 config:

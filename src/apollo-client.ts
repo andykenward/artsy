@@ -2,10 +2,10 @@ import ApolloClient, {
   InMemoryCache,
   IntrospectionFragmentMatcher,
 } from 'apollo-boost';
-import introspectionResult from './generated/introspection-result';
+import result from './generated/graphql';
 
 const fragmentMatcher = new IntrospectionFragmentMatcher({
-  introspectionQueryResultData: introspectionResult,
+  introspectionQueryResultData: result,
 });
 export const cache = new InMemoryCache({ fragmentMatcher });
 
