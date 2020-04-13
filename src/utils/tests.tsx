@@ -46,7 +46,7 @@ export const renderWithApp = (
   MOCKS: MockedResponse[] = [],
   { route = '/', history = createHistory(createMemorySource(route)) } = {}
 ) => {
-  const cache = new InMemoryCache({ fragmentMatcher, addTypename: false });
+  const cache = new InMemoryCache({ fragmentMatcher });
   return render(
     <MockedProvider mocks={MOCKS} cache={cache}>
       <Theme>
