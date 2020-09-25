@@ -1,6 +1,6 @@
 import { Redirect, Router } from '@reach/router';
 import React from 'react';
-import ErrorBoundary from 'react-error-boundary';
+import { ErrorBoundary } from 'react-error-boundary';
 import { Artwork } from './components/artwork';
 import { Collect } from './components/collect';
 import { Error } from './components/error';
