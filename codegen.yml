@@ -4,12 +4,11 @@ documents: './src/components/**/query.ts'
 generates:
   src/generated/graphql.tsx:
     plugins:
-      - 'typescript'
-      - 'typescript-operations'
-      - 'typescript-react-apollo'
-      - 'fragment-matcher'
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
+      - fragment-matcher
     config:
-      reactApolloVersion: 3
       withHooks: true
       withHOC: false
       withComponent: false
