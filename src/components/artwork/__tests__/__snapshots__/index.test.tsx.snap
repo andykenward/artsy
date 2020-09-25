@@ -48,7 +48,7 @@ exports[`<Artwork /> should render empty success response 1`] = `
       href="/collect"
     >
       <div
-        class="c3 "
+        class="c3 Typography-sc-1pie2ao-1"
         font-family="Unica77LLWebRegular, 'Helvetica Neue', Helvetica, Arial, sans-serif"
         font-size="16px"
       >
@@ -56,7 +56,7 @@ exports[`<Artwork /> should render empty success response 1`] = `
       </div>
     </a>
     <div
-      class="c4 "
+      class="c4 Typography-sc-1pie2ao-1"
       font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
       font-size="18px"
     >
@@ -119,7 +119,7 @@ exports[`<Artwork /> should render loading state initially 1`] = `
       href="/collect"
     >
       <div
-        class="c3 "
+        class="c3 Typography-sc-1pie2ao-1"
         font-family="Unica77LLWebRegular, 'Helvetica Neue', Helvetica, Arial, sans-serif"
         font-size="16px"
       >
@@ -213,7 +213,7 @@ exports[`<Artwork /> should render success response 1`] = `
       href="/collect"
     >
       <div
-        class="c3 "
+        class="c3 Typography-sc-1pie2ao-1"
         font-family="Unica77LLWebRegular, 'Helvetica Neue', Helvetica, Arial, sans-serif"
         font-size="16px"
       >
@@ -235,7 +235,7 @@ exports[`<Artwork /> should render success response 1`] = `
         style="max-width: 600px;"
       >
         <div
-          class="c6 "
+          class="c6 Typography-sc-1pie2ao-1"
           font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
           font-size="18px"
         >
@@ -244,7 +244,7 @@ exports[`<Artwork /> should render success response 1`] = `
           </strong>
         </div>
         <div
-          class="c6 "
+          class="c6 Typography-sc-1pie2ao-1"
           font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
           font-size="18px"
         >
@@ -257,7 +257,7 @@ exports[`<Artwork /> should render success response 1`] = `
           target="_blank"
         >
           <div
-            class="c6 "
+            class="c6 Typography-sc-1pie2ao-1"
             font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
             font-size="18px"
           >

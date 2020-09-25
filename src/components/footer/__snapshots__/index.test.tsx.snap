@@ -43,11 +43,11 @@ exports[`<Footer /> renders correctly 1`] = `
 }
 
 <footer
-  class="Box-sc-15se88d-0 c0"
+  class="Flex-cw39ct-0 c0"
   display="flex"
 >
   <div
-    class="c1 "
+    class="c1 Typography-sc-1pie2ao-1"
     font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
     font-size="1.375rem,1.625rem"
   >
@@ -62,7 +62,7 @@ exports[`<Footer /> renders correctly 1`] = `
     target="_blank"
   >
     <div
-      class="c1 "
+      class="c1 Typography-sc-1pie2ao-1"
       font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
       font-size="1.375rem,1.625rem"
     >
@@ -76,7 +76,7 @@ exports[`<Footer /> renders correctly 1`] = `
     target="_blank"
   >
     <div
-      class="c1 "
+      class="c1 Typography-sc-1pie2ao-1"
       font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
       font-size="1.375rem,1.625rem"
     >

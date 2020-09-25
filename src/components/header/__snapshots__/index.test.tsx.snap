@@ -54,7 +54,7 @@ exports[`<Header /> renders correctly 1`] = `
 }
 
 <header
-  class="Box-sc-15se88d-0 c0"
+  class="Flex-cw39ct-0 c0"
   display="flex"
 >
   <a
@@ -64,7 +64,7 @@ exports[`<Header /> renders correctly 1`] = `
     target="_blank"
   >
     <h1
-      class="c2 "
+      class="c2 Typography-sc-1pie2ao-1"
       display="inline-flex"
       font-family="'Adobe Garamond W08', 'adobe-garamond-pro', 'AGaramondPro-Regular', 'Times New Roman', Times, serif"
       font-size="2rem,2.75rem"
