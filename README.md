@@ -8,8 +8,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Requirements
 
-- node `^10.x`
-- npm `^6.10.1`
+- node: ^12.16.0
+- npm: ^6.13.4
 
 ### Node
 
