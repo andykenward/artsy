@@ -4,7 +4,7 @@ import {
   HttpLink,
   InMemoryCache,
 } from '@apollo/client';
-import { onError } from '@apollo/link-error';
+import { onError } from '@apollo/client/link/error';
 import { possibleTypes } from './generated/introspection-result.json';
 
 console.log('GRAPHQL API', process.env.REACT_APP_API);
